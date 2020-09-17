@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Olayis/expensus">
-    <img src="public/favicon.ico" alt="Logo" width="80" height="80">
+    <img src="public/mstile-144x144.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Expensus</h3>
@@ -21,8 +21,6 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
@@ -36,14 +34,12 @@
 * [License](#license)
 * [Contact](#contact)
 * [Screenshots](#screenshots)
-
-
+* [Dependencies Documentations](#dependencies-documentations)
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 <img src="public/img/screenshot.jpg" alt="Screenshot" style="max-width: 100%; height: auto;">
-
 
 ### Built With
 
@@ -51,8 +47,8 @@
 * S(CSS)
 * JavaScript
 * React.js
-
-
+* Redux
+* Firebase
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -61,28 +57,65 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
+If you don't have the following installed on your system, follow the links beside them to install:
+
+* Node.js - [Link](https://nodejs.org/en/)
+* yarn - [Link](https://classic.yarnpkg.com/en/docs/install/)
 
 ### Installation
- 
+
 1. Clone the expensus repository
+
 ```sh
 git clone https://github.com/Olayis/expensus.git
 ```
-2. Install NPM packages
+
+1. Install all the dependencies of the project
+
 ```sh
 yarn
 ```
 
+or
+
+```sh
+yarn install
+```
+
+1. Run webpack development server
+
+```sh
+yarn build:dev
+```
+
+Runs the app in the development mode. <br />
+Open [http://localhost:5000](http://localhost:9000) to view it in the browser.
+
+The page will reload if you make edits.
+
+1. Testing the application
+
+```sh
+yarn test
+```
+
+Launches the test runner.
+
+```sh
+yarn test --watchAll
+```
+
+Launches the test runner in the interactive watch mode.
+
+1. Run webpack production build
+
+```sh
+yarn build:prod
+```
 <!-- ROADMAP -->
 ## Roadmap
 
 See the [open issues](https://github.com/Olayis/expensus/issues) for a list of proposed features (and known issues).
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -95,28 +128,42 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
 <!-- CONTACT -->
 ## Contact
 
-Olayinka Olusegun - olayinkasegunsolo@gmail.com - [LinkedIn](https://linkedin.com/in/olusegun-olayinka) - [@olusegun_os](https://twitter.com/olusegun_os)
+Olayinka Olusegun
+
+* olayinkasegunsolo@gmail.com 
+* [LinkedIn](https://linkedin.com/in/olusegun-olayinka) 
+* Twitter - [@olusegun_os](https://twitter.com/olusegun_os)
 
 Project Link: [https://github.com/Olayis/expensus](https://github.com/Olayis/expensus)
 
-
-[linkedin-url]: https://linkedin.com/in/othneildrew
-
 ## Screenshots
+
+* Login page
+
 * Dashboard page
 
 * Add Expense page
 
 * Edit Expense page
+
+## Dependencies Documentations
+
+Links to the documentations of some dependencies used in the project are:
+
+* [Babeljs](https://babeljs.io/docs/en/)
+* [Enzyme](https://enzymejs.github.io/enzyme/docs/api/)
+* [Jest](https://jestjs.io/docs/en/getting-started)
+* [Moment](https://momentjs.com/docs/)
+* [React-dates](https://github.com/airbnb/react-dates)
+* [React-modal](https://www.npmjs.com/package/react-modal#api-documentation)
+* [React-router](https://reactrouter.com/web/guides/quick-start)
+* [Redux](https://redux.js.org/introduction/getting-started)
+* [Webpack](https://webpack.js.org/concepts/)
