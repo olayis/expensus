@@ -95,7 +95,7 @@ module.exports = {
     devtool: isDevelopment ? 'inline-source-map' : 'source-map',
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
-        port: 5000,
+        port: 9000,
         historyApiFallback: true
     }
 };

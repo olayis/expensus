@@ -1,6 +1,7 @@
 {
     "name": "Expensus",
     "short_name": "Expensus",
+    "start_url": "/",
     "icons": [
         {
             "src": "android-chrome-192x192.png",
@@ -19,6 +20,6 @@
     "orientation": "any",
     "dir": "ltr",
     "lang": "en-US",
-    "description": "Save all your expenses in one place.",
+    "description": "Organize all your expenses in one place.",
     "scope": "/"
 }

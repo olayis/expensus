@@ -59,8 +59,8 @@ To get a local copy up and running follow these simple steps.
 
 If you don't have the following installed on your system, follow the links beside them to install:
 
-* Node.js - [Link](https://nodejs.org/en/)
-* yarn - [Link](https://classic.yarnpkg.com/en/docs/install/)
+* Node.js - <https://nodejs.org/en/>
+* yarn - <https://classic.yarnpkg.com/en/docs/install/>
 
 ### Installation
 
@@ -85,11 +85,11 @@ yarn install
 1. Run webpack development server
 
 ```sh
-yarn build:dev
+yarn run build:dev
 ```
 
 Runs the app in the development mode. <br />
-Open [http://localhost:5000](http://localhost:9000) to view it in the browser.
+Open <http://localhost:9000> to view it in the browser.
 
 The page will reload if you make edits.
 
@@ -110,8 +110,18 @@ Launches the test runner in the interactive watch mode.
 1. Run webpack production build
 
 ```sh
-yarn build:prod
+yarn run build:prod
 ```
+
+Runs the app in production mode.
+
+1. Start up server to view app in production mode
+
+```sh
+yarn run start
+```
+
+Open <http://localhost:3000> to view it in the browser.
 <!-- ROADMAP -->
 ## Roadmap
 
@@ -139,10 +149,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Olayinka Olusegun
 
 * olayinkasegunsolo@gmail.com 
-* [LinkedIn](https://linkedin.com/in/olusegun-olayinka) 
+* LinkedIn - <https://linkedin.com/in/olusegun-olayinka>
 * Twitter - [@olusegun_os](https://twitter.com/olusegun_os)
 
-Project Link: [https://github.com/Olayis/expensus](https://github.com/Olayis/expensus)
+Project Link: <https://github.com/Olayis/expensus>
 
 ## Screenshots
 
