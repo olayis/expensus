@@ -2,11 +2,16 @@
 
 exports[`should render NotFoundPage correctly 1`] = `
 <div>
-  Page Not Found. It's lonely out here, let's —  
-  <Link
-    to="/"
-  >
-    Go home
-  </Link>
+  <h2>
+    Page Not Found.
+  </h2>
+  <p>
+    Sorry, but the page you were trying to view does not exist. Let's —  
+    <Link
+      to="/"
+    >
+      Go home
+    </Link>
+  </p>
 </div>
 `;

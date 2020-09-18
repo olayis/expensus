@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Olayis/expensus">
-    <img src="public/mstile-144x144.png" alt="Logo" width="80" height="80">
+    <img src="public/android-chrome-512x512.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Expensus</h3>
@@ -13,7 +13,7 @@
     <a href="https://github.com/Olayis/expensus"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Olayis/expensus">View Demo</a>
+    <a href="https://expensus.herokuapp.com">View Demo</a>
     ·
     <a href="https://github.com/Olayis/expensus/issues">Report Bug</a>
     ·
@@ -70,7 +70,7 @@ If you don't have the following installed on your system, follow the links besid
 git clone https://github.com/Olayis/expensus.git
 ```
 
-1. Install all the dependencies of the project
+2. Install all the dependencies of the project
 
 ```sh
 yarn
@@ -82,7 +82,7 @@ or
 yarn install
 ```
 
-1. Run webpack development server
+3. Run webpack development server
 
 ```sh
 yarn run build:dev
@@ -93,7 +93,7 @@ Open <http://localhost:9000> to view it in the browser.
 
 The page will reload if you make edits.
 
-1. Testing the application
+4. Testing the application
 
 ```sh
 yarn test
@@ -102,12 +102,12 @@ yarn test
 Launches the test runner.
 
 ```sh
-yarn test --watchAll
+yarn test:watch
 ```
 
 Launches the test runner in the interactive watch mode.
 
-1. Run webpack production build
+5. Run webpack production build
 
 ```sh
 yarn run build:prod
@@ -115,10 +115,10 @@ yarn run build:prod
 
 Runs the app in production mode.
 
-1. Start up server to view app in production mode
+6. Start up server to view app in production mode
 
 ```sh
-yarn run start
+yarn start
 ```
 
 Open <http://localhost:3000> to view it in the browser.

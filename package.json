@@ -5,10 +5,10 @@
   "author": "Olayinka Olusegun",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "build:dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
     "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "test": "jest --config=jest.config.json",
+    "test:watch": "jest --config=jest.config.json --watchAll",
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
   },
@@ -22,9 +22,9 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "core-js": "3",
     "express": "^4.17.1",
-    "live-server": "^1.2.1",
     "moment": "^2.27.0",
     "normalize.css": "^8.0.1",
+    "numeral": "^2.0.6",
     "raf": "^3.4.1",
     "react": "^16.13.1",
     "react-dates": "^21.8.0",
