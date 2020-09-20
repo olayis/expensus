@@ -9,7 +9,7 @@ import selectExpensesTotal from '../selectors/exepenses-total';
 naira();
 
 export const ExpensesSummary = ({ expenseCount, expensesTotal }) => {
-    const expenseWord = expenseCount > 1 ? 'expenses' : 'expense';
+    const expenseWord = expenseCount === 1 ? 'expense' : 'expenses';
     const formattedExpensesTotal = numeral(expensesTotal / 100).format('$0,0.00');
 
     return (

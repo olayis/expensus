@@ -6,7 +6,7 @@ exports[`should render ExpensesSummary with 0 expense 1`] = `
     Viewing 
     0
      
-    expense
+    expenses
      at 
     ₦0.00
   </h2>
