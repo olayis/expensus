@@ -1,10 +1,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/Olayis/expensus">
-    <img src="public/android-chrome-512x512.png" alt="Logo" width="80" height="80">
-  </a>
-
+  <img src="public/android-chrome-512x512.png" alt="Logo" width="80" height="80">
+  
   <h3 align="center">Expensus</h3>
 
   <p align="center">
@@ -13,7 +11,7 @@
     <a href="https://github.com/Olayis/expensus"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://expensus.herokuapp.com">View Demo</a>
+    <a href="https://expensus.herokuapp.com" target="_blank">View Demo</a>
     ·
     <a href="https://github.com/Olayis/expensus/issues">Report Bug</a>
     ·
@@ -66,62 +64,62 @@ If you don't have the following installed on your system, follow the links besid
 
 1. Clone the expensus repository
 
-```sh
-git clone https://github.com/Olayis/expensus.git
-```
+    ```sh
+    git clone https://github.com/Olayis/expensus.git
+    ```
 
 2. Install all the dependencies of the project
 
-```sh
-yarn
-```
+    ```sh
+    yarn
+    ```
 
-or
+    or
 
-```sh
-yarn install
-```
+    ```sh
+    yarn install
+    ```
 
 3. Run webpack development server
 
-```sh
-yarn run build:dev
-```
+    ```sh
+    yarn run build:dev
+    ```
 
-Runs the app in the development mode. <br />
-Open <http://localhost:9000> to view it in the browser.
+    Runs the app in the development mode. <br />
+    Open <http://localhost:9000> to view it in the browser.
 
-The page will reload if you make edits.
+    The page will reload if you make edits.
 
 4. Testing the application
 
-```sh
-yarn test
-```
+    ```sh
+    yarn test
+    ```
 
-Launches the test runner.
+    Launches the test runner.
 
-```sh
-yarn test:watch
-```
+    ```sh
+    yarn test:watch
+    ```
 
-Launches the test runner in the interactive watch mode.
+    Launches the test runner in the interactive watch mode.
 
 5. Run webpack production build
 
-```sh
-yarn run build:prod
-```
+    ```sh
+    yarn run build:prod
+    ```
 
-Runs the app in production mode.
+    Runs the app in production mode.
 
 6. Start up server to view app in production mode
 
-```sh
-yarn start
-```
+    ```sh
+    yarn start
+    ```
 
-Open <http://localhost:3000> to view it in the browser.
+    Open <http://localhost:3000> to view it in the browser.
 <!-- ROADMAP -->
 ## Roadmap
 

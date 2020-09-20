@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpensesSummary with 0 expense 1`] = `
+<div>
+  <h2>
+    Viewing 
+    0
+     
+    expense
+     at 
+    ₦0.00
+  </h2>
+</div>
+`;
+
+exports[`should render ExpensesSummary with 1 expense 1`] = `
+<div>
+  <h2>
+    Viewing 
+    1
+     
+    expense
+     at 
+    ₦20.00
+  </h2>
+</div>
+`;
+
+exports[`should render ExpensesSummary with multiple expenses 1`] = `
+<div>
+  <h2>
+    Viewing 
+    41
+     
+    expenses
+     at 
+    ₦8,713,877.47
+  </h2>
+</div>
+`;

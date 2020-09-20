@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { shallow } from 'enzyme';
 import moment from 'moment';
 import ExpenseForm from '../../components/ExpenseForm';
@@ -27,7 +27,7 @@ test('should render both descriptionError and amountError if [description] and [
 });
 
 test('should render descriptionError if [description] is not provided but [amount] is provided', () => {
-    const value = '23.64';    
+    const value = '23.64';
     const wrapper = shallow(<ExpenseForm />);
     expect(wrapper).toMatchSnapshot();
 
@@ -84,7 +84,7 @@ test('should set amount if input data is valid', () => {
     const wrapper = shallow(<ExpenseForm />);
     wrapper.find('input').at(1).simulate('change', {
         target: { value }
-    });    
+    });
     expect(wrapper.state('amount')).toBe(value);
 });
 
@@ -106,7 +106,7 @@ test('should call onSubmit prop for valid form submission', () => {
 
     expect(wrapper.state('descriptionError')).toBe('');
     expect(wrapper.state('amountError')).toBe('');
-    expect(onSubmitSpy).toHaveBeenLastCalledWith({        
+    expect(onSubmitSpy).toHaveBeenLastCalledWith({
         description: expenses[0].description,
         note: expenses[0].note,
         amount: expenses[0].amount,
@@ -114,10 +114,10 @@ test('should call onSubmit prop for valid form submission', () => {
     });
 });
 
-test('should set new date on date change', () => {    
+test('should set new date on date change', () => {
     const now = moment();
     const wrapper = shallow(<ExpenseForm />);
-    wrapper.find('withStyles(SingleDatePicker)').prop('onDateChange')(now);    
+    wrapper.find('withStyles(SingleDatePicker)').prop('onDateChange')(now);
     expect(wrapper.state('createdAt')).toEqual(now);
 });
 

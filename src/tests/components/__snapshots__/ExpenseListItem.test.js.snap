@@ -10,7 +10,7 @@ exports[`should render ExpenseListItem with expense 1`] = `
     </h3>
   </Link>
   <p>
-    ₦80.00
+    $80.00
   </p>
   <p>
     Jan 13th, 1970
