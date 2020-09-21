@@ -8,47 +8,50 @@
   <p align="center">
     Expensus is a budget planning application that lets you document the cost incurred in or needed for something in an interactive manner.
     <br />
-    <a href="https://github.com/Olayis/expensus"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/olayis/expensus"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://expensus.herokuapp.com" target="_blank">View Demo</a>
     ·
-    <a href="https://github.com/Olayis/expensus/issues">Report Bug</a>
+    <a href="https://github.com/olayis/expensus/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Olayis/expensus/issues">Request Feature</a>
+    <a href="https://github.com/olayis/expensus/issues">Request Feature</a>
   </p>
 </p>
 
 <!-- TABLE OF CONTENTS -->
+
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Screenshots](#screenshots)
-* [Dependencies Documentations](#dependencies-documentations)
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Screenshots](#screenshots)
+- [Dependencies Documentations](#dependencies-documentations)
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 <img src="public/img/screenshot.jpg" alt="Screenshot" style="max-width: 100%; height: auto;">
 
 ### Built With
 
-* Html
-* S(CSS)
-* JavaScript
-* React.js
-* Redux
-* Firebase
+- Html
+- S(CSS)
+- JavaScript
+- React.js
+- Redux
+- Firebase
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
@@ -57,18 +60,18 @@ To get a local copy up and running follow these simple steps.
 
 If you don't have the following installed on your system, follow the links beside them to install:
 
-* Node.js - <https://nodejs.org/en/>
-* yarn - <https://classic.yarnpkg.com/en/docs/install/>
+- Node.js - <https://nodejs.org/en/>
+- yarn - <https://classic.yarnpkg.com/en/docs/install/>
 
 ### Installation
 
-1. Clone the expensus repository
+1.  Clone the expensus repository
 
     ```sh
-    git clone https://github.com/Olayis/expensus.git
+    git clone https://github.com/olayis/expensus.git
     ```
 
-2. Install all the dependencies of the project
+2.  Install all the dependencies of the project
 
     ```sh
     yarn
@@ -80,7 +83,7 @@ If you don't have the following installed on your system, follow the links besid
     yarn install
     ```
 
-3. Run webpack development server
+3.  Run webpack development server
 
     ```sh
     yarn run build:dev
@@ -91,7 +94,7 @@ If you don't have the following installed on your system, follow the links besid
 
     The page will reload if you make edits.
 
-4. Testing the application
+4.  Testing the application
 
     ```sh
     yarn test
@@ -105,7 +108,7 @@ If you don't have the following installed on your system, follow the links besid
 
     Launches the test runner in the interactive watch mode.
 
-5. Run webpack production build
+5.  Run webpack production build
 
     ```sh
     yarn run build:prod
@@ -113,19 +116,22 @@ If you don't have the following installed on your system, follow the links besid
 
     Runs the app in production mode.
 
-6. Start up server to view app in production mode
+6.  Start up server to view app in production mode
 
-    ```sh
-    yarn start
-    ```
+        ```sh
+        yarn start
+        ```
 
-    Open <http://localhost:3000> to view it in the browser.
-<!-- ROADMAP -->
+        Open <http://localhost:3000> to view it in the browser.
+
+    <!-- ROADMAP -->
+
 ## Roadmap
 
-See the [open issues](https://github.com/Olayis/expensus/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/olayis/expensus/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -137,41 +143,43 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
+
 ## Contact
 
 Olayinka Olusegun
 
-* olayinkasegunsolo@gmail.com 
-* LinkedIn - <https://linkedin.com/in/olusegun-olayinka>
-* Twitter - [@olusegun_os](https://twitter.com/olusegun_os)
+- olayinkasegunsolo@gmail.com
+- LinkedIn - <https://linkedin.com/in/olusegun-olayinka>
+- Twitter - [@olusegun_os](https://twitter.com/olusegun_os)
 
-Project Link: <https://github.com/Olayis/expensus>
+Project Link: <https://github.com/olayis/expensus>
 
 ## Screenshots
 
-* Login page
+- Login page
 
-* Dashboard page
+- Dashboard page
 
-* Add Expense page
+- Add Expense page
 
-* Edit Expense page
+- Edit Expense page
 
 ## Dependencies Documentations
 
 Links to the documentations of some dependencies used in the project are:
 
-* [Babeljs](https://babeljs.io/docs/en/)
-* [Enzyme](https://enzymejs.github.io/enzyme/docs/api/)
-* [Jest](https://jestjs.io/docs/en/getting-started)
-* [Moment](https://momentjs.com/docs/)
-* [React-dates](https://github.com/airbnb/react-dates)
-* [React-modal](https://www.npmjs.com/package/react-modal#api-documentation)
-* [React-router](https://reactrouter.com/web/guides/quick-start)
-* [Redux](https://redux.js.org/introduction/getting-started)
-* [Webpack](https://webpack.js.org/concepts/)
+- [Babeljs](https://babeljs.io/docs/en/)
+- [Enzyme](https://enzymejs.github.io/enzyme/docs/api/)
+- [Jest](https://jestjs.io/docs/en/getting-started)
+- [Moment](https://momentjs.com/docs/)
+- [React-dates](https://github.com/airbnb/react-dates)
+- [React-modal](https://www.npmjs.com/package/react-modal#api-documentation)
+- [React-router](https://reactrouter.com/web/guides/quick-start)
+- [Redux](https://redux.js.org/introduction/getting-started)
+- [Webpack](https://webpack.js.org/concepts/)
