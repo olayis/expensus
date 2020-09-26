@@ -1,3 +1,5 @@
 dist
 node_modules
 src/playground
+.env.development
+.env.test

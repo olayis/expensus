@@ -8,7 +8,7 @@ exports[`should render ExpensesSummary with 0 expense 1`] = `
      
     expenses
      at 
-    ₦0.00
+    $0.00
   </h2>
 </div>
 `;
@@ -21,7 +21,7 @@ exports[`should render ExpensesSummary with 1 expense 1`] = `
      
     expense
      at 
-    ₦20.00
+    $20.00
   </h2>
 </div>
 `;
@@ -34,7 +34,7 @@ exports[`should render ExpensesSummary with multiple expenses 1`] = `
      
     expenses
      at 
-    ₦8,713,877.47
+    $8,713,877.47
   </h2>
 </div>
 `;

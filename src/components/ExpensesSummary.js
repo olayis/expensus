@@ -1,12 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import numeral from 'numeral';
-import { naira } from '../configurations/numeralLocale';
 import selectExpenses from '../selectors/expenses';
 import selectExpensesTotal from '../selectors/exepenses-total';
-
-//Use currency from numeralLocale configuration
-naira();
 
 export const ExpensesSummary = ({ expenseCount, expensesTotal }) => {
     const expenseWord = expenseCount === 1 ? 'expense' : 'expenses';

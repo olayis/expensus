@@ -65,13 +65,13 @@ If you don't have the following installed on your system, follow the links besid
 
 ### Installation
 
-1.  Clone the expensus repository
+1.Clone the expensus repository
 
     ```sh
     git clone https://github.com/olayis/expensus.git
     ```
 
-2.  Install all the dependencies of the project
+2.Install all the dependencies of the project
 
     ```sh
     yarn
@@ -83,18 +83,20 @@ If you don't have the following installed on your system, follow the links besid
     yarn install
     ```
 
-3.  Run webpack development server
+3.Run webpack development server
 
     ```sh
     yarn run build:dev
     ```
 
-    Runs the app in the development mode. <br />
-    Open <http://localhost:9000> to view it in the browser.
+    Runs the app in the development mode.
+    <br />
+
+    Open <http://localhost:3000> to view it in the browser.
 
     The page will reload if you make edits.
 
-4.  Testing the application
+4.Testing the application
 
     ```sh
     yarn test
@@ -108,7 +110,7 @@ If you don't have the following installed on your system, follow the links besid
 
     Launches the test runner in the interactive watch mode.
 
-5.  Run webpack production build
+5.Run webpack production build
 
     ```sh
     yarn run build:prod
@@ -116,13 +118,16 @@ If you don't have the following installed on your system, follow the links besid
 
     Runs the app in production mode.
 
-6.  Start up server to view app in production mode
+6.Start up server to view app in production mode
 
-        ```sh
-        yarn start
-        ```
+    ```sh
+    yarn start
+    ```
 
-        Open <http://localhost:3000> to view it in the browser.
+    Runs the app in the development mode.
+    <br />
+
+    Open <http://localhost:9000> to view it in the browser.
 
     <!-- ROADMAP -->
 

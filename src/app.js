@@ -6,13 +6,15 @@ import configureStore from './store/configureStore';
 import 'normalize.css/normalize.css';
 import './styles/main.scss';
 import 'react-dates/lib/css/_datepicker.css';
+import './utils/numeralLocales/ngLocale';
+import './firebase/firebase';
 
 const store = configureStore();
 
 const jsx = (
     <Provider store={store}>
         <AppRouter />
-    </Provider>    
+    </Provider>
 );
 
 ReactDOM.render(jsx, document.getElementById('app'));
