@@ -8,7 +8,7 @@
   <p align="center">
     Expensus is a budget planning application that lets you document the cost incurred in or needed for something in an interactive manner.
     <br />
-    <a href="https://github.com/olayis/expensus"><strong>Explore the docs »</strong></a>
+    <Strong>[Explore the docs ↓](#table-of-contents)</Strong>
     <br />
     <br />
     <a href="https://expensus.herokuapp.com" target="_blank">View Demo</a>
