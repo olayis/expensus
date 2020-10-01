@@ -66,40 +66,31 @@ To get a local copy up and running follow these simple steps.
 - Firebase and Env Variables
 
   - Create development/production and test databases on [firebase](https://console.firebase.google.com/) for the application.
-
   - Create `.env.development` and `.env.test` files in then root directory of the project and add the Firebase SDK snippet config in
     the `Key=Value` format e.g.
-    FIREBASE_API_KEY=your api key
-    FIREBASE_AUTH_DOMAIN=your application auth domain
-    FIREBASE_DATABASE_URL=your database url
-    FIREBASE_PROJECT_ID=project id
+    `FIREBASE_API_KEY=your api key`
+    `FIREBASE_AUTH_DOMAIN=your application auth domain`
+    `FIREBASE_DATABASE_URL=your database url`
+    `FIREBASE_PROJECT_ID=project id`
     ...
 
 ### Installation
 
 1.Clone the expensus repository
-
-    ```
+    
     git clone https://github.com/olayis/expensus.git
-    ```
 
 2.Install all the dependencies of the project
 
-    ```
+    npm install 
+    or 
     yarn
-    ```
-
-    or
-
-    ```
-    yarn install
-    ```
 
 3.Run webpack development server
-
-    ```
-    yarn run build:dev
-    ```
+    
+    npm run build:dev
+    or    
+    yarn build:dev
 
     Runs the app in the development mode.
     <br />
@@ -109,32 +100,35 @@ To get a local copy up and running follow these simple steps.
     The page will reload if you make edits.
 
 4.Testing the application
-
-    ```sh
-    yarn test
-    ```
+    
+    npm run test
+    or
+    yarn test    
 
     Launches the test runner.
 
-    ```
+    npm run test:watch
+    or
     yarn test:watch
-    ```
+    
 
     Launches the test runner in the interactive watch mode.
 
 5.Run webpack production build
 
-    ```
-    yarn run build:prod
-    ```
+    npm run build:prod
+    or
+    yarn build:prod
+    
 
     Runs the app in production mode.
 
 6.Start up server to view app in production mode
 
-    ```
-    yarn start
-    ```
+    npm run start
+    or
+    yarn start    
+    
 
     Runs the app in the development mode.
     <br />
