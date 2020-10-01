@@ -8,7 +8,7 @@
   <p align="center">
     Expensus is a budget planning application that lets you document the cost incurred in or needed for something in an interactive manner.
     <br />
-    <a href="#table-of-contents"><strong>Explore the docs ↓</strong></a>       
+    <a href="#table-of-contents"><strong>Explore the docs ↓</strong></a>
     <br />
     <br />
     <a href="https://expensus.herokuapp.com" target="_blank">View Demo</a>
@@ -58,34 +58,46 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-If you don't have the following installed on your system, follow the links beside them to install:
+- If you don't already have the following installed on your system, click on the links below to install:
 
-- Node.js - <https://nodejs.org/en/>
-- yarn - <https://classic.yarnpkg.com/en/docs/install/>
+  - Node.js - <https://nodejs.org/en/>
+  - yarn - <https://classic.yarnpkg.com/en/docs/install/>
+
+- Firebase and Env Variables
+
+  - Create development/production and test databases on [firebase](https://console.firebase.google.com/) for the application.
+
+  - Create `.env.development` and `.env.test` files in then root directory of the project and add the Firebase SDK snippet config in
+    the `Key=Value` format e.g.
+    FIREBASE_API_KEY=your api key
+    FIREBASE_AUTH_DOMAIN=your application auth domain
+    FIREBASE_DATABASE_URL=your database url
+    FIREBASE_PROJECT_ID=project id
+    ...
 
 ### Installation
 
 1.Clone the expensus repository
 
-    ```sh
+    ```
     git clone https://github.com/olayis/expensus.git
     ```
 
 2.Install all the dependencies of the project
 
-    ```sh
+    ```
     yarn
     ```
 
     or
 
-    ```sh
+    ```
     yarn install
     ```
 
 3.Run webpack development server
 
-    ```sh
+    ```
     yarn run build:dev
     ```
 
@@ -104,7 +116,7 @@ If you don't have the following installed on your system, follow the links besid
 
     Launches the test runner.
 
-    ```sh
+    ```
     yarn test:watch
     ```
 
@@ -112,7 +124,7 @@ If you don't have the following installed on your system, follow the links besid
 
 5.Run webpack production build
 
-    ```sh
+    ```
     yarn run build:prod
     ```
 
@@ -120,7 +132,7 @@ If you don't have the following installed on your system, follow the links besid
 
 6.Start up server to view app in production mode
 
-    ```sh
+    ```
     yarn start
     ```
 
