@@ -30,9 +30,9 @@
   - [Installation](#installation)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
+- [Screenshots](#screenshots)
 - [License](#license)
 - [Contact](#contact)
-- [Screenshots](#screenshots)
 - [Dependencies Documentations](#dependencies-documentations)
 
 <!-- ABOUT THE PROJECT -->
@@ -68,49 +68,53 @@ To get a local copy up and running follow these simple steps.
   - Create development/production and test databases on [firebase](https://console.firebase.google.com/) for the application.
   - Create `.env.development` and `.env.test` files in then root directory of the project and add the Firebase SDK snippet config in
     the `Key=Value` format e.g.
+    <br>
     `FIREBASE_API_KEY=your api key`
+    <br>
     `FIREBASE_AUTH_DOMAIN=your application auth domain`
+    <br>
     `FIREBASE_DATABASE_URL=your database url`
+    <br>
     `FIREBASE_PROJECT_ID=project id`
-    ...
+    <br>
+    `...`
 
 ### Installation
 
 1.Clone the expensus repository
-    
+
     git clone https://github.com/olayis/expensus.git
 
 2.Install all the dependencies of the project
 
-    npm install 
-    or 
+    npm install
+    or
     yarn
 
 3.Run webpack development server
-    
+
     npm run build:dev
-    or    
+    or
     yarn build:dev
 
     Runs the app in the development mode.
-    <br />
 
-    Open <http://localhost:3000> to view it in the browser.
+    Open http://localhost:3000 to view it in the browser.
 
     The page will reload if you make edits.
 
 4.Testing the application
-    
+
     npm run test
     or
-    yarn test    
+    yarn test
 
     Launches the test runner.
 
     npm run test:watch
     or
     yarn test:watch
-    
+
 
     Launches the test runner in the interactive watch mode.
 
@@ -119,7 +123,7 @@ To get a local copy up and running follow these simple steps.
     npm run build:prod
     or
     yarn build:prod
-    
+
 
     Runs the app in production mode.
 
@@ -127,15 +131,12 @@ To get a local copy up and running follow these simple steps.
 
     npm run start
     or
-    yarn start    
-    
+    yarn start
+
 
     Runs the app in the development mode.
-    <br />
 
-    Open <http://localhost:9000> to view it in the browser.
-
-    <!-- ROADMAP -->
+    Open http://localhost:9000 to view it in the browser.
 
 ## Roadmap
 
@@ -152,6 +153,16 @@ Contributions are what make the open source community such an amazing place to b
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+## Screenshots
+
+- Login page
+
+- Dashboard page
+
+- Add Expense page
+
+- Edit Expense page
 
 <!-- LICENSE -->
 
@@ -170,16 +181,6 @@ Olayinka Olusegun
 - Twitter - [@olusegun_os](https://twitter.com/olusegun_os)
 
 Project Link: <https://github.com/olayis/expensus>
-
-## Screenshots
-
-- Login page
-
-- Dashboard page
-
-- Add Expense page
-
-- Edit Expense page
 
 ## Dependencies Documentations
 

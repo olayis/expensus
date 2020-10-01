@@ -7,8 +7,8 @@
   "scripts": {
     "build:dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
     "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
-    "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
-    "test:watch": "jest --config=jest.config.json --watchAll",
+    "test": "cross-env NODE_ENV=test jest --config=jest.config.json --detectOpenHandles",
+    "test:watch": "yarn test --watchAll",
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
   },
