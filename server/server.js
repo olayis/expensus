@@ -7,9 +7,9 @@ const port = process.env.PORT || 9000;
 app.use(express.static(distPath));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(distPath, 'index.html'));
+  res.sendFile(path.join(distPath, 'index.html'));
 });
 
 app.listen(port, () => {
-    console.log('server is up');
+  console.log('server is up');
 });

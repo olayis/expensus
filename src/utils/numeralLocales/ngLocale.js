@@ -1,24 +1,24 @@
 import numeral from 'numeral';
 
-// load a locale
-numeral.register('locale', 'ng', {
+export default () => {
+  // load a locale
+  numeral.register('locale', 'ng', {
     delimiters: {
-        thousands: ',',
-        decimal: '.'
+      thousands: ',',
+      decimal: '.',
     },
     abbreviations: {
-        thousand: 'k',
-        million: 'm',
-        billion: 'b',
-        trillion: 't'
+      thousand: 'k',
+      million: 'm',
+      billion: 'b',
+      trillion: 't',
     },
-    ordinal: (number) => (
-        number === 1 ? 'er' : 'ème'
-    ),
+    ordinal: (number) => (number === 1 ? 'er' : 'ème'),
     currency: {
-        symbol: '₦'
-    }
-});
+      symbol: '₦',
+    },
+  });
 
-// switch between locales
-numeral.locale('ng');
+  // switch between locales
+  return numeral.locale('ng');
+};

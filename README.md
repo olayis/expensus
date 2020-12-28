@@ -64,7 +64,6 @@ To get a local copy up and running follow these simple steps.
   - yarn - <https://classic.yarnpkg.com/en/docs/install/>
 
 - Firebase and Env Variables
-
   - Create development/production and test databases on [firebase](https://console.firebase.google.com/) for the application.
   - Create `.env.development` and `.env.test` files in then root directory of the project and add the Firebase SDK snippet config in
     the `Key=Value` format e.g.
@@ -115,7 +114,6 @@ To get a local copy up and running follow these simple steps.
     or
     yarn test:watch
 
-
     Launches the test runner in the interactive watch mode.
 
 5.Run webpack production build
@@ -124,17 +122,15 @@ To get a local copy up and running follow these simple steps.
     or
     yarn build:prod
 
-
     Runs the app in production mode.
+
+    Open http://localhost:9000 to view it in the browser.
 
 6.Start up server to view app in production mode
 
     npm run start
     or
     yarn start
-
-
-    Runs the app in the development mode.
 
     Open http://localhost:9000 to view it in the browser.
 

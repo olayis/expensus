@@ -23,6 +23,7 @@
     "core-js": "3",
     "express": "^4.17.1",
     "firebase": "^7.21.0",
+    "history": "4.7.2",
     "moment": "^2.27.0",
     "normalize.css": "^8.0.1",
     "numeral": "^2.0.6",
