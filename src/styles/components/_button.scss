@@ -1,7 +1,41 @@
-button {
-    cursor: pointer;
+.btn {
+  cursor: pointer;
+  font-size: $default-font-size;
+
+  &__login {
+    padding: 1rem 4rem;
+    display: block;
+    background-color: #fff;
+    margin: 0 auto $m-size auto;
+    color: $color-grey;
+    border-radius: 10rem;
+    width: 30rem;
+    text-align: left;
+    transition: all 0.2s;
+
+    &:hover {
+      color: #fff;
+      border: 2px solid $color-dark-grey;
+    }
+
+    &--google:hover {
+      background-color: $color-google;
+    }
+
+    &--twitter:hover {
+      background-color: $color-twitter;
+    }
+
+    &--facebook:hover {
+      background-color: $color-facebook;
+    }
+
+    &--email:hover {
+      background-color: $color-primary;
+    }
+  }
 }
 
-button:disabled {
-    cursor: default;
+.btn:disabled {
+  cursor: default;
 }

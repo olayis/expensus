@@ -1,0 +1,101 @@
+.split-layout {
+  &__left {
+    position: fixed;
+    overflow: auto;
+    background-color: $color-primary-dark;
+    width: 25%;
+    min-width: 39rem;
+    height: 100vh;
+    padding: 5rem 5rem;
+    z-index: 1;
+  }
+
+  &__right {
+    background: linear-gradient(
+        180deg,
+        rgba(64, 123, 255, 0.2) 60%,
+        rgba(47, 46, 65, 0.8) 80%
+      ),
+      url(/public/img/hero-2.jpg);
+    color: $color-light;
+    width: 75%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    margin-left: 25%;
+    position: relative;
+  }
+}
+
+.login-content {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+
+  &__logo-box {
+    width: 100%;
+    height: auto;
+    margin: 0 auto $xl-size auto;
+  }
+
+  &__logo {
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  &__message {
+    font-size: $default-font-size;
+    color: $color-light;
+    text-align: center;
+    margin-bottom: $l-size;
+  }
+}
+
+.login-footer {
+  color: $color-grey-2;
+  position: absolute;
+  top: 85%;
+  font-size: $small-font-size;
+  font-weight: 500;
+  text-align: center;
+  width: 70%;
+
+  &__link {
+    text-decoration: none;
+    transition: all 0.2s;
+    color: $color-light-grey;
+
+    &:hover {
+      color: $color-light;
+    }
+  }
+
+  .social-link {
+    font-size: $medium-font-size;
+    padding: 0 3px;
+    margin-left: 5px;
+  }
+}
+
+.quotes {
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  line-height: 1.4;
+  padding: 0 $xl-size;
+  font-size: $medium-font-size;
+
+  &--text {
+    font-weight: 700;
+  }
+
+  &--author {
+    display: inline-block;
+    font-size: $default-font-size;
+    font-weight: 500;
+    text-align: right;
+    width: 99%;
+  }
+}

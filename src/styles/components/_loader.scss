@@ -1,0 +1,11 @@
+.loader {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__text {
+    color: $color-dark-grey;
+    font-size: $default-font-size;
+  }
+}

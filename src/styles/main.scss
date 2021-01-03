@@ -10,9 +10,11 @@
 @import "./base/utilities";
 
 @import "./components/button";
+@import "./components/loader";
 
 @import "./layout/grid";
 @import "./pages/add-expense";
 @import "./pages/edit-expense";
 @import "./pages/home";
 @import "./pages/not-found";
+@import "./pages/login-page";
