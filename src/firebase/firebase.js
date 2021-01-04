@@ -16,14 +16,15 @@ firebase.initializeApp(firebaseConfig);
 
 const database = firebase.database();
 const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
-googleAuthProvider.addScope('profile');
-googleAuthProvider.addScope('email');
-
 const facebookAuthProvider = new firebase.auth.FacebookAuthProvider();
+const twitterAuthprovider = new firebase.auth.TwitterAuthProvider();
+const yahooAuthProvider = new firebase.auth.OAuthProvider('yahoo.com');
 
 export {
   firebase,
   googleAuthProvider,
   facebookAuthProvider,
+  twitterAuthprovider,
+  yahooAuthProvider,
   database as default,
 };

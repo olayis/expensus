@@ -2,6 +2,8 @@ import {
   firebase,
   googleAuthProvider,
   facebookAuthProvider,
+  twitterAuthprovider,
+  yahooAuthProvider,
 } from '../firebase/firebase';
 
 export const login = (uid) => ({
@@ -18,6 +20,18 @@ export const startGoogleLogin = () => {
 export const startFacebookLogin = () => {
   return () => {
     return firebase.auth().signInWithPopup(facebookAuthProvider);
+  };
+};
+
+export const startTwitterLogin = () => {
+  return () => {
+    return firebase.auth().signInWithPopup(twitterAuthprovider);
+  };
+};
+
+export const startYahooLogin = () => {
+  return () => {
+    return firebase.auth().signInWithPopup(yahooAuthProvider);
   };
 };
 

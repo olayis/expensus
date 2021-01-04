@@ -13,6 +13,11 @@
     text-align: left;
     transition: all 0.2s;
 
+    @include respond(phone) {
+      width: 25rem;
+      padding: 1rem 2.5rem;
+    }
+
     &:hover {
       color: #fff;
       border: 2px solid $color-dark-grey;
@@ -30,8 +35,8 @@
       background-color: $color-facebook;
     }
 
-    &--email:hover {
-      background-color: $color-primary;
+    &--yahoo:hover {
+      background-color: $color-yahoo;
     }
   }
 }

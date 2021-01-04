@@ -7,16 +7,26 @@ import {
   faGoogle,
   faTwitter,
   faFacebookF,
+  faYahoo,
 } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import randomQuote from '../utils/budgetQuotes/quotes';
 import expensus_logo from '../../public/img/expensus-blue';
-import { startGoogleLogin, startFacebookLogin } from '../actions/auth';
+import {
+  startGoogleLogin,
+  startFacebookLogin,
+  startTwitterLogin,
+  startYahooLogin,
+} from '../actions/auth';
 import LoginPageFooter from './LoginPageFooter';
 
 const { quote, author } = randomQuote();
 
-export const LoginPage = ({ startGoogleLogin, startFacebookLogin }) => (
+export const LoginPage = ({
+  startGoogleLogin,
+  startFacebookLogin,
+  startTwitterLogin,
+  startYahooLogin,
+}) => (
   <div className='split-layout'>
     <div className='split-layout__left'>
       <div className='login-content'>
@@ -45,16 +55,16 @@ export const LoginPage = ({ startGoogleLogin, startFacebookLogin }) => (
           <FontAwesomeIcon icon={faFacebookF} /> Continue with Facebook
         </button>
         <button
-          onClick={startGoogleLogin}
+          onClick={startTwitterLogin}
           className='btn btn__login btn__login--twitter'
         >
           <FontAwesomeIcon icon={faTwitter} /> Continue with Twitter
         </button>
         <button
-          onClick={startGoogleLogin}
-          className='btn btn__login btn__login--email'
+          onClick={startYahooLogin}
+          className='btn btn__login btn__login--yahoo'
         >
-          <FontAwesomeIcon icon={faEnvelope} /> Sign Up with Email
+          <FontAwesomeIcon icon={faYahoo} /> Continue with Yahoo
         </button>
       </div>
       <LoginPageFooter />
@@ -74,6 +84,8 @@ export const LoginPage = ({ startGoogleLogin, startFacebookLogin }) => (
 const mapDispatchToProps = (dispatch) => ({
   startGoogleLogin: () => dispatch(startGoogleLogin()),
   startFacebookLogin: () => dispatch(startFacebookLogin()),
+  startTwitterLogin: () => dispatch(startTwitterLogin()),
+  startYahooLogin: () => dispatch(startYahooLogin()),
 });
 
 export default connect(undefined, mapDispatchToProps)(LoginPage);
