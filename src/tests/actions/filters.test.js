@@ -1,9 +1,13 @@
 import moment from 'moment';
 import {
   setTextFilter,
-  sortByDate,
-  sortByAmount,
-  sortByDescription,
+  sortByDateRecent,
+  sortByDateOldest,
+  sortByAmountHighest,
+  sortByAmountLowest,
+  sortByDescriptionAtoZ,
+  sortByDescriptionZtoA,
+  sortByCategory,
   setStartDate,
   setEndDate,
 } from '../../actions/filters';
@@ -25,16 +29,36 @@ test('should generate set text filter action object with default value', () => {
   });
 });
 
-test('should generate sort by date action object', () => {
-  expect(sortByDate()).toEqual({ type: 'SORT_BY_DATE' });
+test('should generate sort by recent date action object', () => {
+  expect(sortByDateRecent()).toEqual({ type: 'SORT_BY_DATE_RECENT' });
 });
 
-test('should generate sort by amount action object', () => {
-  expect(sortByAmount()).toEqual({ type: 'SORT_BY_AMOUNT' });
+test('should generate sort by oldest date action object', () => {
+  expect(sortByDateOldest()).toEqual({ type: 'SORT_BY_DATE_OLDEST' });
 });
 
-test('should generate sort by description action object', () => {
-  expect(sortByDescription()).toEqual({ type: 'SORT_BY_DESCRIPTION' });
+test('should generate sort by highest amount action object', () => {
+  expect(sortByAmountHighest()).toEqual({ type: 'SORT_BY_AMOUNT_HIGHEST' });
+});
+
+test('should generate sort by lowest amount action object', () => {
+  expect(sortByAmountLowest()).toEqual({ type: 'SORT_BY_AMOUNT_LOWEST' });
+});
+
+test('should generate sort by A to Z description action object', () => {
+  expect(sortByDescriptionAtoZ()).toEqual({
+    type: 'SORT_BY_DESCRIPTION_A_TO_Z',
+  });
+});
+
+test('should generate sort by Z to A description action object', () => {
+  expect(sortByDescriptionZtoA()).toEqual({
+    type: 'SORT_BY_DESCRIPTION_Z_TO_A',
+  });
+});
+
+test('should generate sort by category action object', () => {
+  expect(sortByCategory()).toEqual({ type: 'SORT_BY_CATEGORY' });
 });
 
 test('should generate generate start date action object', () => {

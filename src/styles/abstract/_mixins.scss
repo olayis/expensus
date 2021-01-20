@@ -1,3 +1,33 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin shortenLongText {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin content-width {
+  margin: 6.4rem 0 0 25rem;
+
+  @include respond(tab-land) {
+    margin: 4rem 0 0 0;
+  }
+}
+
+@mixin centerElement {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 // MEDIA QUERY MANAGER
 /*
 0 - 600px:      Phone
@@ -17,24 +47,30 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @mixin respond($breakpoint) {
+  @if $breakpoint == small-phone {
+    @media only screen and (max-width: 25em) {
+      @content;
+    } // 400px
+  }
+
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
       @content;
-    } //600px
+    } // 600px
   }
   @if $breakpoint == tab-port {
     @media only screen and (max-width: 56.25em) {
       @content;
-    } //900px
+    } // 900px
   }
   @if $breakpoint == tab-land {
     @media only screen and (max-width: 75em) {
       @content;
-    } //1200px
+    } // 1200px
   }
   @if $breakpoint == big-desktop {
     @media only screen and (min-width: 112.5em) {
       @content;
-    } //1800
+    } // 1800
   }
 }

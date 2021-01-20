@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Route, Redirect } from 'react-router-dom';
-import Header from '../components/Header';
+import Layout from '../components/Layout';
 
 export const PrivateRoute = ({
   isAuthenticated,
@@ -12,8 +12,8 @@ export const PrivateRoute = ({
     {...rest}
     component={(props) =>
       isAuthenticated ? (
-        <div>
-          <Header />
+        <div className='layout-container'>
+          <Layout />
           <Component {...props} />
         </div>
       ) : (

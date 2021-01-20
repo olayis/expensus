@@ -10,9 +10,12 @@ export class AddExpensePage extends React.Component {
   };
   render() {
     return (
-      <div>
-        <h2>Add Expense</h2>
-        <ExpenseForm onSubmit={this.onSubmit} />
+      <div className='main-content'>
+        <div className='content-container'>
+          <div className='add-expense-container'>
+            <ExpenseForm onSubmit={this.onSubmit} />
+          </div>
+        </div>
       </div>
     );
   }

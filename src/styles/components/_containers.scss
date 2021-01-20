@@ -1,0 +1,68 @@
+.main-content {
+  padding: $s-size 1.6rem;
+  height: 100%;
+  font-size: $normal-font-size;
+  grid-area: main;
+}
+
+.content-container {
+  margin: 0 auto;
+  max-width: 114rem;
+  padding: 0 $l-size;
+
+  @include respond(tab-port) {
+    padding: 0 $s-size;
+  }
+}
+
+.layout-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.6fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas:
+    'sidebar nav nav nav'
+    'sidebar main main main';
+
+  @include respond(tab-land) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      'nav'
+      'main';
+  }
+}
+
+.expenses-list-container,
+.expenses-chart-container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 3rem;
+  box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
+
+  @include respond(tab-port) {
+    padding: 3rem 0;
+  }
+}
+
+.expenses-chart-container {
+  margin-top: 6rem;
+
+  @include respond(tab-port) {
+    margin-top: 4rem;
+  }
+}
+
+.filter-container {
+  margin-bottom: $l-size;
+}
+
+.add-expense-container,
+.edit-expense-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
+  padding: $l-size;
+  position: relative;
+  top: 2rem;
+}

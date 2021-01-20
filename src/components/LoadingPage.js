@@ -1,9 +1,9 @@
 import React from 'react';
-import loadingGif from '../../public/img/loading';
+import loadingGif from '../../public/img/loading.gif';
 
 const LoadingPage = () => (
   <div className='loader'>
-    <div>
+    <div className='loader__content'>
       <img src={loadingGif} className='loader__image' />
       <p className='loader__text'>Loading...</p>
     </div>

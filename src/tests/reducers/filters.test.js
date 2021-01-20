@@ -5,27 +5,63 @@ test('should set up default filter values', () => {
   const state = filtersReducer(undefined, { type: '@@INIT' });
   expect(state).toEqual({
     text: '',
-    sortBy: 'date',
+    sortBy: 'date(recent)',
     startDate: moment().startOf('month'),
     endDate: moment().endOf('month'),
   });
 });
 
-test('should set up sortBy to amount', () => {
-  const state = filtersReducer(undefined, { type: 'SORT_BY_AMOUNT' });
-  expect(state.sortBy).toBe('amount');
+test('should set up sortBy to highest amount', () => {
+  const state = filtersReducer(undefined, { type: 'SORT_BY_AMOUNT_HIGHEST' });
+  expect(state.sortBy).toBe('amount(highest)');
 });
 
-test('should set up sortBy to date', () => {
+test('should set up sortBy to lowest amount', () => {
+  const state = filtersReducer(undefined, { type: 'SORT_BY_AMOUNT_LOWEST' });
+  expect(state.sortBy).toBe('amount(lowest)');
+});
+
+test('should set up sortBy to recent date', () => {
   const currentState = {
     text: '',
-    sortBy: 'amount',
+    sortBy: 'amount(lowest)',
     startDate: undefined,
     endDate: undefined,
   };
-  const action = { type: 'SORT_BY_DATE' };
+  const action = { type: 'SORT_BY_DATE_RECENT' };
   const state = filtersReducer(currentState, action);
-  expect(state.sortBy).toBe('date');
+  expect(state.sortBy).toBe('date(recent)');
+});
+
+test('should set up sortBy to oldest date', () => {
+  const state = filtersReducer(undefined, { type: 'SORT_BY_DATE_OLDEST' });
+  expect(state.sortBy).toBe('date(oldest)');
+});
+
+test('should set up sortBy to description from A to Z', () => {
+  const state = filtersReducer(undefined, {
+    type: 'SORT_BY_DESCRIPTION_A_TO_Z',
+  });
+  expect(state.sortBy).toBe('description(a_to_z)');
+});
+
+test('should set up sortBy to description from Z to A', () => {
+  const state = filtersReducer(undefined, {
+    type: 'SORT_BY_DESCRIPTION_Z_TO_A',
+  });
+  expect(state.sortBy).toBe('description(z_to_a)');
+});
+
+test('should set up sortBy to category', () => {
+  const currentState = {
+    text: '',
+    sortBy: 'date(oldest)',
+    startDate: undefined,
+    endDate: undefined,
+  };
+  const action = { type: 'SORT_BY_CATEGORY' };
+  const state = filtersReducer(currentState, action);
+  expect(state.sortBy).toBe('category');
 });
 
 test('should set text filter', () => {

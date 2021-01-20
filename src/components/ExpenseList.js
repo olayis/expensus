@@ -1,21 +1,45 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye } from '@fortawesome/free-regular-svg-icons';
 import ExpenseListItem from './ExpenseListItem';
 import selectExpenses from '../selectors/expenses';
-import blank_canvas from '../../public/img/blank_canvas';
+import no_data from '../../public/img/no_data.svg';
+import splitEvery from '../utils/helpers/splitEvery';
 
 export const ExpenseList = (props) => (
-  <div>
-    {props.expenses.length === 0 ? (
-      <div>
-        <img src={blank_canvas} alt="Lady looking at blank canvas" />
-        <p>No Expenses To Display.</p>
-      </div>
-    ) : (
-      props.expenses.map((expense) => (
-        <ExpenseListItem key={expense.id} {...expense} />
-      ))
-    )}
+  <div className='content-container'>
+    <div className='expenses-list-container'>
+      <h2 className='heading-secondary'>
+        <FontAwesomeIcon icon={faEye} /> Expenses Overview
+      </h2>
+      {props.expenses.length === 0 ? (
+        <div className='no-expense'>
+          <img
+            src={no_data}
+            alt='A clipboard showing no data'
+            className='no-expense__illustration'
+          />
+          <p>
+            No Expenses To Display.{' '}
+            <Link to='/create' className='router-link router-link--add'>
+              Add an Expense
+            </Link>
+          </p>
+        </div>
+      ) : (
+        splitEvery(props.expenses, 4).map((expensesChunk, index) => (
+          <div className='row' key={index}>
+            {expensesChunk.map((expense, index) => (
+              <div className='col-1-of-4' key={expense.id + index}>
+                <ExpenseListItem key={expense.id} {...expense} />
+              </div>
+            ))}
+          </div>
+        ))
+      )}
+    </div>
   </div>
 );
 

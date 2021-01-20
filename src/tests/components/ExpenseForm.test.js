@@ -14,7 +14,7 @@ test('should render ExpenseForm with expense data', () => {
   expect(wrapper).toMatchSnapshot();
 });
 
-test('should render both descriptionError and amountError if [description] and [amount] are not provided', () => {
+test('should render both descriptionError and amountError if "description" and "amount" are not provided', () => {
   const wrapper = shallow(<ExpenseForm />);
   expect(wrapper).toMatchSnapshot();
 
@@ -26,7 +26,7 @@ test('should render both descriptionError and amountError if [description] and [
   expect(wrapper.state('amountError').length).toBeGreaterThan(0);
 });
 
-test('should render descriptionError if [description] is not provided but [amount] is provided', () => {
+test('should render descriptionError if "description" is not provided but "amount" is provided', () => {
   const value = '23.64';
   const wrapper = shallow(<ExpenseForm />);
   expect(wrapper).toMatchSnapshot();
@@ -43,7 +43,7 @@ test('should render descriptionError if [description] is not provided but [amoun
   expect(wrapper).toMatchSnapshot();
 });
 
-test('should render amountError if [amount] is not provided but [description] is provided', () => {
+test('should render amountError if "amount" is not provided but "description" is provided', () => {
   const wrapper = shallow(<ExpenseForm />);
   expect(wrapper).toMatchSnapshot();
 
@@ -88,6 +88,15 @@ test('should set amount if input data is valid', () => {
   expect(wrapper.state('amount')).toBe(value);
 });
 
+test('should set category on select change', () => {
+  const value = 'Maintenance';
+  const wrapper = shallow(<ExpenseForm />);
+  wrapper.find('.dropdown').simulate('change', {
+    target: { value },
+  });
+  expect(wrapper.state('category')).toBe(value);
+});
+
 test('should not set amount if input data is invalid', () => {
   const value = '12.432';
   const wrapper = shallow(<ExpenseForm />);
@@ -113,6 +122,7 @@ test('should call onSubmit prop for valid form submission', () => {
     note: expenses[0].note,
     amount: expenses[0].amount,
     createdAt: expenses[0].createdAt,
+    category: expenses[0].category,
   });
 });
 

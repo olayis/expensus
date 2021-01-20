@@ -1,18 +1,25 @@
 // Colors
 $color-primary: #407bff;
+$color-primary-2: #0046e1;
 $color-primary-dark: #00091e;
 
 $color-grey: #777;
 $color-grey-2: #6a7277;
 $color-light-grey: #b9bec1;
-$color-dark-grey: #263238;
+$color-dark-grey: #2d3b42;
 
 $color-light: #ececec;
+$color-light-blue: #f7fafc;
+$color-light-blue-2: #e3ebff;
+
+$color-bg: #fafafa;
 
 $color-google: #4285f4;
 $color-twitter: #1da1f2;
 $color-facebook: #4267b2;
 $color-yahoo: #0067fa;
+
+$color-danger: #ff0033;
 
 // Spacing
 $s-size: 1.2rem;
@@ -24,5 +31,13 @@ $desktop-breakpoint: 45rem;
 // Fonts
 $default-font-size: 1.6rem;
 $small-font-size: 1.2rem;
-$medium-font-size: 2.4rem;
-$large-font-size: 3.6rem;
+$normal-font-size: 1.4rem;
+$medium-font-size: 1.8rem;
+$large-font-size: 2.4rem;
+$extra-large-font-size: 3.6rem;
+
+// Grid
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;

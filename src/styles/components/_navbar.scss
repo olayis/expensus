@@ -1,0 +1,63 @@
+.navbar {
+  background: $color-bg;
+  font-size: $normal-font-size;
+  grid-area: nav;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $l-size;
+  color: $color-dark-grey;
+
+  &__icon {
+    display: none;
+
+    & > svg {
+      font-size: $large-font-size;
+    }
+
+    @include respond(tab-land) {
+      display: inline;
+    }
+  }
+
+  &__title {
+    display: none;
+
+    @include respond(tab-land) {
+      display: inline-block;
+    }
+
+    a {
+      display: none;
+      padding: $s-size;
+      text-decoration: none;
+      transition: all 0.2s;
+      color: $color-primary-dark;
+      font-size: $medium-font-size;
+      font-weight: 600;
+    }
+
+    .nav-is-active {
+      display: inline-block !important;
+    }
+  }
+
+  .user__wrapper {
+    .username {
+      font-size: $normal-font-size;
+      font-weight: 700;
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    img {
+      margin-left: 1rem;
+      border-radius: 50%;
+      height: 4rem;
+      vertical-align: middle;
+    }
+  }
+}

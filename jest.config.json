@@ -1,4 +1,8 @@
 {
   "setupFiles": ["raf/polyFill", "<rootDir>/src/tests/setupTests.js"],
-  "snapshotSerializers": ["enzyme-to-json/serializer"]
+  "snapshotSerializers": ["enzyme-to-json/serializer"],
+  "moduleNameMapper": {
+    "\\.svg": "<rootDir>/src/tests/__mocks__/svgrMock.js",
+    "\\.gif": "<rootDir>/src/tests/__mocks__/fileMock.js"
+  }
 }

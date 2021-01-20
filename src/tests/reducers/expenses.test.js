@@ -9,11 +9,12 @@ test('should set default state', () => {
 
 test('should add an expense', () => {
   const expense = {
-    id: '999',
+    id: '753',
     description: 'TV Subscription',
     note: '',
     amount: 560,
     createdAt: moment().subtract(7, 'days'),
+    category: 'Entertainment',
   };
   const action = {
     type: 'ADD_EXPENSE',
@@ -55,7 +56,7 @@ test('should remove expense by id', () => {
     id: expenses[1].id,
   };
   const state = expensesReducer(expenses, action);
-  expect(state).toEqual([expenses[0], expenses[2]]);
+  expect(state).toEqual([expenses[0], expenses[2], expenses[3]]);
 });
 
 test('should not remove expense if id is not found', () => {

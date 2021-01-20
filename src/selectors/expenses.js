@@ -18,12 +18,27 @@ export default (expenses, { text, sortBy, startDate, endDate }) => {
       return textMatch && startDateMatch && endDateMatch;
     })
     .sort((a, b) => {
-      if (sortBy === 'date') {
-        return a.createdAt < b.createdAt ? 1 : -1;
-      } else if (sortBy === 'amount') {
-        return a.amount < b.amount ? 1 : -1;
-      } else if (sortBy === 'description') {
-        return a.description.localeCompare(b.description);
+      switch (sortBy) {
+        case 'date(recent)':
+          return a.createdAt < b.createdAt ? 1 : -1;
+
+        case 'date(oldest)':
+          return a.createdAt > b.createdAt ? 1 : -1;
+
+        case 'amount(highest)':
+          return a.amount < b.amount ? 1 : -1;
+
+        case 'amount(lowest)':
+          return a.amount > b.amount ? 1 : -1;
+
+        case 'description(a_to_z)':
+          return a.description.localeCompare(b.description);
+
+        case 'description(z_to_a)':
+          return b.description.localeCompare(a.description);
+
+        case 'category':
+          return a.category.localeCompare(b.category);
       }
     });
 };

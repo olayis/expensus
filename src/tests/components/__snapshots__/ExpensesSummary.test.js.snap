@@ -1,40 +1,160 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render ExpensesSummary with 0 expense 1`] = `
-<div>
-  <h2>
-    Viewing 
-    0
-     
-    expenses
-     at 
-    $0.00
-  </h2>
+<div
+  className="content-container"
+>
+  <div
+    className="summary"
+  >
+    <div
+      className="summary__word"
+    >
+      <span
+        className="summary--top"
+      >
+        Viewing
+      </span>
+      <br />
+      <span
+        className="summary--bottom"
+      >
+        0
+         
+        Expenses
+      </span>
+    </div>
+    <div
+      className="summary__amount"
+    >
+      <span
+        className="summary--top"
+      >
+        Total
+      </span>
+      <br />
+      <span
+        className="summary--bottom"
+      >
+        $0.00
+      </span>
+    </div>
+    <div
+      className="summary__button"
+    >
+      <Link
+        className="btn-add-expense btn-add-expense--cta"
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`should render ExpensesSummary with 1 expense 1`] = `
-<div>
-  <h2>
-    Viewing 
-    1
-     
-    expense
-     at 
-    $20.00
-  </h2>
+<div
+  className="content-container"
+>
+  <div
+    className="summary"
+  >
+    <div
+      className="summary__word"
+    >
+      <span
+        className="summary--top"
+      >
+        Viewing
+      </span>
+      <br />
+      <span
+        className="summary--bottom"
+      >
+        1
+         
+        Expense
+      </span>
+    </div>
+    <div
+      className="summary__amount"
+    >
+      <span
+        className="summary--top"
+      >
+        Total
+      </span>
+      <br />
+      <span
+        className="summary--bottom"
+      >
+        $20.00
+      </span>
+    </div>
+    <div
+      className="summary__button"
+    >
+      <Link
+        className="btn-add-expense btn-add-expense--cta"
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`should render ExpensesSummary with multiple expenses 1`] = `
-<div>
-  <h2>
-    Viewing 
-    41
-     
-    expenses
-     at 
-    $8,713,877.47
-  </h2>
+<div
+  className="content-container"
+>
+  <div
+    className="summary"
+  >
+    <div
+      className="summary__word"
+    >
+      <span
+        className="summary--top"
+      >
+        Viewing
+      </span>
+      <br />
+      <span
+        className="summary--bottom"
+      >
+        41
+         
+        Expenses
+      </span>
+    </div>
+    <div
+      className="summary__amount"
+    >
+      <span
+        className="summary--top"
+      >
+        Total
+      </span>
+      <br />
+      <span
+        className="summary--bottom"
+      >
+        $8,713,877.47
+      </span>
+    </div>
+    <div
+      className="summary__button"
+    >
+      <Link
+        className="btn-add-expense btn-add-expense--cta"
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;

@@ -1,23 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render ExpenseForm correctly 1`] = `
-<div>
-  <form
-    onSubmit={[Function]}
+<form
+  className="input-field"
+  onSubmit={[Function]}
+>
+  <div
+    className="input-field__wrapper"
   >
     <input
       autoFocus={true}
+      className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
+    <span
+      className="input-field__helper "
+    >
+      Description
+    </span>
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
     <input
+      className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Amount"
       type="text"
       value=""
     />
+    <span
+      className="input-field__helper "
+    >
+      Amount
+    </span>
+  </div>
+  <div
+    className="input-field__wrapper text-input--form"
+  >
     <withStyles(SingleDatePicker)
       anchorDirection="left"
       appendToBody={false}
@@ -113,36 +136,166 @@ exports[`should render ExpenseForm correctly 1`] = `
       withFullScreenPortal={false}
       withPortal={false}
     />
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
+    <select
+      className="dropdown dropdown--category"
+      onChange={[Function]}
+      value="Uncategorized"
+    >
+      <option
+        value="Uncategorized"
+      >
+        Uncategorized
+      </option>
+      <option
+        value="Bills & Utilities"
+      >
+        Bills & Utilities
+      </option>
+      <option
+        value="Debt"
+      >
+        Debt
+      </option>
+      <option
+        value="Education"
+      >
+        Education
+      </option>
+      <option
+        value="Entertainment"
+      >
+        Entertainment
+      </option>
+      <option
+        value="Family & Friends"
+      >
+        Family & Friends
+      </option>
+      <option
+        value="Gadgets"
+      >
+        Gadgets
+      </option>
+      <option
+        value="Health"
+      >
+        Health
+      </option>
+      <option
+        value="Housing"
+      >
+        Housing
+      </option>
+      <option
+        value="Maintenance"
+      >
+        Maintenance
+      </option>
+      <option
+        value="Meals/Food Items"
+      >
+        Meals/Food Items
+      </option>
+      <option
+        value="Rent"
+      >
+        Rent
+      </option>
+      <option
+        value="Savings & Investments"
+      >
+        Savings & Investments
+      </option>
+      <option
+        value="Shopping"
+      >
+        Shopping
+      </option>
+      <option
+        value="Taxes"
+      >
+        Taxes
+      </option>
+      <option
+        value="Transportation"
+      >
+        Transportation
+      </option>
+      <option
+        value="Travel"
+      >
+        Travel
+      </option>
+    </select>
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
     <textarea
+      className="textarea textarea--form"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
     />
-    <button>
-      Add Expense
-    </button>
-  </form>
-</div>
+    <span
+      className="input-field__helper"
+    >
+      Note
+    </span>
+  </div>
+  <button
+    className="btn btn-add-expense btn-add-expense--form"
+  >
+    Add Expense
+  </button>
+</form>
 `;
 
 exports[`should render ExpenseForm with expense data 1`] = `
-<div>
-  <form
-    onSubmit={[Function]}
+<form
+  className="input-field"
+  onSubmit={[Function]}
+>
+  <div
+    className="input-field__wrapper"
   >
     <input
       autoFocus={true}
+      className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Description"
       type="text"
-      value="Rent"
+      value="Home Rentage"
     />
+    <span
+      className="input-field__helper input-field--has-value"
+    >
+      Description
+    </span>
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
     <input
+      className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Amount"
       type="text"
       value="350"
     />
+    <span
+      className="input-field__helper input-field--has-value"
+    >
+      Amount
+    </span>
+  </div>
+  <div
+    className="input-field__wrapper text-input--form"
+  >
     <withStyles(SingleDatePicker)
       anchorDirection="left"
       appendToBody={false}
@@ -238,36 +391,166 @@ exports[`should render ExpenseForm with expense data 1`] = `
       withFullScreenPortal={false}
       withPortal={false}
     />
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
+    <select
+      className="dropdown dropdown--category"
+      onChange={[Function]}
+      value="Rent"
+    >
+      <option
+        value="Uncategorized"
+      >
+        Uncategorized
+      </option>
+      <option
+        value="Bills & Utilities"
+      >
+        Bills & Utilities
+      </option>
+      <option
+        value="Debt"
+      >
+        Debt
+      </option>
+      <option
+        value="Education"
+      >
+        Education
+      </option>
+      <option
+        value="Entertainment"
+      >
+        Entertainment
+      </option>
+      <option
+        value="Family & Friends"
+      >
+        Family & Friends
+      </option>
+      <option
+        value="Gadgets"
+      >
+        Gadgets
+      </option>
+      <option
+        value="Health"
+      >
+        Health
+      </option>
+      <option
+        value="Housing"
+      >
+        Housing
+      </option>
+      <option
+        value="Maintenance"
+      >
+        Maintenance
+      </option>
+      <option
+        value="Meals/Food Items"
+      >
+        Meals/Food Items
+      </option>
+      <option
+        value="Rent"
+      >
+        Rent
+      </option>
+      <option
+        value="Savings & Investments"
+      >
+        Savings & Investments
+      </option>
+      <option
+        value="Shopping"
+      >
+        Shopping
+      </option>
+      <option
+        value="Taxes"
+      >
+        Taxes
+      </option>
+      <option
+        value="Transportation"
+      >
+        Transportation
+      </option>
+      <option
+        value="Travel"
+      >
+        Travel
+      </option>
+    </select>
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
     <textarea
+      className="textarea textarea--form"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
     />
-    <button>
-      Add Expense
-    </button>
-  </form>
-</div>
+    <span
+      className="input-field__helper"
+    >
+      Note
+    </span>
+  </div>
+  <button
+    className="btn btn-add-expense btn-add-expense--form"
+  >
+    Add Expense
+  </button>
+</form>
 `;
 
-exports[`should render amountError if [amount] is not provided but [description] is provided 1`] = `
-<div>
-  <form
-    onSubmit={[Function]}
+exports[`should render amountError if "amount" is not provided but "description" is provided 1`] = `
+<form
+  className="input-field"
+  onSubmit={[Function]}
+>
+  <div
+    className="input-field__wrapper"
   >
     <input
       autoFocus={true}
+      className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
+    <span
+      className="input-field__helper "
+    >
+      Description
+    </span>
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
     <input
+      className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Amount"
       type="text"
       value=""
     />
+    <span
+      className="input-field__helper "
+    >
+      Amount
+    </span>
+  </div>
+  <div
+    className="input-field__wrapper text-input--form"
+  >
     <withStyles(SingleDatePicker)
       anchorDirection="left"
       appendToBody={false}
@@ -363,39 +646,202 @@ exports[`should render amountError if [amount] is not provided but [description]
       withFullScreenPortal={false}
       withPortal={false}
     />
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
+    <select
+      className="dropdown dropdown--category"
+      onChange={[Function]}
+      value="Uncategorized"
+    >
+      <option
+        value="Uncategorized"
+      >
+        Uncategorized
+      </option>
+      <option
+        value="Bills & Utilities"
+      >
+        Bills & Utilities
+      </option>
+      <option
+        value="Debt"
+      >
+        Debt
+      </option>
+      <option
+        value="Education"
+      >
+        Education
+      </option>
+      <option
+        value="Entertainment"
+      >
+        Entertainment
+      </option>
+      <option
+        value="Family & Friends"
+      >
+        Family & Friends
+      </option>
+      <option
+        value="Gadgets"
+      >
+        Gadgets
+      </option>
+      <option
+        value="Health"
+      >
+        Health
+      </option>
+      <option
+        value="Housing"
+      >
+        Housing
+      </option>
+      <option
+        value="Maintenance"
+      >
+        Maintenance
+      </option>
+      <option
+        value="Meals/Food Items"
+      >
+        Meals/Food Items
+      </option>
+      <option
+        value="Rent"
+      >
+        Rent
+      </option>
+      <option
+        value="Savings & Investments"
+      >
+        Savings & Investments
+      </option>
+      <option
+        value="Shopping"
+      >
+        Shopping
+      </option>
+      <option
+        value="Taxes"
+      >
+        Taxes
+      </option>
+      <option
+        value="Transportation"
+      >
+        Transportation
+      </option>
+      <option
+        value="Travel"
+      >
+        Travel
+      </option>
+    </select>
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
     <textarea
+      className="textarea textarea--form"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
     />
-    <button>
-      Add Expense
-    </button>
-  </form>
-</div>
+    <span
+      className="input-field__helper"
+    >
+      Note
+    </span>
+  </div>
+  <button
+    className="btn btn-add-expense btn-add-expense--form"
+  >
+    Add Expense
+  </button>
+</form>
 `;
 
-exports[`should render amountError if [amount] is not provided but [description] is provided 2`] = `
-<div>
-  <form
-    onSubmit={[Function]}
+exports[`should render amountError if "amount" is not provided but "description" is provided 2`] = `
+<form
+  className="input-field"
+  onSubmit={[Function]}
+>
+  <div
+    className="input-field__wrapper"
   >
     <input
       autoFocus={true}
+      className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value="Data"
     />
+    <span
+      className="input-field__helper input-field--has-value"
+    >
+      Description
+    </span>
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
     <input
+      className="text-input text-input--form input-field--has-error"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
       value=""
     />
-    <p>
+    <span
+      className="input-field__helper "
+    >
+      Amount
+    </span>
+    <span
+      className="input-field__error-msg"
+    >
+      <FontAwesomeIcon
+        border={false}
+        className="fa-icon"
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              512,
+              512,
+              Array [],
+              "f06a",
+              "M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z",
+            ],
+            "iconName": "exclamation-circle",
+            "prefix": "fas",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
       Please provide an amount.
-    </p>
+    </span>
+  </div>
+  <div
+    className="input-field__wrapper text-input--form"
+  >
     <withStyles(SingleDatePicker)
       anchorDirection="left"
       appendToBody={false}
@@ -491,36 +937,166 @@ exports[`should render amountError if [amount] is not provided but [description]
       withFullScreenPortal={false}
       withPortal={false}
     />
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
+    <select
+      className="dropdown dropdown--category"
+      onChange={[Function]}
+      value="Uncategorized"
+    >
+      <option
+        value="Uncategorized"
+      >
+        Uncategorized
+      </option>
+      <option
+        value="Bills & Utilities"
+      >
+        Bills & Utilities
+      </option>
+      <option
+        value="Debt"
+      >
+        Debt
+      </option>
+      <option
+        value="Education"
+      >
+        Education
+      </option>
+      <option
+        value="Entertainment"
+      >
+        Entertainment
+      </option>
+      <option
+        value="Family & Friends"
+      >
+        Family & Friends
+      </option>
+      <option
+        value="Gadgets"
+      >
+        Gadgets
+      </option>
+      <option
+        value="Health"
+      >
+        Health
+      </option>
+      <option
+        value="Housing"
+      >
+        Housing
+      </option>
+      <option
+        value="Maintenance"
+      >
+        Maintenance
+      </option>
+      <option
+        value="Meals/Food Items"
+      >
+        Meals/Food Items
+      </option>
+      <option
+        value="Rent"
+      >
+        Rent
+      </option>
+      <option
+        value="Savings & Investments"
+      >
+        Savings & Investments
+      </option>
+      <option
+        value="Shopping"
+      >
+        Shopping
+      </option>
+      <option
+        value="Taxes"
+      >
+        Taxes
+      </option>
+      <option
+        value="Transportation"
+      >
+        Transportation
+      </option>
+      <option
+        value="Travel"
+      >
+        Travel
+      </option>
+    </select>
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
     <textarea
+      className="textarea textarea--form"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
     />
-    <button>
-      Add Expense
-    </button>
-  </form>
-</div>
+    <span
+      className="input-field__helper"
+    >
+      Note
+    </span>
+  </div>
+  <button
+    className="btn btn-add-expense btn-add-expense--form"
+  >
+    Add Expense
+  </button>
+</form>
 `;
 
-exports[`should render both descriptionError and amountError if [description] and [amount] are not provided 1`] = `
-<div>
-  <form
-    onSubmit={[Function]}
+exports[`should render both descriptionError and amountError if "description" and "amount" are not provided 1`] = `
+<form
+  className="input-field"
+  onSubmit={[Function]}
+>
+  <div
+    className="input-field__wrapper"
   >
     <input
       autoFocus={true}
+      className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
+    <span
+      className="input-field__helper "
+    >
+      Description
+    </span>
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
     <input
+      className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Amount"
       type="text"
       value=""
     />
+    <span
+      className="input-field__helper "
+    >
+      Amount
+    </span>
+  </div>
+  <div
+    className="input-field__wrapper text-input--form"
+  >
     <withStyles(SingleDatePicker)
       anchorDirection="left"
       appendToBody={false}
@@ -616,36 +1192,166 @@ exports[`should render both descriptionError and amountError if [description] an
       withFullScreenPortal={false}
       withPortal={false}
     />
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
+    <select
+      className="dropdown dropdown--category"
+      onChange={[Function]}
+      value="Uncategorized"
+    >
+      <option
+        value="Uncategorized"
+      >
+        Uncategorized
+      </option>
+      <option
+        value="Bills & Utilities"
+      >
+        Bills & Utilities
+      </option>
+      <option
+        value="Debt"
+      >
+        Debt
+      </option>
+      <option
+        value="Education"
+      >
+        Education
+      </option>
+      <option
+        value="Entertainment"
+      >
+        Entertainment
+      </option>
+      <option
+        value="Family & Friends"
+      >
+        Family & Friends
+      </option>
+      <option
+        value="Gadgets"
+      >
+        Gadgets
+      </option>
+      <option
+        value="Health"
+      >
+        Health
+      </option>
+      <option
+        value="Housing"
+      >
+        Housing
+      </option>
+      <option
+        value="Maintenance"
+      >
+        Maintenance
+      </option>
+      <option
+        value="Meals/Food Items"
+      >
+        Meals/Food Items
+      </option>
+      <option
+        value="Rent"
+      >
+        Rent
+      </option>
+      <option
+        value="Savings & Investments"
+      >
+        Savings & Investments
+      </option>
+      <option
+        value="Shopping"
+      >
+        Shopping
+      </option>
+      <option
+        value="Taxes"
+      >
+        Taxes
+      </option>
+      <option
+        value="Transportation"
+      >
+        Transportation
+      </option>
+      <option
+        value="Travel"
+      >
+        Travel
+      </option>
+    </select>
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
     <textarea
+      className="textarea textarea--form"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
     />
-    <button>
-      Add Expense
-    </button>
-  </form>
-</div>
+    <span
+      className="input-field__helper"
+    >
+      Note
+    </span>
+  </div>
+  <button
+    className="btn btn-add-expense btn-add-expense--form"
+  >
+    Add Expense
+  </button>
+</form>
 `;
 
-exports[`should render descriptionError if [description] is not provided but [amount] is provided 1`] = `
-<div>
-  <form
-    onSubmit={[Function]}
+exports[`should render descriptionError if "description" is not provided but "amount" is provided 1`] = `
+<form
+  className="input-field"
+  onSubmit={[Function]}
+>
+  <div
+    className="input-field__wrapper"
   >
     <input
       autoFocus={true}
+      className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
+    <span
+      className="input-field__helper "
+    >
+      Description
+    </span>
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
     <input
+      className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Amount"
       type="text"
       value=""
     />
+    <span
+      className="input-field__helper "
+    >
+      Amount
+    </span>
+  </div>
+  <div
+    className="input-field__wrapper text-input--form"
+  >
     <withStyles(SingleDatePicker)
       anchorDirection="left"
       appendToBody={false}
@@ -741,39 +1447,202 @@ exports[`should render descriptionError if [description] is not provided but [am
       withFullScreenPortal={false}
       withPortal={false}
     />
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
+    <select
+      className="dropdown dropdown--category"
+      onChange={[Function]}
+      value="Uncategorized"
+    >
+      <option
+        value="Uncategorized"
+      >
+        Uncategorized
+      </option>
+      <option
+        value="Bills & Utilities"
+      >
+        Bills & Utilities
+      </option>
+      <option
+        value="Debt"
+      >
+        Debt
+      </option>
+      <option
+        value="Education"
+      >
+        Education
+      </option>
+      <option
+        value="Entertainment"
+      >
+        Entertainment
+      </option>
+      <option
+        value="Family & Friends"
+      >
+        Family & Friends
+      </option>
+      <option
+        value="Gadgets"
+      >
+        Gadgets
+      </option>
+      <option
+        value="Health"
+      >
+        Health
+      </option>
+      <option
+        value="Housing"
+      >
+        Housing
+      </option>
+      <option
+        value="Maintenance"
+      >
+        Maintenance
+      </option>
+      <option
+        value="Meals/Food Items"
+      >
+        Meals/Food Items
+      </option>
+      <option
+        value="Rent"
+      >
+        Rent
+      </option>
+      <option
+        value="Savings & Investments"
+      >
+        Savings & Investments
+      </option>
+      <option
+        value="Shopping"
+      >
+        Shopping
+      </option>
+      <option
+        value="Taxes"
+      >
+        Taxes
+      </option>
+      <option
+        value="Transportation"
+      >
+        Transportation
+      </option>
+      <option
+        value="Travel"
+      >
+        Travel
+      </option>
+    </select>
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
     <textarea
+      className="textarea textarea--form"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
     />
-    <button>
-      Add Expense
-    </button>
-  </form>
-</div>
+    <span
+      className="input-field__helper"
+    >
+      Note
+    </span>
+  </div>
+  <button
+    className="btn btn-add-expense btn-add-expense--form"
+  >
+    Add Expense
+  </button>
+</form>
 `;
 
-exports[`should render descriptionError if [description] is not provided but [amount] is provided 2`] = `
-<div>
-  <form
-    onSubmit={[Function]}
+exports[`should render descriptionError if "description" is not provided but "amount" is provided 2`] = `
+<form
+  className="input-field"
+  onSubmit={[Function]}
+>
+  <div
+    className="input-field__wrapper"
   >
     <input
       autoFocus={true}
+      className="text-input text-input--form input-field--has-error"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
-    <p>
+    <span
+      className="input-field__helper "
+    >
+      Description
+    </span>
+    <span
+      className="input-field__error-msg"
+    >
+      <FontAwesomeIcon
+        border={false}
+        className="fa-icon"
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              512,
+              512,
+              Array [],
+              "f06a",
+              "M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z",
+            ],
+            "iconName": "exclamation-circle",
+            "prefix": "fas",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
       Please provide a description.
-    </p>
+    </span>
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
     <input
+      className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Amount"
       type="text"
       value="23.64"
     />
+    <span
+      className="input-field__helper input-field--has-value"
+    >
+      Amount
+    </span>
+  </div>
+  <div
+    className="input-field__wrapper text-input--form"
+  >
     <withStyles(SingleDatePicker)
       anchorDirection="left"
       appendToBody={false}
@@ -869,14 +1738,121 @@ exports[`should render descriptionError if [description] is not provided but [am
       withFullScreenPortal={false}
       withPortal={false}
     />
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
+    <select
+      className="dropdown dropdown--category"
+      onChange={[Function]}
+      value="Uncategorized"
+    >
+      <option
+        value="Uncategorized"
+      >
+        Uncategorized
+      </option>
+      <option
+        value="Bills & Utilities"
+      >
+        Bills & Utilities
+      </option>
+      <option
+        value="Debt"
+      >
+        Debt
+      </option>
+      <option
+        value="Education"
+      >
+        Education
+      </option>
+      <option
+        value="Entertainment"
+      >
+        Entertainment
+      </option>
+      <option
+        value="Family & Friends"
+      >
+        Family & Friends
+      </option>
+      <option
+        value="Gadgets"
+      >
+        Gadgets
+      </option>
+      <option
+        value="Health"
+      >
+        Health
+      </option>
+      <option
+        value="Housing"
+      >
+        Housing
+      </option>
+      <option
+        value="Maintenance"
+      >
+        Maintenance
+      </option>
+      <option
+        value="Meals/Food Items"
+      >
+        Meals/Food Items
+      </option>
+      <option
+        value="Rent"
+      >
+        Rent
+      </option>
+      <option
+        value="Savings & Investments"
+      >
+        Savings & Investments
+      </option>
+      <option
+        value="Shopping"
+      >
+        Shopping
+      </option>
+      <option
+        value="Taxes"
+      >
+        Taxes
+      </option>
+      <option
+        value="Transportation"
+      >
+        Transportation
+      </option>
+      <option
+        value="Travel"
+      >
+        Travel
+      </option>
+    </select>
+  </div>
+  <div
+    className="input-field__wrapper"
+  >
     <textarea
+      className="textarea textarea--form"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
     />
-    <button>
-      Add Expense
-    </button>
-  </form>
-</div>
+    <span
+      className="input-field__helper"
+    >
+      Note
+    </span>
+  </div>
+  <button
+    className="btn btn-add-expense btn-add-expense--form"
+  >
+    Add Expense
+  </button>
+</form>
 `;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render LoadingPage correctly 1`] = `
+<div
+  className="loader"
+>
+  <div
+    className="loader__content"
+  >
+    <img
+      className="loader__image"
+      src="test-file-stub"
+    />
+    <p
+      className="loader__text"
+    >
+      Loading...
+    </p>
+  </div>
+</div>
+`;

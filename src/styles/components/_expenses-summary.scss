@@ -1,0 +1,38 @@
+.summary {
+  margin: $l-size $s-size 7rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond(tab-port) {
+    margin-bottom: 4rem;
+  }
+
+  &__word,
+  &__amount,
+  &__button {
+    display: inline-block;
+    margin-right: 2.5rem;
+
+    @include respond(phone) {
+      margin-right: 1rem;
+    }
+  }
+
+  &--top {
+    color: $color-grey-2;
+    font-size: $normal-font-size;
+    font-weight: 400;
+  }
+
+  &--bottom {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+
+    @include respond(phone) {
+      font-size: 2.2rem;
+    }
+  }
+}

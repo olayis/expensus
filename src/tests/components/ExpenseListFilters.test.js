@@ -7,27 +7,40 @@ import { filters, altFilters } from '../fixtures/filters';
 let setTextFilter,
   setStartDate,
   setEndDate,
-  sortByDate,
-  sortByAmount,
-  sortByDescription,
+  sortByDateRecent,
+  sortByDateOldest,
+  sortByAmountHighest,
+  sortByAmountLowest,
+  sortByDescriptionAtoZ,
+  sortByDescriptionZtoA,
+  sortByCategory,
   wrapper;
 
 beforeEach(() => {
   setTextFilter = jest.fn();
   setStartDate = jest.fn();
   setEndDate = jest.fn();
-  sortByDate = jest.fn();
-  sortByAmount = jest.fn();
-  sortByDescription = jest.fn();
+  sortByDateRecent = jest.fn();
+  sortByDateOldest = jest.fn();
+  sortByAmountHighest = jest.fn();
+  sortByAmountLowest = jest.fn();
+  sortByDescriptionAtoZ = jest.fn();
+  sortByDescriptionZtoA = jest.fn();
+  sortByCategory = jest.fn();
+
   wrapper = shallow(
     <ExpenseListFilters
       filters={filters}
       setTextFilter={setTextFilter}
       setStartDate={setStartDate}
       setEndDate={setEndDate}
-      sortByDate={sortByDate}
-      sortByAmount={sortByAmount}
-      sortByDescription={sortByDescription}
+      sortByDateRecent={sortByDateRecent}
+      sortByDateOldest={sortByDateOldest}
+      sortByAmountHighest={sortByAmountHighest}
+      sortByAmountLowest={sortByAmountLowest}
+      sortByDescriptionAtoZ={sortByDescriptionAtoZ}
+      sortByDescriptionZtoA={sortByDescriptionZtoA}
+      sortByCategory={sortByCategory}
     />
   );
 });
@@ -42,36 +55,69 @@ test('should render ExpenseListFilters with alt data correctly', () => {
 });
 
 test('should handle text change', () => {
-  const value = 'electricity';
+  const value = 'room';
   wrapper.find('input').simulate('change', {
     target: { value },
   });
   expect(setTextFilter).toHaveBeenLastCalledWith(value);
 });
 
-test('should sort by date', () => {
-  const value = 'date';
+test('should sort by recent date', () => {
+  const value = 'date(recent)';
   wrapper.setProps({ filters: altFilters });
   wrapper.find('select').simulate('change', {
     target: { value },
   });
-  expect(sortByDate).toHaveBeenCalled();
+  expect(sortByDateRecent).toHaveBeenCalled();
 });
 
-test('should sort by amount', () => {
-  const value = 'amount';
+test('should sort by oldest date', () => {
+  const value = 'date(oldest)';
+  wrapper.setProps({ filters: altFilters });
   wrapper.find('select').simulate('change', {
     target: { value },
   });
-  expect(sortByAmount).toHaveBeenCalled();
+  expect(sortByDateOldest).toHaveBeenCalled();
 });
 
-test('should sort by description', () => {
-  const value = 'description';
+test('should sort by highest amount', () => {
+  const value = 'amount(highest)';
   wrapper.find('select').simulate('change', {
     target: { value },
   });
-  expect(sortByDescription).toHaveBeenCalled();
+  expect(sortByAmountHighest).toHaveBeenCalled();
+});
+
+test('should sort by lowest amount', () => {
+  const value = 'amount(lowest)';
+  wrapper.find('select').simulate('change', {
+    target: { value },
+  });
+  expect(sortByAmountLowest).toHaveBeenCalled();
+});
+
+test('should sort by description from A to Z', () => {
+  const value = 'description(a_to_z)';
+  wrapper.find('select').simulate('change', {
+    target: { value },
+  });
+  expect(sortByDescriptionAtoZ).toHaveBeenCalled();
+});
+
+test('should sort by description from Z to A', () => {
+  const value = 'description(z_to_a)';
+  wrapper.find('select').simulate('change', {
+    target: { value },
+  });
+  expect(sortByDescriptionZtoA).toHaveBeenCalled();
+});
+
+test('should sort by category', () => {
+  const value = 'category';
+  wrapper.find('select').simulate('change', {
+    target: { value },
+  });
+  expect(sortByCategory).toHaveBeenCalled();
 });
 
 test('should handle date changes', () => {

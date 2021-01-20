@@ -1,0 +1,46 @@
+.card-box {
+  background-color: rgba(#fff, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
+  transition: transform 0.3s;
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
+  &__description {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      $color-primary,
+      $color-primary-dark
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 0 1rem;
+    @include shortenLongText;
+
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__amount,
+  &__date,
+  &__category {
+    margin-bottom: 0.5rem;
+    @include shortenLongText;
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}

@@ -1,40 +1,175 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render ExpenseList with empty message 1`] = `
-<div>
-  <div>
-    <p>
-      No Expenses To Display.
-    </p>
+<div
+  className="content-container"
+>
+  <div
+    className="expenses-list-container"
+  >
+    <h2
+      className="heading-secondary"
+    >
+      <FontAwesomeIcon
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              576,
+              512,
+              Array [],
+              "f06e",
+              "M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z",
+            ],
+            "iconName": "eye",
+            "prefix": "far",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
+       Expenses Overview
+    </h2>
+    <div
+      className="no-expense"
+    >
+      <img
+        alt="A clipboard showing no data"
+        className="no-expense__illustration"
+        src="SvgrURL"
+      />
+      <p>
+        No Expenses To Display.
+         
+        <Link
+          className="router-link router-link--add"
+          to="/create"
+        >
+          Add an Expense
+        </Link>
+      </p>
+    </div>
   </div>
 </div>
 `;
 
 exports[`should render ExpenseList with expenses 1`] = `
-<div>
-  <ExpenseListItem
-    amount={2000}
-    createdAt={0}
-    description="Data"
-    id="1"
-    key="1"
-    note=""
-  />
-  <ExpenseListItem
-    amount={35000}
-    createdAt={"1969-12-27T00:00:00.000Z"}
-    description="Rent"
-    id="2"
-    key="2"
-    note=""
-  />
-  <ExpenseListItem
-    amount={8000}
-    createdAt={"1970-01-13T00:00:00.000Z"}
-    description="Electricity"
-    id="3"
-    key="3"
-    note=""
-  />
+<div
+  className="content-container"
+>
+  <div
+    className="expenses-list-container"
+  >
+    <h2
+      className="heading-secondary"
+    >
+      <FontAwesomeIcon
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              576,
+              512,
+              Array [],
+              "f06e",
+              "M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z",
+            ],
+            "iconName": "eye",
+            "prefix": "far",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
+       Expenses Overview
+    </h2>
+    <div
+      className="row"
+      key="0"
+    >
+      <div
+        className="col-1-of-4"
+        key="10"
+      >
+        <ExpenseListItem
+          amount={2000}
+          category="Bills & Utilities"
+          createdAt={0}
+          description="Data"
+          id="1"
+          key="1"
+          note=""
+        />
+      </div>
+      <div
+        className="col-1-of-4"
+        key="21"
+      >
+        <ExpenseListItem
+          amount={35000}
+          category="Rent"
+          createdAt={"1969-12-27T00:00:00.000Z"}
+          description="Home Rentage"
+          id="2"
+          key="2"
+          note=""
+        />
+      </div>
+      <div
+        className="col-1-of-4"
+        key="32"
+      >
+        <ExpenseListItem
+          amount={8000}
+          category="Maintenance"
+          createdAt={"1970-01-13T00:00:00.000Z"}
+          description="Room Repainting"
+          id="3"
+          key="3"
+          note=""
+        />
+      </div>
+      <div
+        className="col-1-of-4"
+        key="43"
+      >
+        <ExpenseListItem
+          amount={1000}
+          category="Maintenance"
+          createdAt={"1970-01-11T00:00:00.000Z"}
+          description="Water Pipes Repair"
+          id="4"
+          key="4"
+          note=""
+        />
+      </div>
+    </div>
+  </div>
 </div>
 `;

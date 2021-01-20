@@ -2,6 +2,10 @@
   cursor: pointer;
   font-size: $default-font-size;
 
+  &:disabled {
+    cursor: default;
+  }
+
   &__login {
     padding: 1rem 4rem;
     display: block;
@@ -12,6 +16,7 @@
     width: 30rem;
     text-align: left;
     transition: all 0.2s;
+    border-color: transparent;
 
     @include respond(phone) {
       width: 25rem;
@@ -39,8 +44,87 @@
       background-color: $color-yahoo;
     }
   }
+
+  &__signOut {
+    font-size: $normal-font-size;
+    font-weight: 500;
+    background-color: transparent;
+    border: 0;
+    color: $color-light-grey;
+
+    &:hover {
+      color: $color-light;
+    }
+  }
 }
 
-.btn:disabled {
-  cursor: default;
+.btn-add-expense {
+  background-color: $color-primary;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 1rem;
+  transition: all 0.2s;
+
+  &--cta {
+    &,
+    &:link,
+    &:visited {
+      padding: 0.8rem 2rem;
+      font-size: $normal-font-size;
+      margin-top: 3.5rem;
+      box-shadow: 0 0.3rem 0.5rem rgba(#000, 0.2);
+      text-transform: uppercase;
+
+      @include respond(tab-land) {
+        margin-top: 2rem;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
+    }
+
+    &:active,
+    &:focus {
+      transform: translate(-1px);
+      outline: none;
+      box-shadow: 0 0.4rem 0.8rem rgba(#000, 0.2);
+    }
+  }
+
+  &--form {
+    width: 15rem;
+    height: auto;
+    padding: 0.8rem 2rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(#000, 0.2);
+    border-color: transparent;
+
+    &:hover {
+      background-color: $color-primary-2;
+    }
+  }
+}
+
+.btn-remove-expense {
+  &--form {
+    display: inline-block;
+    margin-top: $m-size;
+    background-color: transparent;
+    color: $color-grey-2;
+    padding: 0.8rem 2rem;
+    border: none;
+    position: absolute;
+    top: 84%;
+    left: 85%;
+
+    @include respond(tab-port) {
+      left: 75%;
+    }
+
+    &:hover {
+      color: $color-danger;
+    }
+  }
 }

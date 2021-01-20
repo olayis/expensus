@@ -8,6 +8,10 @@
     height: 100vh;
     padding: 5rem 5rem;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
     @include respond(tab-port) {
       background: linear-gradient(
@@ -15,7 +19,7 @@
           rgba($color-primary-dark, 0.9) 60%,
           rgba($color-primary-dark, 0.98) 80%
         ),
-        url(/public/img/hero-2.jpg);
+        url(/public/img/hero.jpg);
       background-size: cover;
       background-position: center;
       width: 100%;
@@ -28,7 +32,7 @@
         rgba(64, 123, 255, 0.2) 60%,
         rgba(47, 46, 65, 0.8) 80%
       ),
-      url(/public/img/hero-2.jpg);
+      url(/public/img/hero.jpg);
     color: $color-light;
     width: 75%;
     height: 100vh;
@@ -52,6 +56,10 @@
     width: 100%;
     height: auto;
     margin: 0 auto $xl-size auto;
+
+    @include respond(phone) {
+      margin-bottom: $l-size;
+    }
   }
 
   &__logo {
@@ -76,8 +84,6 @@
 
 .login-footer {
   color: $color-grey-2;
-  position: absolute;
-  top: 85%;
   font-size: $small-font-size;
   font-weight: 500;
   text-align: center;
@@ -102,7 +108,7 @@
   }
 
   .social-link {
-    font-size: $medium-font-size;
+    font-size: $large-font-size;
     padding: 0 3px;
     margin-left: 5px;
   }
@@ -114,7 +120,7 @@
   width: 100%;
   line-height: 1.4;
   padding: 0 $xl-size;
-  font-size: $medium-font-size;
+  font-size: $large-font-size;
 
   &--text {
     font-weight: 700;

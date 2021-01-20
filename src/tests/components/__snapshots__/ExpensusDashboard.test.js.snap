@@ -1,9 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render expensus dashboard page correctly 1`] = `
-<div>
+<div
+  className="main-content"
+>
   <Connect(ExpensesSummary) />
   <Connect(ExpenseListFilters) />
   <Connect(ExpenseList) />
+  <Connect(ExpensesCharts) />
 </div>
 `;

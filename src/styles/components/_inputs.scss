@@ -1,0 +1,64 @@
+.text-input {
+  border: 1px solid #cacccd;
+  border-radius: 5px;
+  height: 50px;
+  font-size: $normal-font-size;
+  padding: $s-size;
+  color: $color-dark-grey;
+
+  &:focus {
+    outline: none;
+    border-color: $color-primary;
+    box-shadow: 0 0 1px $color-primary;
+  }
+
+  &--search {
+    padding-right: $l-size;
+    height: 30px;
+
+    @include respond(phone) {
+      padding-right: 0;
+    }
+
+    &__icon {
+      position: relative;
+      left: -2rem;
+      margin-top: 9px;
+      color: $color-light-grey;
+    }
+  }
+
+  &__label {
+    color: $color-dark-grey;
+    font-size: $normal-font-size;
+  }
+
+  &--form {
+    width: 100%;
+  }
+}
+
+.dropdown {
+  font-weight: 500;
+  font-size: $normal-font-size;
+
+  &--sort {
+    color: $color-primary-2;
+    border: 0;
+    font-weight: 500;
+    padding: 0;
+    outline: none;
+    background-color: transparent;
+  }
+
+  &--category {
+    @extend .text-input;
+    width: 100%;
+  }
+}
+
+.textarea {
+  @extend .text-input;
+  height: 10rem;
+  width: 100%;
+}

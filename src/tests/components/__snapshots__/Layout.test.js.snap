@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Layout correctly 1`] = `
+<Fragment>
+  <Navbar
+    openSidebar={[Function]}
+    sidebarOpen={false}
+  />
+  <Connect(Sidebar)
+    closeSidebar={[Function]}
+    sidebarOpen={false}
+  />
+</Fragment>
+`;

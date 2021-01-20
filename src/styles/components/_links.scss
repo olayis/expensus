@@ -1,0 +1,21 @@
+.router-link {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $color-dark-grey;
+  }
+
+  &--add,
+  &--home {
+    &:link,
+    &:visited {
+      font-weight: 500;
+      color: $color-primary;
+      transition: all 0.2s;
+    }
+    &:hover {
+      color: $color-primary-2;
+    }
+  }
+}

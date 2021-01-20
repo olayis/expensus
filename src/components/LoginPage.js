@@ -10,7 +10,7 @@ import {
   faYahoo,
 } from '@fortawesome/free-brands-svg-icons';
 import randomQuote from '../utils/budgetQuotes/quotes';
-import expensus_logo from '../../public/img/expensus-blue';
+import expensus_logo from '../../public/img/expensus-blue.svg';
 import {
   startGoogleLogin,
   startFacebookLogin,

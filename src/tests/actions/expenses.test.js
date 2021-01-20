@@ -25,13 +25,15 @@ beforeEach((done) => {
       note: '',
       amount: 2000,
       createdAt: 0,
+      category: 'Bills & Utilities',
     },
     {
       id: '2',
-      description: 'Rent',
+      description: 'Home Rentage',
       note: '',
       amount: 35000,
       createdAt: '1969-12-27T00:00:00.000Z',
+      category: 'Rent',
     },
     {
       id: '3',
@@ -39,12 +41,21 @@ beforeEach((done) => {
       note: '',
       amount: 8000,
       createdAt: '1970-01-13T00:00:00.000Z',
+      category: 'Bills & Utilities',
+    },
+    {
+      id: '4',
+      description: 'Fuel',
+      note: '',
+      amount: 8000,
+      createdAt: '1970-01-13T00:00:00.000Z',
+      category: 'Transportation',
     },
   ];
 
   const expensesData = {};
-  expenses.forEach(({ id, description, note, amount, createdAt }) => {
-    expensesData[id] = { description, note, amount, createdAt };
+  expenses.forEach(({ id, description, note, amount, createdAt, category }) => {
+    expensesData[id] = { description, note, amount, createdAt, category };
   });
 
   database
@@ -129,6 +140,7 @@ test('should add expense to database and store', (done) => {
     amount: 88300,
     note: 'A random phone',
     createdAt: 200,
+    category: 'Gadgets',
   };
 
   store
@@ -160,6 +172,7 @@ test('should add expense with defaults to database and store', (done) => {
     note: '',
     amount: 0,
     createdAt: 0,
+    category: 'Uncategorized',
   };
 
   store
@@ -200,13 +213,15 @@ test('should fetch the expenses from firebase', (done) => {
       note: '',
       amount: 2000,
       createdAt: 0,
+      category: 'Bills & Utilities',
     },
     {
       id: '2',
-      description: 'Rent',
+      description: 'Home Rentage',
       note: '',
       amount: 35000,
       createdAt: '1969-12-27T00:00:00.000Z',
+      category: 'Rent',
     },
     {
       id: '3',
@@ -214,6 +229,15 @@ test('should fetch the expenses from firebase', (done) => {
       note: '',
       amount: 8000,
       createdAt: '1970-01-13T00:00:00.000Z',
+      category: 'Bills & Utilities',
+    },
+    {
+      id: '4',
+      description: 'Fuel',
+      note: '',
+      amount: 8000,
+      createdAt: '1970-01-13T00:00:00.000Z',
+      category: 'Transportation',
     },
   ];
 

@@ -1,20 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
-@import "./abstract/functions";
-@import "./abstract/mixins";
-@import "./abstract/variables";
+@import './abstract/functions';
+@import './abstract/mixins';
+@import './abstract/variables';
 
-@import "./base/animations";
-@import "./base/base";
-@import "./base/typography";
-@import "./base/utilities";
+@import './base/animations';
+@import './base/base';
+@import './base/typography';
+@import './base/utilities';
 
-@import "./components/button";
-@import "./components/loader";
+@import './components/button';
+@import './components/card';
+@import './components/chart';
+@import './components/containers';
+@import './components/expenses-summary';
+@import './components/fa-icon';
+@import './components/inputs';
+@import './components/input-field';
+@import './components/input-group';
+@import './components/links';
+@import './components/loader';
+@import './components/navbar';
+@import './components/not-found';
+@import './components/react_dates_overrides';
+@import './components/sidebar';
 
-@import "./layout/grid";
-@import "./pages/add-expense";
-@import "./pages/edit-expense";
-@import "./pages/home";
-@import "./pages/not-found";
-@import "./pages/login-page";
+@import './layout/grid';
+@import './pages/login-page';

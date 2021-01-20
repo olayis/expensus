@@ -25,7 +25,7 @@ test('should call startFacebookLogin on button click', () => {
 
 test('should call startTwitterLogin on button click', () => {
   const startTwitterLogin = jest.fn();
-  const wrapper = shallow(<LoginPage startTwitterLogin={startYahooLogin} />);
+  const wrapper = shallow(<LoginPage startTwitterLogin={startTwitterLogin} />);
   wrapper.find('.btn__login--twitter').simulate('click');
   expect(startTwitterLogin).toHaveBeenCalled();
 });

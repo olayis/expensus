@@ -1,18 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render NotFoundPage correctly 1`] = `
-<div>
-  <h2>
-    Page Not Found.
-  </h2>
-  <p>
-    Sorry, but the page you were trying to view does not exist. Let's —
-     
-    <Link
-      to="/"
+<div
+  className="content-container"
+>
+  <div
+    className="not-found"
+  >
+    <img
+      alt="Lady illustrating not found page."
+      className="not-found__illustration"
+      src="SvgrURL"
+    />
+    <h2
+      className="not-found__text"
     >
-      Go home
-    </Link>
-  </p>
+      Page Not Found.
+    </h2>
+    <p
+      className="not-found__explanation"
+    >
+      Sorry, but the page you were trying to view does not exist. Let's —
+       
+      <Link
+        className="router-link router-link--home"
+        to="/"
+      >
+        Go home
+      </Link>
+    </p>
+  </div>
 </div>
 `;
