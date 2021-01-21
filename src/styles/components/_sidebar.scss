@@ -74,11 +74,17 @@
   }
 }
 
-.sidebar--responsive {
-  display: inline !important;
-  z-index: 9999 !important;
-  left: 0 !important;
-  position: absolute;
-  background-color: rgba($color: $color-primary-dark, $alpha: 0.98) !important;
-  box-shadow: 0 5px 8px #000;
+.sidebar {
+  &--responsive {
+    display: inline !important;
+    z-index: 9999 !important;
+    left: 0 !important;
+    position: absolute;
+    background-color: rgba(
+      $color: $color-primary-dark,
+      $alpha: 0.98
+    ) !important;
+    box-shadow: 0 5px 8px #000;
+    animation: moveInLeft 0.2s ease-out;
+  }
 }
