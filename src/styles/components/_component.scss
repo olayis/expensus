@@ -1,0 +1,50 @@
+.component {
+  &__content {
+    width: 30rem;
+    margin: 3rem auto;
+    padding: 0 5px;
+    text-align: center;
+
+    @include respond(narrow-phone) {
+      width: 25rem;
+    }
+  }
+
+  a {
+    &:link,
+    &:visited {
+      font-weight: 500;
+      color: $color-primary;
+      transition: all 0.2s;
+    }
+    &:hover {
+      color: $color-primary-2;
+    }
+  }
+
+  &__illustration {
+    font-size: 25rem;
+
+    @include respond(narrow-phone) {
+      font-size: 20rem;
+    }
+
+    &--delete {
+      color: $color-light-grey;
+
+      &:hover {
+        color: $color-danger;
+      }
+    }
+
+    &--empty {
+      color: $color-light-grey;
+    }
+  }
+
+  &__message {
+    font-size: $normal-font-size;
+    font-weight: 500;
+    padding: $m-size;
+  }
+}

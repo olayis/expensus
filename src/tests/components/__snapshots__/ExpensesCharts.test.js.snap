@@ -5,7 +5,7 @@ exports[`should render ExpensesChart with expenses data 1`] = `
   className="content-container"
 >
   <div
-    className="expenses-chart-container"
+    className="component-container component-container--chart"
   >
     <h2
       className="heading-secondary"
@@ -520,7 +520,7 @@ exports[`should render ExpensesCharts with empty message 1`] = `
   className="content-container"
 >
   <div
-    className="expenses-chart-container"
+    className="component-container component-container--chart"
   >
     <h2
       className="heading-secondary"

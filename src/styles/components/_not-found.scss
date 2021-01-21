@@ -22,9 +22,18 @@
 .no-expense {
   width: 30rem;
   margin: 0 auto;
+  padding: 0 1rem;
+
+  @include respond(narrow-phone) {
+    width: 25rem;
+  }
 
   &__illustration {
     width: 25rem;
     height: auto;
+
+    @include respond(narrow-phone) {
+      width: 20rem;
+    }
   }
 }

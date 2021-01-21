@@ -23,6 +23,11 @@
       padding: 1rem 2.5rem;
     }
 
+    @include respond(narrow-phone) {
+      font-size: $normal-font-size;
+      width: 22rem;
+    }
+
     &:hover {
       color: #fff;
       border: 2px solid $color-dark-grey;
@@ -121,6 +126,10 @@
 
     @include respond(tab-port) {
       left: 75%;
+    }
+
+    @include respond(small-phone) {
+      left: 65%;
     }
 
     &:hover {

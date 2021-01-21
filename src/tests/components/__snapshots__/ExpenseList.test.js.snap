@@ -5,7 +5,7 @@ exports[`should render ExpenseList with empty message 1`] = `
   className="content-container"
 >
   <div
-    className="expenses-list-container"
+    className="component-container"
   >
     <h2
       className="heading-secondary"
@@ -71,7 +71,7 @@ exports[`should render ExpenseList with expenses 1`] = `
   className="content-container"
 >
   <div
-    className="expenses-list-container"
+    className="component-container"
   >
     <h2
       className="heading-secondary"

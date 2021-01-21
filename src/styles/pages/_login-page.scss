@@ -22,7 +22,12 @@
         url(/public/img/hero.jpg);
       background-size: cover;
       background-position: center;
+      min-width: 0;
       width: 100%;
+    }
+
+    @include respond(narrow-phone) {
+      padding: 5rem 2rem;
     }
   }
 
@@ -58,7 +63,7 @@
     margin: 0 auto $xl-size auto;
 
     @include respond(phone) {
-      margin-bottom: $l-size;
+      margin-bottom: $m-size;
     }
   }
 
@@ -78,7 +83,7 @@
     font-size: $default-font-size;
     color: $color-light;
     text-align: center;
-    margin-bottom: $l-size;
+    margin-bottom: 6rem;
   }
 }
 

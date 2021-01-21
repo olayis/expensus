@@ -40,6 +40,7 @@
       display: none;
       color: #fff;
       font-size: $medium-font-size;
+      cursor: pointer;
 
       @include respond(tab-land) {
         display: inline;
@@ -79,4 +80,5 @@
   left: 0 !important;
   position: absolute;
   background-color: rgba($color: $color-primary-dark, $alpha: 0.98) !important;
+  box-shadow: 0 5px 8px #000;
 }

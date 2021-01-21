@@ -10,7 +10,7 @@ import splitEvery from '../utils/helpers/splitEvery';
 
 export const ExpenseList = (props) => (
   <div className='content-container'>
-    <div className='expenses-list-container'>
+    <div className='component-container'>
       <h2 className='heading-secondary'>
         <FontAwesomeIcon icon={faEye} /> Expenses Overview
       </h2>

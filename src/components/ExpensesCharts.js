@@ -19,7 +19,7 @@ export const ExpensesCharts = (props) => {
 
   return (
     <div className='content-container'>
-      <div className='expenses-chart-container'>
+      <div className='component-container component-container--chart'>
         <h2 className='heading-secondary'>
           <FontAwesomeIcon icon={faChartBar} /> Expenses Charts
         </h2>

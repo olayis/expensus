@@ -8,6 +8,8 @@ import {
   faSignOutAlt,
   faCog,
   faTimes,
+  faFileDownload,
+  faCoins,
 } from '@fortawesome/free-solid-svg-icons';
 import expensus_round from '../../public/img/expensus-round.svg';
 import { startLogout } from '../actions/auth';
@@ -42,6 +44,16 @@ export const Sidebar = ({ startLogout, sidebarOpen, closeSidebar }) => (
           <NavLink to='/create' activeClassName='is-active'>
             <FontAwesomeIcon icon={faPlusCircle} className='fa-icon' /> Add
             Expense
+          </NavLink>
+        </li>
+        <li className='sidebar__link'>
+          <NavLink to='/currency' activeClassName='is-active'>
+            <FontAwesomeIcon icon={faCoins} className='fa-icon' /> Currency
+          </NavLink>
+        </li>
+        <li className='sidebar__link'>
+          <NavLink to='/data' activeClassName='is-active'>
+            <FontAwesomeIcon icon={faFileDownload} className='fa-icon' /> Data
           </NavLink>
         </li>
         <li className='sidebar__link'>

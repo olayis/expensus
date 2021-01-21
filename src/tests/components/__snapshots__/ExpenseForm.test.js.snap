@@ -29,7 +29,7 @@ exports[`should render ExpenseForm correctly 1`] = `
       className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Amount"
-      type="text"
+      type="number"
       value=""
     />
     <span
@@ -284,7 +284,7 @@ exports[`should render ExpenseForm with expense data 1`] = `
       className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Amount"
-      type="text"
+      type="number"
       value="350"
     />
     <span
@@ -539,7 +539,7 @@ exports[`should render amountError if "amount" is not provided but "description"
       className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Amount"
-      type="text"
+      type="number"
       value=""
     />
     <span
@@ -794,7 +794,7 @@ exports[`should render amountError if "amount" is not provided but "description"
       className="text-input text-input--form input-field--has-error"
       onChange={[Function]}
       placeholder="Amount"
-      type="text"
+      type="number"
       value=""
     />
     <span
@@ -1085,7 +1085,7 @@ exports[`should render both descriptionError and amountError if "description" an
       className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Amount"
-      type="text"
+      type="number"
       value=""
     />
     <span
@@ -1340,7 +1340,7 @@ exports[`should render descriptionError if "description" is not provided but "am
       className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Amount"
-      type="text"
+      type="number"
       value=""
     />
     <span
@@ -1631,7 +1631,7 @@ exports[`should render descriptionError if "description" is not provided but "am
       className="text-input text-input--form "
       onChange={[Function]}
       placeholder="Amount"
-      type="text"
+      type="number"
       value="23.64"
     />
     <span

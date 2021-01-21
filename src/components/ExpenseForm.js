@@ -120,7 +120,7 @@ export default class ExpenseForm extends React.Component {
               'text-input text-input--form ' +
               (this.state.amountError ? 'input-field--has-error' : '')
             }
-            type='text'
+            type='number'
             placeholder='Amount'
             value={this.state.amount}
             onChange={this.onAmountChange}

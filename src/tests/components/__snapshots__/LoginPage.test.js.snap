@@ -191,7 +191,7 @@ exports[`should render login page correctly 1`] = `
           className="quotes--text"
         >
           “
-          Creating a budget isn't easy, but sticking to any budget is extremely difficult. The trick is to focus on the word realistic
+          The slightest adjustments to your daily routines can dramatically alter the outcomes in your life.
           "
         </span>
         <br />
@@ -199,7 +199,7 @@ exports[`should render login page correctly 1`] = `
           className="quotes--author"
         >
           — 
-          Tere Stouffer
+          Darren Hardy
         </span>
       </U>
     </div>
