@@ -9,6 +9,8 @@ const NotFoundPage = () => (
         src={not_found}
         alt='Lady illustrating not found page.'
         className='not-found__illustration'
+        width='1075'
+        height='585'
       />
       <h2 className='not-found__text'>Page Not Found.</h2>
       <p className='not-found__explanation'>

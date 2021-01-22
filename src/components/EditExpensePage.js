@@ -16,7 +16,7 @@ export class EditExpensePage extends React.Component {
 
   render() {
     return (
-      <div className='main-content'>
+      <main className='main-content'>
         <div className='content-container'>
           <div className='edit-expense-container'>
             <ExpenseForm
@@ -26,12 +26,13 @@ export class EditExpensePage extends React.Component {
             <button
               onClick={this.onRemove}
               className='btn btn-remove-expense btn-remove-expense--form'
+              aria-label='Remove expense'
             >
               Remove
             </button>
           </div>
         </div>
-      </div>
+      </main>
     );
   }
 }

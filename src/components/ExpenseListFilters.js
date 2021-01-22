@@ -78,6 +78,8 @@ export class ExpenseListFilters extends React.Component {
                 placeholder='Search'
                 value={this.props.filters.text}
                 onChange={this.onTextChange}
+                aria-label='Search expenses'
+                name='search'
               />
               <FontAwesomeIcon
                 icon={faSearch}
@@ -90,6 +92,8 @@ export class ExpenseListFilters extends React.Component {
                 className='dropdown--sort'
                 value={this.props.filters.sortBy}
                 onChange={this.onSortChange}
+                aria-label='Sort expenses'
+                name='sort'
               >
                 <option value='date(recent)'>Date (Recent)</option>
                 <option value='date(oldest)'>Date (Oldest)</option>

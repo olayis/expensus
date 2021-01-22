@@ -1,13 +1,26 @@
 .split-layout {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas:
+    'left right right right'
+    'left right right right';
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      'left'
+      'left';
+  }
+
   &__left {
-    position: fixed;
+    grid-area: left;
     overflow: auto;
     background-color: $color-primary-dark;
-    width: 25%;
     min-width: 39rem;
-    height: 100vh;
     padding: 5rem 5rem;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -23,15 +36,15 @@
       background-size: cover;
       background-position: center;
       min-width: 0;
-      width: 100%;
     }
 
     @include respond(narrow-phone) {
-      padding: 5rem 2rem;
+      padding: 4rem 2rem;
     }
   }
 
   &__right {
+    grid-area: right;
     background: linear-gradient(
         180deg,
         rgba(64, 123, 255, 0.2) 60%,
@@ -39,12 +52,10 @@
       ),
       url(/public/img/hero.jpg);
     color: $color-light;
-    width: 75%;
-    height: 100vh;
     background-size: cover;
     background-position: top;
-    margin-left: 25%;
     position: relative;
+    overflow: hidden;
 
     @include respond(tab-port) {
       display: none;
@@ -53,14 +64,10 @@
 }
 
 .login-content {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-
   &__logo-box {
     width: 100%;
     height: auto;
-    margin: 0 auto $xl-size auto;
+    margin-bottom: $xl-size;
 
     @include respond(phone) {
       margin-bottom: $m-size;
@@ -81,6 +88,7 @@
 
   &__message {
     font-size: $default-font-size;
+    font-weight: 400;
     color: $color-light;
     text-align: center;
     margin-bottom: 6rem;
@@ -88,19 +96,10 @@
 }
 
 .login-footer {
-  color: $color-grey-2;
+  color: $color-light-grey;
   font-size: $small-font-size;
   font-weight: 500;
   text-align: center;
-  width: 70%;
-
-  @include respond(tab-port) {
-    width: 85%;
-  }
-
-  @include respond(phone) {
-    width: 70%;
-  }
 
   &__link {
     text-decoration: none;
@@ -136,12 +135,6 @@
     font-size: $default-font-size;
     font-weight: 500;
     text-align: right;
-    width: 99%;
-  }
-}
-
-@media only screen and (max-width: 1390px) {
-  .quotes {
-    display: none;
+    width: 98%;
   }
 }

@@ -6,7 +6,11 @@ import user_avatar from '../../public/img/user-avatar.svg';
 
 export const Navbar = ({ sidebarOpen, openSidebar }) => (
   <nav className='navbar'>
-    <div className='navbar__icon' onClick={() => openSidebar()}>
+    <div
+      className='navbar__icon'
+      onClick={() => openSidebar()}
+      aria-label='Expand Sidebar'
+    >
       <FontAwesomeIcon icon={faBars} className='fa-icon' />
     </div>
     <div className='navbar__center'>
@@ -42,7 +46,7 @@ export const Navbar = ({ sidebarOpen, openSidebar }) => (
     <div className='navbar__right'>
       <div className='user__wrapper'>
         <span className='username'>Username</span>
-        <img src={user_avatar} alt='Avatar' />
+        <img src={user_avatar} alt='User Avatar' width='50' height='50' />
       </div>
     </div>
   </nav>

@@ -12,6 +12,8 @@ const LoginPageFooter = () => (
       href='https://www.github.com/olayis'
       target='_blank'
       className='login-footer__link'
+      aria-label='Olusegun"s Github'
+      rel='noreferrer'
     >
       Olayis
     </a>
@@ -21,6 +23,8 @@ const LoginPageFooter = () => (
         href='https://www.twitter.com/olusegun_os/'
         target='_blank'
         className='login-footer__link'
+        aria-label='Olusegun"s Twitter'
+        rel='noreferrer'
       >
         <FontAwesomeIcon icon={faTwitter} className='social-link' />
       </a>
@@ -28,6 +32,8 @@ const LoginPageFooter = () => (
         href='https://www.github.com/olayis/expensus'
         target='_blank'
         className='login-footer__link'
+        aria-label='Expensus"s Github URL'
+        rel='noreferrer'
       >
         <FontAwesomeIcon icon={faGithub} className='social-link' />
       </a>
@@ -35,6 +41,8 @@ const LoginPageFooter = () => (
         href='mailto:olayinkasegunsolo@gmail.com'
         target='_blank'
         className='login-footer__link'
+        aria-label='Olusegun"s Email'
+        rel='noreferrer'
       >
         <FontAwesomeIcon icon={faEnvelopeOpen} className='social-link' />
       </a>

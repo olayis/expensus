@@ -36,12 +36,14 @@ export const LoginPage = ({
               src={expensus_logo}
               alt='Expensus Logo'
               className='login-content__logo'
+              width='195'
+              height='37'
             />
           </Link>
         </div>
-        <p className='login-content__message'>
+        <h1 className='login-content__message'>
           Hi! Sign in to start managing your expenses.
-        </p>
+        </h1>
         <button
           onClick={startGoogleLogin}
           className='btn btn__login btn__login--google'

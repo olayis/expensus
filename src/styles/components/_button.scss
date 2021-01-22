@@ -11,9 +11,9 @@
     display: block;
     background-color: #fff;
     margin: 0 auto $m-size auto;
-    color: $color-grey;
+    color: $color-dark-grey;
     border-radius: 10rem;
-    width: 30rem;
+    width: 28rem;
     text-align: left;
     transition: all 0.2s;
     border-color: transparent;
@@ -64,7 +64,7 @@
 }
 
 .btn-add-expense {
-  background-color: $color-primary;
+  background-color: $color-primary-2;
   color: #fff;
   text-decoration: none;
   display: inline-block;

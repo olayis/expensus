@@ -18,7 +18,7 @@ export const ExpensesCharts = (props) => {
   const bubbleChartData = categoryCountAmountPercentage(props.expenses);
 
   return (
-    <div className='content-container'>
+    <section className='content-container'>
       <div className='component-container component-container--chart'>
         <h2 className='heading-secondary'>
           <FontAwesomeIcon icon={faChartBar} /> Expenses Charts
@@ -29,6 +29,8 @@ export const ExpensesCharts = (props) => {
               src={charts}
               alt='A man looking at charts'
               className='no-expense__illustration'
+              width='773'
+              height='532'
             />
             <p>Start adding Expenses to show Charts.</p>
           </div>
@@ -47,7 +49,7 @@ export const ExpensesCharts = (props) => {
                     chartType='PieChart'
                     loader={
                       <div>
-                        <img src={spinner} />
+                        <img src={spinner} alt='' width='200' height='200' />
                         <p>Loading Pie Chart...</p>
                       </div>
                     }
@@ -66,7 +68,7 @@ export const ExpensesCharts = (props) => {
                     chartType='PieChart'
                     loader={
                       <div>
-                        <img src={spinner} />
+                        <img src={spinner} alt='' width='200' height='200' />
                         <p>Loading Chart...</p>
                       </div>
                     }
@@ -92,7 +94,7 @@ export const ExpensesCharts = (props) => {
                     chartType='Bar'
                     loader={
                       <div>
-                        <img src={spinner} />
+                        <img src={spinner} alt='' width='200' height='200' />
                         <p>Loading Bar Chart...</p>
                       </div>
                     }
@@ -113,7 +115,7 @@ export const ExpensesCharts = (props) => {
                     chartType='LineChart'
                     loader={
                       <div>
-                        <img src={spinner} />
+                        <img src={spinner} alt='' width='200' height='200' />
                         <p>Loading Line Chart...</p>
                       </div>
                     }
@@ -141,7 +143,7 @@ export const ExpensesCharts = (props) => {
                   chartType='BubbleChart'
                   loader={
                     <div>
-                      <img src={spinner} />
+                      <img src={spinner} alt='' width='200' height='200' />
                       <p>Loading Bubble Chart...</p>
                     </div>
                   }
@@ -157,7 +159,7 @@ export const ExpensesCharts = (props) => {
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 

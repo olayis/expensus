@@ -16,8 +16,8 @@ import {
 import selectExpenses from '../selectors/expenses';
 
 export const ExpensesData = (props) => (
-  <div className='main-content'>
-    <div className='content-container'>
+  <main className='main-content'>
+    <section className='content-container'>
       <div className='component-container'>
         <div className='component'>
           <h2 className='heading-secondary'>
@@ -50,10 +50,11 @@ export const ExpensesData = (props) => (
                 <CSVLink
                   data={props.expenses.map((expense, index) => ({
                     ...expense,
-                    id: index,
+                    id: index + 1,
                     amount: expense.amount / 100,
                     createdAt: moment(expense.createdAt).format('DD/MM/YYYY'),
                   }))}
+                  aria-label='CSV Link'
                 >
                   <FontAwesomeIcon
                     icon={faArrowAltCircleDown}
@@ -65,8 +66,8 @@ export const ExpensesData = (props) => (
           )}
         </div>
       </div>
-    </div>
-    <div className='content-container margin-top-md'>
+    </section>
+    <section className='content-container margin-top-md'>
       <div className='component-container'>
         <div className='component'>
           <h2 className='heading-secondary'>
@@ -103,6 +104,7 @@ export const ExpensesData = (props) => (
                     amount: expense.amount / 100,
                     createdAt: moment(expense.createdAt).format('DD/MM/YYYY'),
                   }))}
+                  aria-label='CSV Link'
                 >
                   <FontAwesomeIcon
                     icon={faTrashAlt}
@@ -114,8 +116,8 @@ export const ExpensesData = (props) => (
           )}
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 );
 
 const mapStateToProps = (state) => {

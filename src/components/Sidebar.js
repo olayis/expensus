@@ -22,6 +22,8 @@ export const Sidebar = ({ startLogout, sidebarOpen, closeSidebar }) => (
           src={expensus_round}
           alt='Expensus Logo'
           className='sidebar__logo-img'
+          height='432'
+          width='432'
         />
         <span className='sidebar__expensus'>Expensus</span>
       </Link>
@@ -30,6 +32,7 @@ export const Sidebar = ({ startLogout, sidebarOpen, closeSidebar }) => (
           icon={faTimes}
           className='fa-icon'
           onClick={() => closeSidebar()}
+          aria-label='Close'
         />
       </span>
     </div>

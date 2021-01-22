@@ -114,7 +114,7 @@ To get a local copy up and running follow these simple steps.
     or
     yarn test:watch
 
-    Launches the test runner in the interactive watch mode.
+    Launches the test runner in watch mode.
 
 5.Run webpack production build
 
@@ -122,9 +122,7 @@ To get a local copy up and running follow these simple steps.
     or
     yarn build:prod
 
-    Runs the app in production mode.
-
-    Open http://localhost:9000 to view it in the browser.
+    Builds the app for production.
 
 6.Start up server to view app in production mode
 
@@ -132,7 +130,7 @@ To get a local copy up and running follow these simple steps.
     or
     yarn start
 
-    Open http://localhost:9000 to view it in the browser.
+    Open http://localhost:9000 to view the production mode in the browser.
 
 ## Roadmap
 

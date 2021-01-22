@@ -9,7 +9,7 @@ import no_data from '../../public/img/no_data.svg';
 import splitEvery from '../utils/helpers/splitEvery';
 
 export const ExpenseList = (props) => (
-  <div className='content-container'>
+  <section className='content-container'>
     <div className='component-container'>
       <h2 className='heading-secondary'>
         <FontAwesomeIcon icon={faEye} /> Expenses Overview
@@ -20,6 +20,8 @@ export const ExpenseList = (props) => (
             src={no_data}
             alt='A clipboard showing no data'
             className='no-expense__illustration'
+            width='648'
+            height='633'
           />
           <p>
             No Expenses To Display.{' '}
@@ -40,7 +42,7 @@ export const ExpenseList = (props) => (
         ))
       )}
     </div>
-  </div>
+  </section>
 );
 
 const mapStateToProps = (state) => {

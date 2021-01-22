@@ -6,7 +6,7 @@
     text-align: center;
 
     @include respond(narrow-phone) {
-      width: 25rem;
+      width: 20rem;
     }
   }
 
@@ -26,7 +26,7 @@
     font-size: 25rem;
 
     @include respond(narrow-phone) {
-      font-size: 20rem;
+      font-size: 15rem;
     }
 
     &--delete {

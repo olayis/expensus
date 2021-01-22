@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 const isDevelopment = process.env.NODE_ENV === 'development';
 
 if (process.env.NODE_ENV === 'test') {
@@ -118,6 +119,7 @@ module.exports = {
         process.env.FIREBASE_MEASUREMENT_ID
       ),
     }),
+    new CompressionPlugin(),
   ],
   resolve: {
     extensions: [

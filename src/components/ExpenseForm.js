@@ -62,7 +62,7 @@ export default class ExpenseForm extends React.Component {
         amountError: 'Please provide an amount',
         descriptionError: 'Please provide a description',
       }));
-    } else if (!this.state.description) {
+    } else if (!this.state.description.trim()) {
       this.setState(() => ({
         amountError: '',
         descriptionError: 'Please provide a description.',
@@ -98,6 +98,8 @@ export default class ExpenseForm extends React.Component {
             autoFocus
             value={this.state.description}
             onChange={this.onDescriptionChange}
+            aria-label='Expense description'
+            name='description'
           />
           <span
             className={
@@ -124,6 +126,8 @@ export default class ExpenseForm extends React.Component {
             placeholder='Amount'
             value={this.state.amount}
             onChange={this.onAmountChange}
+            aria-label='Expense amount'
+            name='amount'
           />
           <span
             className={
@@ -156,6 +160,8 @@ export default class ExpenseForm extends React.Component {
             className='dropdown dropdown--category'
             value={this.state.category}
             onChange={this.onCategoryChange}
+            aria-label='Select category'
+            name='category'
           >
             <option value='Uncategorized'>Uncategorized</option>
             <option value='Bills & Utilities'>Bills & Utilities</option>
@@ -182,6 +188,8 @@ export default class ExpenseForm extends React.Component {
             placeholder='Add a note for your expense (optional)'
             value={this.state.note}
             onChange={this.onNoteChange}
+            aria-label='Expense note'
+            name='note'
           ></textarea>
           <span className='input-field__helper'>Note</span>
         </div>

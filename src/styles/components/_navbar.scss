@@ -36,7 +36,7 @@
       transition: all 0.2s;
       color: $color-primary-dark;
       font-size: $medium-font-size;
-      font-weight: 600;
+      font-weight: 500;
     }
 
     .nav-is-active {
@@ -60,5 +60,11 @@
       height: 4rem;
       vertical-align: middle;
     }
+  }
+
+  @include respond(tab-land) {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
   }
 }
