@@ -12,7 +12,7 @@ body {
   padding: 0.5rem 1rem;
   margin-bottom: 2rem;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     text-align: center;
     font-size: 2.2rem;
   }
