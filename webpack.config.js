@@ -18,7 +18,7 @@ module.exports = {
   entry: ['@babel/polyfill', './src/app.js'],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: isDevelopment ? 'bundle.js' : '[name].bundle.js',
+    filename: isDevelopment ? 'bundle.js' : '[name].bundle.js.br',
   },
   module: {
     rules: [
