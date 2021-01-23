@@ -11,11 +11,11 @@
     &:link,
     &:visited {
       font-weight: 500;
-      color: $color-primary;
+      color: $color-primary-2;
       transition: all 0.2s;
     }
     &:hover {
-      color: $color-primary-2;
+      color: $color-primary;
     }
   }
 }

@@ -11,20 +11,12 @@ import {
   faFileDownload,
   faCoins,
 } from '@fortawesome/free-solid-svg-icons';
-import expensus_round from '../../public/img/expensus-round.svg';
 import { startLogout } from '../actions/auth';
 
 export const Sidebar = ({ startLogout, sidebarOpen, closeSidebar }) => (
   <aside className={sidebarOpen ? 'sidebar--responsive' : ''} id='sidebar'>
     <div className='sidebar__logo'>
       <Link to='/dashboard' className='dashboard-link'>
-        <img
-          src={expensus_round}
-          alt='Expensus Logo'
-          className='sidebar__logo-img'
-          height='432'
-          width='432'
-        />
         <span className='sidebar__expensus'>Expensus</span>
       </Link>
       <span className='sidebar__close'>

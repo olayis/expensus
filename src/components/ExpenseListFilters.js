@@ -15,6 +15,7 @@ import {
   setStartDate,
   setEndDate,
 } from '../actions/filters';
+import 'react-dates/initialize';
 
 export class ExpenseListFilters extends React.Component {
   state = {
