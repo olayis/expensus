@@ -19,15 +19,17 @@ exports[`should render login page correctly 1`] = `
           <img
             alt="Expensus Logo"
             className="login-content__logo"
+            height="37"
             src="SvgrURL"
+            width="195"
           />
         </Link>
       </div>
-      <p
+      <h1
         className="login-content__message"
       >
         Hi! Sign in to start managing your expenses.
-      </p>
+      </h1>
       <button
         className="btn btn__login btn__login--google"
       >
@@ -191,7 +193,7 @@ exports[`should render login page correctly 1`] = `
           className="quotes--text"
         >
           “
-          The slightest adjustments to your daily routines can dramatically alter the outcomes in your life.
+          A budget tells us what we can't afford, but it doesn't keep us from buying it.
           "
         </span>
         <br />
@@ -199,7 +201,7 @@ exports[`should render login page correctly 1`] = `
           className="quotes--author"
         >
           — 
-          Darren Hardy
+          William Feather
         </span>
       </U>
     </div>

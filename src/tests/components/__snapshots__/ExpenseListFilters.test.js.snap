@@ -14,7 +14,9 @@ exports[`should render ExpenseListFilters correctly 1`] = `
         className="input-group__item"
       >
         <input
+          aria-label="Search expenses"
           className="text-input text-input--search"
+          name="search"
           onChange={[Function]}
           placeholder="Search"
           type="text"
@@ -61,7 +63,9 @@ exports[`should render ExpenseListFilters correctly 1`] = `
           Sort by: 
         </label>
         <select
+          aria-label="Sort expenses"
           className="dropdown--sort"
+          name="sort"
           onChange={[Function]}
           value="date(recent)"
         >
@@ -228,7 +232,9 @@ exports[`should render ExpenseListFilters with alt data correctly 1`] = `
         className="input-group__item"
       >
         <input
+          aria-label="Search expenses"
           className="text-input text-input--search"
+          name="search"
           onChange={[Function]}
           placeholder="Search"
           type="text"
@@ -275,7 +281,9 @@ exports[`should render ExpenseListFilters with alt data correctly 1`] = `
           Sort by: 
         </label>
         <select
+          aria-label="Sort expenses"
           className="dropdown--sort"
+          name="sort"
           onChange={[Function]}
           value="amount(highest)"
         >

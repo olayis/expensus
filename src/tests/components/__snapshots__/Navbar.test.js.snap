@@ -5,6 +5,7 @@ exports[`should render Navbar correctly 1`] = `
   className="navbar"
 >
   <div
+    aria-label="Expand Sidebar"
     className="navbar__icon"
     onClick={[Function]}
   >
@@ -104,8 +105,10 @@ exports[`should render Navbar correctly 1`] = `
         Username
       </span>
       <img
-        alt="Avatar"
+        alt="User Avatar"
+        height="50"
         src="SvgrURL"
+        width="50"
       />
     </div>
   </div>

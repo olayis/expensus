@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render ExpensesChart with expenses data 1`] = `
-<div
+<section
   className="content-container"
 >
   <div
@@ -102,7 +102,10 @@ exports[`should render ExpensesChart with expenses data 1`] = `
               loader={
                 <div>
                   <img
+                    alt=""
+                    height="200"
                     src="test-file-stub"
+                    width="200"
                   />
                   <p>
                     Loading Pie Chart...
@@ -190,7 +193,10 @@ exports[`should render ExpensesChart with expenses data 1`] = `
               loader={
                 <div>
                   <img
+                    alt=""
+                    height="200"
                     src="test-file-stub"
+                    width="200"
                   />
                   <p>
                     Loading Chart...
@@ -282,7 +288,10 @@ exports[`should render ExpensesChart with expenses data 1`] = `
               loader={
                 <div>
                   <img
+                    alt=""
+                    height="200"
                     src="test-file-stub"
+                    width="200"
                   />
                   <p>
                     Loading Bar Chart...
@@ -370,7 +379,10 @@ exports[`should render ExpensesChart with expenses data 1`] = `
               loader={
                 <div>
                   <img
+                    alt=""
+                    height="200"
                     src="test-file-stub"
+                    width="200"
                   />
                   <p>
                     Loading Line Chart...
@@ -472,7 +484,10 @@ exports[`should render ExpensesChart with expenses data 1`] = `
             loader={
               <div>
                 <img
+                  alt=""
+                  height="200"
                   src="test-file-stub"
+                  width="200"
                 />
                 <p>
                   Loading Bubble Chart...
@@ -512,11 +527,11 @@ exports[`should render ExpensesChart with expenses data 1`] = `
       </div>
     </div>
   </div>
-</div>
+</section>
 `;
 
 exports[`should render ExpensesCharts with empty message 1`] = `
-<div
+<section
   className="content-container"
 >
   <div
@@ -564,12 +579,14 @@ exports[`should render ExpensesCharts with empty message 1`] = `
       <img
         alt="A man looking at charts"
         className="no-expense__illustration"
+        height="532"
         src="SvgrURL"
+        width="773"
       />
       <p>
         Start adding Expenses to show Charts.
       </p>
     </div>
   </div>
-</div>
+</section>
 `;

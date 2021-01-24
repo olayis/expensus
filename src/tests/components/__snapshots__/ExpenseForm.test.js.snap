@@ -9,8 +9,10 @@ exports[`should render ExpenseForm correctly 1`] = `
     className="input-field__wrapper"
   >
     <input
+      aria-label="Expense description"
       autoFocus={true}
       className="text-input text-input--form "
+      name="description"
       onChange={[Function]}
       placeholder="Description"
       type="text"
@@ -26,7 +28,9 @@ exports[`should render ExpenseForm correctly 1`] = `
     className="input-field__wrapper"
   >
     <input
+      aria-label="Expense amount"
       className="text-input text-input--form "
+      name="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="number"
@@ -141,7 +145,9 @@ exports[`should render ExpenseForm correctly 1`] = `
     className="input-field__wrapper"
   >
     <select
+      aria-label="Select category"
       className="dropdown dropdown--category"
+      name="category"
       onChange={[Function]}
       value="Uncategorized"
     >
@@ -236,7 +242,9 @@ exports[`should render ExpenseForm correctly 1`] = `
     className="input-field__wrapper"
   >
     <textarea
+      aria-label="Expense note"
       className="textarea textarea--form"
+      name="note"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
@@ -264,8 +272,10 @@ exports[`should render ExpenseForm with expense data 1`] = `
     className="input-field__wrapper"
   >
     <input
+      aria-label="Expense description"
       autoFocus={true}
       className="text-input text-input--form "
+      name="description"
       onChange={[Function]}
       placeholder="Description"
       type="text"
@@ -281,7 +291,9 @@ exports[`should render ExpenseForm with expense data 1`] = `
     className="input-field__wrapper"
   >
     <input
+      aria-label="Expense amount"
       className="text-input text-input--form "
+      name="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="number"
@@ -396,7 +408,9 @@ exports[`should render ExpenseForm with expense data 1`] = `
     className="input-field__wrapper"
   >
     <select
+      aria-label="Select category"
       className="dropdown dropdown--category"
+      name="category"
       onChange={[Function]}
       value="Rent"
     >
@@ -491,7 +505,9 @@ exports[`should render ExpenseForm with expense data 1`] = `
     className="input-field__wrapper"
   >
     <textarea
+      aria-label="Expense note"
       className="textarea textarea--form"
+      name="note"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
@@ -519,8 +535,10 @@ exports[`should render amountError if "amount" is not provided but "description"
     className="input-field__wrapper"
   >
     <input
+      aria-label="Expense description"
       autoFocus={true}
       className="text-input text-input--form "
+      name="description"
       onChange={[Function]}
       placeholder="Description"
       type="text"
@@ -536,7 +554,9 @@ exports[`should render amountError if "amount" is not provided but "description"
     className="input-field__wrapper"
   >
     <input
+      aria-label="Expense amount"
       className="text-input text-input--form "
+      name="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="number"
@@ -651,7 +671,9 @@ exports[`should render amountError if "amount" is not provided but "description"
     className="input-field__wrapper"
   >
     <select
+      aria-label="Select category"
       className="dropdown dropdown--category"
+      name="category"
       onChange={[Function]}
       value="Uncategorized"
     >
@@ -746,7 +768,9 @@ exports[`should render amountError if "amount" is not provided but "description"
     className="input-field__wrapper"
   >
     <textarea
+      aria-label="Expense note"
       className="textarea textarea--form"
+      name="note"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
@@ -774,8 +798,10 @@ exports[`should render amountError if "amount" is not provided but "description"
     className="input-field__wrapper"
   >
     <input
+      aria-label="Expense description"
       autoFocus={true}
       className="text-input text-input--form "
+      name="description"
       onChange={[Function]}
       placeholder="Description"
       type="text"
@@ -791,7 +817,9 @@ exports[`should render amountError if "amount" is not provided but "description"
     className="input-field__wrapper"
   >
     <input
+      aria-label="Expense amount"
       className="text-input text-input--form input-field--has-error"
+      name="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="number"
@@ -942,7 +970,9 @@ exports[`should render amountError if "amount" is not provided but "description"
     className="input-field__wrapper"
   >
     <select
+      aria-label="Select category"
       className="dropdown dropdown--category"
+      name="category"
       onChange={[Function]}
       value="Uncategorized"
     >
@@ -1037,7 +1067,9 @@ exports[`should render amountError if "amount" is not provided but "description"
     className="input-field__wrapper"
   >
     <textarea
+      aria-label="Expense note"
       className="textarea textarea--form"
+      name="note"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
@@ -1065,8 +1097,10 @@ exports[`should render both descriptionError and amountError if "description" an
     className="input-field__wrapper"
   >
     <input
+      aria-label="Expense description"
       autoFocus={true}
       className="text-input text-input--form "
+      name="description"
       onChange={[Function]}
       placeholder="Description"
       type="text"
@@ -1082,7 +1116,9 @@ exports[`should render both descriptionError and amountError if "description" an
     className="input-field__wrapper"
   >
     <input
+      aria-label="Expense amount"
       className="text-input text-input--form "
+      name="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="number"
@@ -1197,7 +1233,9 @@ exports[`should render both descriptionError and amountError if "description" an
     className="input-field__wrapper"
   >
     <select
+      aria-label="Select category"
       className="dropdown dropdown--category"
+      name="category"
       onChange={[Function]}
       value="Uncategorized"
     >
@@ -1292,7 +1330,9 @@ exports[`should render both descriptionError and amountError if "description" an
     className="input-field__wrapper"
   >
     <textarea
+      aria-label="Expense note"
       className="textarea textarea--form"
+      name="note"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
@@ -1320,8 +1360,10 @@ exports[`should render descriptionError if "description" is not provided but "am
     className="input-field__wrapper"
   >
     <input
+      aria-label="Expense description"
       autoFocus={true}
       className="text-input text-input--form "
+      name="description"
       onChange={[Function]}
       placeholder="Description"
       type="text"
@@ -1337,7 +1379,9 @@ exports[`should render descriptionError if "description" is not provided but "am
     className="input-field__wrapper"
   >
     <input
+      aria-label="Expense amount"
       className="text-input text-input--form "
+      name="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="number"
@@ -1452,7 +1496,9 @@ exports[`should render descriptionError if "description" is not provided but "am
     className="input-field__wrapper"
   >
     <select
+      aria-label="Select category"
       className="dropdown dropdown--category"
+      name="category"
       onChange={[Function]}
       value="Uncategorized"
     >
@@ -1547,7 +1593,9 @@ exports[`should render descriptionError if "description" is not provided but "am
     className="input-field__wrapper"
   >
     <textarea
+      aria-label="Expense note"
       className="textarea textarea--form"
+      name="note"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
@@ -1575,8 +1623,10 @@ exports[`should render descriptionError if "description" is not provided but "am
     className="input-field__wrapper"
   >
     <input
+      aria-label="Expense description"
       autoFocus={true}
       className="text-input text-input--form input-field--has-error"
+      name="description"
       onChange={[Function]}
       placeholder="Description"
       type="text"
@@ -1628,7 +1678,9 @@ exports[`should render descriptionError if "description" is not provided but "am
     className="input-field__wrapper"
   >
     <input
+      aria-label="Expense amount"
       className="text-input text-input--form "
+      name="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="number"
@@ -1743,7 +1795,9 @@ exports[`should render descriptionError if "description" is not provided but "am
     className="input-field__wrapper"
   >
     <select
+      aria-label="Select category"
       className="dropdown dropdown--category"
+      name="category"
       onChange={[Function]}
       value="Uncategorized"
     >
@@ -1838,7 +1892,9 @@ exports[`should render descriptionError if "description" is not provided but "am
     className="input-field__wrapper"
   >
     <textarea
+      aria-label="Expense note"
       className="textarea textarea--form"
+      name="note"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""

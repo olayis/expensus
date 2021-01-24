@@ -13,7 +13,7 @@ import 'react-dates/lib/css/_datepicker.css';
 import './styles/main.scss';
 
 const store = configureStore();
-const numeral = configureNumeralLocale('Lira');
+const numeral = configureNumeralLocale('Euro');
 const jsx = (
   <Provider store={store}>
     <AppRouter />

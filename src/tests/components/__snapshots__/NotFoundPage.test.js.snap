@@ -10,7 +10,9 @@ exports[`should render NotFoundPage correctly 1`] = `
     <img
       alt="Lady illustrating not found page."
       className="not-found__illustration"
+      height="585"
       src="SvgrURL"
+      width="1075"
     />
     <h2
       className="not-found__text"

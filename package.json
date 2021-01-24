@@ -4,6 +4,11 @@
   "main": "index.js",
   "author": "Olayinka Olusegun",
   "license": "MIT",
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x",
+    "yarn": "1.x"
+  },
   "scripts": {
     "build:dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
     "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
@@ -65,7 +70,7 @@
     "image-webpack-loader": "^7.0.1",
     "jest": "^26.4.2",
     "mini-css-extract-plugin": "^0.11.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "4.14.1",
     "react-test-renderer": "^16.13.1",
     "redux-mock-store": "^1.5.4",
     "sass-loader": "^10.0.2",

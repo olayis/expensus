@@ -15,7 +15,9 @@ exports[`should render Sidebar correctly 1`] = `
       <img
         alt="Expensus Logo"
         className="sidebar__logo-img"
+        height="432"
         src="SvgrURL"
+        width="432"
       />
       <span
         className="sidebar__expensus"
@@ -27,6 +29,7 @@ exports[`should render Sidebar correctly 1`] = `
       className="sidebar__close"
     >
       <FontAwesomeIcon
+        aria-label="Close"
         border={false}
         className="fa-icon"
         fixedWidth={false}

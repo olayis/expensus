@@ -50,8 +50,8 @@ export default (locale) => {
     case 'Euro':
       numeral.register('locale', 'de', {
         delimiters: {
-          thousands: ' ',
-          decimal: ',',
+          thousands: ',',
+          decimal: '.',
         },
         abbreviations: {
           thousand: 'k',
@@ -101,7 +101,7 @@ export default (locale) => {
         },
         ordinal: (number) => '.',
         currency: {
-          symbol: ' Ft',
+          symbol: 'Ft',
         },
       });
       return numeral.locale('hu');

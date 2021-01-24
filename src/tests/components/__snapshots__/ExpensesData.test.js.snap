@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render ExpensesData with empty message 1`] = `
-<div
+<main
   className="main-content"
 >
-  <div
+  <section
     className="content-container"
   >
     <div
@@ -102,8 +102,8 @@ exports[`should render ExpensesData with empty message 1`] = `
         </div>
       </div>
     </div>
-  </div>
-  <div
+  </section>
+  <section
     className="content-container margin-top-md"
   >
     <div
@@ -202,15 +202,15 @@ exports[`should render ExpensesData with empty message 1`] = `
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </section>
+</main>
 `;
 
 exports[`should render ExpensesData with expenses 1`] = `
-<div
+<main
   className="main-content"
 >
-  <div
+  <section
     className="content-container"
   >
     <div
@@ -265,6 +265,7 @@ exports[`should render ExpensesData with expenses 1`] = `
             className="component__content"
           >
             <CSVLink
+              aria-label="CSV Link"
               asyncOnClick={false}
               data={
                 Array [
@@ -273,7 +274,7 @@ exports[`should render ExpensesData with expenses 1`] = `
                     "category": "Bills & Utilities",
                     "createdAt": "01/01/1970",
                     "description": "Data",
-                    "id": 0,
+                    "id": 1,
                     "note": "",
                   },
                   Object {
@@ -281,7 +282,7 @@ exports[`should render ExpensesData with expenses 1`] = `
                     "category": "Rent",
                     "createdAt": "27/12/1969",
                     "description": "Home Rentage",
-                    "id": 1,
+                    "id": 2,
                     "note": "",
                   },
                   Object {
@@ -289,7 +290,7 @@ exports[`should render ExpensesData with expenses 1`] = `
                     "category": "Maintenance",
                     "createdAt": "13/01/1970",
                     "description": "Room Repainting",
-                    "id": 2,
+                    "id": 3,
                     "note": "",
                   },
                   Object {
@@ -297,7 +298,7 @@ exports[`should render ExpensesData with expenses 1`] = `
                     "category": "Maintenance",
                     "createdAt": "11/01/1970",
                     "description": "Water Pipes Repair",
-                    "id": 3,
+                    "id": 4,
                     "note": "",
                   },
                 ]
@@ -343,8 +344,8 @@ exports[`should render ExpensesData with expenses 1`] = `
         </div>
       </div>
     </div>
-  </div>
-  <div
+  </section>
+  <section
     className="content-container margin-top-md"
   >
     <div
@@ -400,6 +401,7 @@ exports[`should render ExpensesData with expenses 1`] = `
             className="component__content"
           >
             <CSVLink
+              aria-label="CSV Link"
               asyncOnClick={false}
               data={
                 Array [
@@ -478,6 +480,6 @@ exports[`should render ExpensesData with expenses 1`] = `
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </section>
+</main>
 `;

@@ -8,6 +8,7 @@ exports[`should render LoadingPage correctly 1`] = `
     className="loader__content"
   >
     <img
+      alt=""
       className="loader__image"
       src="test-file-stub"
     />

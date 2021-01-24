@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render ExpenseList with empty message 1`] = `
-<div
+<section
   className="content-container"
 >
   <div
@@ -49,7 +49,9 @@ exports[`should render ExpenseList with empty message 1`] = `
       <img
         alt="A clipboard showing no data"
         className="no-expense__illustration"
+        height="633"
         src="SvgrURL"
+        width="648"
       />
       <p>
         No Expenses To Display.
@@ -63,11 +65,11 @@ exports[`should render ExpenseList with empty message 1`] = `
       </p>
     </div>
   </div>
-</div>
+</section>
 `;
 
 exports[`should render ExpenseList with expenses 1`] = `
-<div
+<section
   className="content-container"
 >
   <div
@@ -171,5 +173,5 @@ exports[`should render ExpenseList with expenses 1`] = `
       </div>
     </div>
   </div>
-</div>
+</section>
 `;
