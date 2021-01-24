@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter, { history } from './routers/AppRouter';
 import configureStore from './store/configureStore';
-import configureNumeral from './utils/numeralLocales/ngLocale';
+import configureNumeralLocale from './utils/numeralLocales/locales';
 import { firebase } from './firebase/firebase';
 import { startSetExpenses } from './actions/expenses';
 import { login, logout } from './actions/auth';
@@ -13,7 +13,7 @@ import 'react-dates/lib/css/_datepicker.css';
 import './styles/main.scss';
 
 const store = configureStore();
-const numeral = configureNumeral();
+const numeral = configureNumeralLocale('Lira');
 const jsx = (
   <Provider store={store}>
     <AppRouter />
