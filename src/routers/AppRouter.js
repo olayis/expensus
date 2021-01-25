@@ -5,14 +5,21 @@ import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 import LoadingPage from '../components/LoadingPage';
 
-const ExpensusDashboardPage = lazy(() =>
-  import('../components/ExpensusDashboardPage')
-);
-const AddExpensePage = lazy(() => import('../components/AddExpensePage'));
-const EditExpensePage = lazy(() => import('../components/EditExpensePage'));
-const NotFoundPage = lazy(() => import('../components/NotFoundPage'));
-const LoginPage = lazy(() => import('../components/LoginPage'));
-const ExpensesData = lazy(() => import('../components/ExpensesData'));
+// const ExpensusDashboardPage = lazy(() =>
+//   import('../components/ExpensusDashboardPage')
+// );
+// const AddExpensePage = lazy(() => import('../components/AddExpensePage'));
+// const EditExpensePage = lazy(() => import('../components/EditExpensePage'));
+// const NotFoundPage = lazy(() => import('../components/NotFoundPage'));
+// const LoginPage = lazy(() => import('../components/LoginPage'));
+// const ExpensesData = lazy(() => import('../components/ExpensesData'));
+
+import ExpensusDashboardPage from '../components/ExpensusDashboardPage';
+import AddExpensePage from '../components/AddExpensePage';
+import EditExpensePage from '../components/EditExpensePage';
+import NotFoundPage from '../components/NotFoundPage';
+import LoginPage from '../components/LoginPage';
+import ExpensesData from '../components/ExpensesData';
 
 export const history = createHistory();
 
