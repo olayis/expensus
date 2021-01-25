@@ -3,8 +3,6 @@ const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
-  .BundleAnalyzerPlugin;
 const TerserPlugin = require('terser-webpack-plugin');
 const isDevelopment = process.env.NODE_ENV === 'development';
 
@@ -121,7 +119,6 @@ module.exports = {
         process.env.FIREBASE_MEASUREMENT_ID
       ),
     }),
-    new BundleAnalyzerPlugin(),
   ],
   resolve: {
     extensions: [
