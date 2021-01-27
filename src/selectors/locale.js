@@ -1,9 +1,9 @@
 // Acknowledgement: numeral locale configurations were gotten from https://github.com/adamwdraper/Numeral-js
-
+// Switch between locales
 import numeral from 'numeral';
 
-export default (locale) => {
-  switch (locale) {
+export default ({ currency }) => {
+  switch (currency) {
     case 'Baht':
       // Thai Baht
       numeral.register('locale', 'th', {
@@ -22,7 +22,7 @@ export default (locale) => {
           symbol: '฿',
         },
       });
-      return numeral.locale('th');
+      return 'th';
 
     case 'Danish Krone':
       // Danish Denmark Krone
@@ -42,29 +42,10 @@ export default (locale) => {
           symbol: 'DKK',
         },
       });
-      return numeral.locale('da-dk');
+      return 'da-dk';
 
     case 'Dollar':
-      return numeral.locale('en');
-
-    case 'Euro':
-      numeral.register('locale', 'de', {
-        delimiters: {
-          thousands: ',',
-          decimal: '.',
-        },
-        abbreviations: {
-          thousand: 'k',
-          million: 'm',
-          billion: 'b',
-          trillion: 't',
-        },
-        ordinal: (number) => '.',
-        currency: {
-          symbol: '€',
-        },
-      });
-      return numeral.locale('de');
+      return 'en';
 
     case 'Dong':
       // Vietnamese Dong
@@ -84,7 +65,26 @@ export default (locale) => {
           symbol: '₫',
         },
       });
-      return numeral.locale('vi');
+      return 'vi';
+
+    case 'Euro':
+      numeral.register('locale', 'de', {
+        delimiters: {
+          thousands: ',',
+          decimal: '.',
+        },
+        abbreviations: {
+          thousand: 'k',
+          million: 'm',
+          billion: 'b',
+          trillion: 't',
+        },
+        ordinal: (number) => '.',
+        currency: {
+          symbol: '€',
+        },
+      });
+      return 'de';
 
     case 'Forint':
       // Hungarian Forint
@@ -104,7 +104,7 @@ export default (locale) => {
           symbol: 'Ft',
         },
       });
-      return numeral.locale('hu');
+      return 'hu';
 
     case 'Hryvnia':
       // Ukrainian Hryvnia
@@ -130,7 +130,7 @@ export default (locale) => {
           symbol: '\u20B4',
         },
       });
-      return numeral.locale('uk-ua');
+      return 'uk-ua';
 
     case 'Koruna':
       // Czech Koruna
@@ -150,7 +150,7 @@ export default (locale) => {
           symbol: 'Kč',
         },
       });
-      return numeral.locale('cs');
+      return 'cs';
 
     case 'Lira':
       // Turkish Lira
@@ -207,7 +207,7 @@ export default (locale) => {
           symbol: '\u20BA',
         },
       });
-      return numeral.locale('tr');
+      return 'tr';
 
     case 'Lev':
       // Bulgarian Lev
@@ -238,7 +238,7 @@ export default (locale) => {
           symbol: 'лв',
         },
       });
-      return numeral.locale('bg');
+      return 'bg';
 
     case 'Naira':
       // Nigerian Naira
@@ -269,7 +269,7 @@ export default (locale) => {
           symbol: '₦',
         },
       });
-      return numeral.locale('ng');
+      return 'ng';
 
     case 'Norwegian krone':
       numeral.register('locale', 'no', {
@@ -288,7 +288,7 @@ export default (locale) => {
           symbol: 'kr',
         },
       });
-      return numeral.locale('no');
+      return 'no';
 
     case 'Pound Sterling':
       // locale: United Kingdom
@@ -319,7 +319,7 @@ export default (locale) => {
           symbol: '£',
         },
       });
-      return numeral.locale('en-gb');
+      return 'en-gb';
 
     case 'Rand':
       // South Africa Rand
@@ -350,7 +350,7 @@ export default (locale) => {
           symbol: 'R',
         },
       });
-      return numeral.locale('en-za');
+      return 'en-za';
 
     case 'Real':
       // Brazilian Real
@@ -370,7 +370,7 @@ export default (locale) => {
           symbol: 'R$',
         },
       });
-      return numeral.locale('pt-br');
+      return 'pt-br';
 
     case 'Ruble':
       // Russian Ruble
@@ -395,7 +395,7 @@ export default (locale) => {
           symbol: '₽',
         },
       });
-      return numeral.locale('ru');
+      return 'ru';
 
     case 'Swiss Franc':
       // German in Switzerland
@@ -415,7 +415,7 @@ export default (locale) => {
           symbol: 'CHF',
         },
       });
-      return numeral.locale('de-ch');
+      return 'de-ch';
 
     case 'Yen':
       // Japanese Yen
@@ -435,7 +435,7 @@ export default (locale) => {
           symbol: '¥',
         },
       });
-      return numeral.locale('ja');
+      return 'ja';
 
     case 'Yuan':
       // Simplified Chinese Yuan
@@ -455,7 +455,7 @@ export default (locale) => {
           symbol: '¥',
         },
       });
-      return numeral.locale('chs');
+      return 'chs';
 
     case 'Zloty':
       // Polish Złoty
@@ -475,9 +475,9 @@ export default (locale) => {
           symbol: 'PLN',
         },
       });
-      return numeral.locale('pl');
+      return 'pl';
 
     default:
-      return numeral.locale('en');
+      return 'en';
   }
 };

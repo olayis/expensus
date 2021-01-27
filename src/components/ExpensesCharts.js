@@ -32,7 +32,7 @@ export const ExpensesCharts = (props) => {
               width='773'
               height='532'
             />
-            <p>Start adding Expenses to show Charts.</p>
+            <p>Start adding Expenses to generate Charts.</p>
           </div>
         ) : (
           <div>
@@ -48,7 +48,7 @@ export const ExpensesCharts = (props) => {
                     height={'30rem'}
                     chartType='PieChart'
                     loader={
-                      <div>
+                      <div className='expense-chart__loader'>
                         <img src={spinner} alt='' width='200' height='200' />
                         <p>Loading Pie Chart...</p>
                       </div>
@@ -67,7 +67,7 @@ export const ExpensesCharts = (props) => {
                     height={'30rem'}
                     chartType='PieChart'
                     loader={
-                      <div>
+                      <div className='expense-chart__loader'>
                         <img src={spinner} alt='' width='200' height='200' />
                         <p>Loading Chart...</p>
                       </div>
@@ -93,7 +93,7 @@ export const ExpensesCharts = (props) => {
                     height={'30rem'}
                     chartType='Bar'
                     loader={
-                      <div>
+                      <div className='expense-chart__loader'>
                         <img src={spinner} alt='' width='200' height='200' />
                         <p>Loading Bar Chart...</p>
                       </div>
@@ -114,7 +114,7 @@ export const ExpensesCharts = (props) => {
                     height={'30rem'}
                     chartType='LineChart'
                     loader={
-                      <div>
+                      <div className='expense-chart__loader'>
                         <img src={spinner} alt='' width='200' height='200' />
                         <p>Loading Line Chart...</p>
                       </div>
@@ -142,7 +142,7 @@ export const ExpensesCharts = (props) => {
                   height={'50rem'}
                   chartType='BubbleChart'
                   loader={
-                    <div>
+                    <div className='expense-chart__loader'>
                       <img src={spinner} alt='' width='200' height='200' />
                       <p>Loading Bubble Chart...</p>
                     </div>

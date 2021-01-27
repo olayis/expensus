@@ -17,6 +17,7 @@
     text-align: left;
     transition: all 0.2s;
     border-color: transparent;
+    outline: none;
 
     @include respond(phone) {
       width: 25rem;
@@ -59,6 +60,19 @@
 
     &:hover {
       color: $color-light;
+    }
+  }
+
+  &--try-again {
+    padding: 0.8rem 2rem;
+    background-color: $color-primary;
+    border-radius: 1rem;
+    color: #fff;
+
+    &,
+    &:link,
+    &:active {
+      text-decoration: none;
     }
   }
 }

@@ -3,7 +3,8 @@ import { Router, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
-import LoadingPage from '../components/LoadingPage';
+import LayoutLoadingPage from '../components/LayoutLoadingPage';
+import ErrorBoundary from '../components/ErrorBoundary';
 
 const ExpensusDashboardPage = lazy(() =>
   import('../components/ExpensusDashboardPage')
@@ -19,16 +20,18 @@ export const history = createHistory();
 const AppRouter = () => (
   <Router history={history}>
     <div>
-      <Suspense fallback={<LoadingPage />}>
-        <Switch>
-          <PublicRoute path='/' component={LoginPage} exact />
-          <PrivateRoute path='/dashboard' component={ExpensusDashboardPage} />
-          <PrivateRoute path='/create' component={AddExpensePage} />
-          <PrivateRoute path='/edit/:id' component={EditExpensePage} />
-          <PrivateRoute path='/data' component={ExpensesData} />
-          <Route component={NotFoundPage} />
-        </Switch>
-      </Suspense>
+      <ErrorBoundary>
+        <Suspense fallback={<LayoutLoadingPage />}>
+          <Switch>
+            <PublicRoute path='/' component={LoginPage} exact />
+            <PrivateRoute path='/dashboard' component={ExpensusDashboardPage} />
+            <PrivateRoute path='/create' component={AddExpensePage} />
+            <PrivateRoute path='/edit/:id' component={EditExpensePage} />
+            <PrivateRoute path='/data' component={ExpensesData} />
+            <Route component={NotFoundPage} />
+          </Switch>
+        </Suspense>
+      </ErrorBoundary>
     </div>
   </Router>
 );

@@ -4,14 +4,13 @@ import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
 
 const currentYear = new Date().getFullYear();
-
-const LoginPageFooter = () => (
-  <div className='login-footer'>
+const Footer = () => (
+  <div className='footer'>
     &copy; {`${currentYear} `}
     <a
       href='https://www.github.com/olayis'
       target='_blank'
-      className='login-footer__link'
+      className='footer__link'
       aria-label='Olusegun"s Github'
       rel='noreferrer'
     >
@@ -22,7 +21,7 @@ const LoginPageFooter = () => (
       <a
         href='https://www.twitter.com/olusegun_os/'
         target='_blank'
-        className='login-footer__link'
+        className='footer__link'
         aria-label='Olusegun"s Twitter'
         rel='noreferrer'
       >
@@ -31,7 +30,7 @@ const LoginPageFooter = () => (
       <a
         href='https://www.github.com/olayis/expensus'
         target='_blank'
-        className='login-footer__link'
+        className='footer__link'
         aria-label='Expensus"s Github URL'
         rel='noreferrer'
       >
@@ -40,7 +39,7 @@ const LoginPageFooter = () => (
       <a
         href='mailto:olayinkasegunsolo@gmail.com'
         target='_blank'
-        className='login-footer__link'
+        className='footer__link'
         aria-label='Olusegun"s Email'
         rel='noreferrer'
       >
@@ -50,4 +49,4 @@ const LoginPageFooter = () => (
   </div>
 );
 
-export default LoginPageFooter;
+export default Footer;

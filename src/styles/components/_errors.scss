@@ -1,12 +1,16 @@
-.not-found {
+.error {
   max-width: 200rem;
-  padding: $l-size;
+  padding: 2rem;
   text-align: center;
 
   &__illustration {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     margin: $l-size 1rem;
+
+    @include respond(phone) {
+      max-width: 100%;
+    }
   }
 
   &__text {
@@ -16,6 +20,11 @@
 
   &__explanation {
     font-size: $default-font-size;
+  }
+
+  &__action {
+    display: block;
+    margin-top: $m-size;
   }
 }
 

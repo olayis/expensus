@@ -4,16 +4,16 @@ import not_found from '../../public/img/not_found.svg';
 
 const NotFoundPage = () => (
   <div className='content-container'>
-    <div className='not-found'>
+    <div className='error'>
       <img
         src={not_found}
         alt='Lady illustrating not found page.'
-        className='not-found__illustration'
+        className='error__illustration'
         width='1075'
         height='585'
       />
-      <h2 className='not-found__text'>Page Not Found.</h2>
-      <p className='not-found__explanation'>
+      <h2 className='error__text'>Page Not Found.</h2>
+      <p className='error__explanation'>
         Sorry, but the page you were trying to view does not exist. Let's
         &mdash;{' '}
         <Link className='router-link router-link--home' to='/'>

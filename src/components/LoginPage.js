@@ -17,7 +17,7 @@ import {
   startTwitterLogin,
   startYahooLogin,
 } from '../actions/auth';
-import LoginPageFooter from './LoginPageFooter';
+import Footer from './Footer';
 
 const { quote, author } = randomQuote();
 
@@ -69,7 +69,7 @@ export const LoginPage = ({
           <FontAwesomeIcon icon={faYahoo} /> Continue with Yahoo
         </button>
       </div>
-      <LoginPageFooter />
+      <Footer />
     </div>
     <div className='split-layout__right'>
       <div className='quotes'>
