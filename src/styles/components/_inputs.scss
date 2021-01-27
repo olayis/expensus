@@ -30,7 +30,6 @@
 
   &__label {
     color: $color-dark-grey;
-    font-size: $normal-font-size;
   }
 
   &--form {
@@ -40,7 +39,7 @@
 
 .dropdown {
   font-weight: 500;
-  font-size: $normal-font-size;
+  font-size: $default-font-size;
 
   &--sort {
     color: $color-primary-2;

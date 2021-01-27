@@ -48,7 +48,7 @@
 }
 
 .DateInput_input {
-  font-size: $normal-font-size;
+  font-size: $default-font-size;
   color: $color-dark-grey;
   padding: 3px 11px 2px;
 }
@@ -56,4 +56,8 @@
 .SingleDatePickerInput {
   padding: 1rem;
   border-radius: 5px;
+}
+
+.CalendarDay {
+  font-size: $default-font-size;
 }
