@@ -2,7 +2,7 @@
 // Switch between locales
 import numeral from 'numeral';
 
-export default ({ currency }) => {
+export default (currency) => {
   switch (currency) {
     case 'Baht':
       // Thai Baht

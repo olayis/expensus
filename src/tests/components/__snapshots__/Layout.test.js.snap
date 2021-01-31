@@ -3,12 +3,23 @@
 exports[`should render Layout correctly 1`] = `
 <Fragment>
   <Navbar
+    closeSidebar={[Function]}
     openSidebar={[Function]}
     sidebarOpen={false}
   />
   <Connect(Sidebar)
     closeSidebar={[Function]}
     sidebarOpen={false}
+  />
+  <footer
+    className="footer--layout"
+  >
+    <Footer />
+  </footer>
+  <div
+    aria-label="Close Sidebar Overlay"
+    className="sidebar__overlay--close"
+    onClick={[Function]}
   />
 </Fragment>
 `;

@@ -5,6 +5,7 @@ import AppRouter, { history } from './routers/AppRouter';
 import configureStore from './store/configureStore';
 import { firebase } from './firebase/firebase';
 import { startSetExpenses } from './actions/expenses';
+import configureLocale from './utils/numeralLocale/configureLocale';
 import { login, logout } from './actions/auth';
 import LoadingPage from './components/LoadingPage';
 import 'normalize.css/normalize.css';
@@ -37,6 +38,7 @@ firebase.auth().onAuthStateChanged((user) => {
         history.push('/dashboard');
       }
     });
+    configureLocale(store);
   } else {
     store.dispatch(logout());
     renderApp();

@@ -5,22 +5,22 @@ exports[`should render NotFoundPage correctly 1`] = `
   className="content-container"
 >
   <div
-    className="not-found"
+    className="error"
   >
     <img
       alt="Lady illustrating not found page."
-      className="not-found__illustration"
+      className="error__illustration"
       height="585"
       src="SvgrURL"
       width="1075"
     />
     <h2
-      className="not-found__text"
+      className="error__text"
     >
       Page Not Found.
     </h2>
     <p
-      className="not-found__explanation"
+      className="error__explanation"
     >
       Sorry, but the page you were trying to view does not exist. Let's —
        

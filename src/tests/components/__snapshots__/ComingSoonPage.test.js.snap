@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ComingSoonPage correctly 1`] = `
+<main
+  className="main-content"
+>
+  <div
+    className="content-container"
+  >
+    <div
+      className="error"
+    >
+      <img
+        alt="Programmer"
+        className="error__illustration"
+        height="585"
+        src="SvgrURL"
+        width="1075"
+      />
+      <h2
+        className="error__text"
+      >
+        This page is coming soon.
+      </h2>
+      <div
+        className="error__explanation"
+      >
+        Continue managing your expenses.
+        <span
+          className="error__action"
+        >
+          <Link
+            className="btn btn--try-again"
+            to="/"
+          >
+            Go Home
+          </Link>
+        </span>
+      </div>
+    </div>
+  </div>
+</main>
+`;

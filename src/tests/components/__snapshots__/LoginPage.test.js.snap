@@ -175,7 +175,7 @@ exports[`should render login page correctly 1`] = `
          Continue with Yahoo
       </button>
     </div>
-    <LoginPageFooter />
+    <Footer />
   </div>
   <div
     className="split-layout__right"
@@ -193,7 +193,7 @@ exports[`should render login page correctly 1`] = `
           className="quotes--text"
         >
           “
-          A budget tells us what we can't afford, but it doesn't keep us from buying it.
+          It isn't what you earn but how you spend it that fixes your class.
           "
         </span>
         <br />
@@ -201,7 +201,7 @@ exports[`should render login page correctly 1`] = `
           className="quotes--author"
         >
           — 
-          William Feather
+          Sinclair Lewis
         </span>
       </U>
     </div>

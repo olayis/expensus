@@ -100,7 +100,9 @@ exports[`should render ExpensesChart with expenses data 1`] = `
               legendToggle={false}
               legend_toggle={false}
               loader={
-                <div>
+                <div
+                  className="expense-chart__loader"
+                >
                   <img
                     alt=""
                     height="200"
@@ -191,7 +193,9 @@ exports[`should render ExpensesChart with expenses data 1`] = `
               legendToggle={false}
               legend_toggle={false}
               loader={
-                <div>
+                <div
+                  className="expense-chart__loader"
+                >
                   <img
                     alt=""
                     height="200"
@@ -286,7 +290,9 @@ exports[`should render ExpensesChart with expenses data 1`] = `
               legendToggle={false}
               legend_toggle={false}
               loader={
-                <div>
+                <div
+                  className="expense-chart__loader"
+                >
                   <img
                     alt=""
                     height="200"
@@ -377,7 +383,9 @@ exports[`should render ExpensesChart with expenses data 1`] = `
               legendToggle={false}
               legend_toggle={false}
               loader={
-                <div>
+                <div
+                  className="expense-chart__loader"
+                >
                   <img
                     alt=""
                     height="200"
@@ -482,7 +490,9 @@ exports[`should render ExpensesChart with expenses data 1`] = `
             legendToggle={false}
             legend_toggle={false}
             loader={
-              <div>
+              <div
+                className="expense-chart__loader"
+              >
                 <img
                   alt=""
                   height="200"
@@ -584,7 +594,7 @@ exports[`should render ExpensesCharts with empty message 1`] = `
         width="773"
       />
       <p>
-        Start adding Expenses to show Charts.
+        Start adding Expenses to generate Charts.
       </p>
     </div>
   </div>

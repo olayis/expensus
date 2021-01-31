@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import engineer from '../../public/img/QA-Engineer.svg';
 
-const NotFoundPage = () => (
+const ErrorPage = () => (
   <div className='content-container'>
     <div className='error'>
       <img
         src={engineer}
-        alt='Image showing an Engineer'
+        alt='A Quality Assurance Engineer'
         className='error__illustration'
         width='1075'
         height='585'
@@ -25,4 +25,4 @@ const NotFoundPage = () => (
   </div>
 );
 
-export default NotFoundPage;
+export default ErrorPage;

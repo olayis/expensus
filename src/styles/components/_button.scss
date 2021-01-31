@@ -151,3 +151,13 @@
     }
   }
 }
+
+.btn-currency {
+  @extend .btn-add-expense;
+  @extend .btn-add-expense--form;
+  width: 100%;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
+  }
+}

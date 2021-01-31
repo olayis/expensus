@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ErrorPage correctly 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="error"
+  >
+    <img
+      alt="A Quality Assurance Engineer"
+      className="error__illustration"
+      height="585"
+      src="SvgrURL"
+      width="1075"
+    />
+    <h2
+      className="error__text"
+    >
+      Oops! Something went wrong.
+    </h2>
+    <div
+      className="error__explanation"
+    >
+      Click here to try again.
+      <span
+        className="error__action"
+      >
+        <Link
+          className="btn btn--try-again"
+          to="/"
+        >
+          Try Again
+        </Link>
+      </span>
+    </div>
+  </div>
+</div>
+`;

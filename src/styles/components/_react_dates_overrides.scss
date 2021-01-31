@@ -48,9 +48,13 @@
 }
 
 .DateInput_input {
-  font-size: $default-font-size;
+  font-size: $normal-font-size;
   color: $color-dark-grey;
   padding: 3px 11px 2px;
+
+  @include respond(tab-port) {
+    font-size: $default-font-size;
+  }
 }
 
 .SingleDatePickerInput {
@@ -59,5 +63,9 @@
 }
 
 .CalendarDay {
-  font-size: $default-font-size;
+  font-size: $normal-font-size;
+
+  @include respond(tab-port) {
+    font-size: $default-font-size;
+  }
 }

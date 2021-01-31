@@ -38,8 +38,8 @@ export const Navbar = ({ sidebarOpen, openSidebar, closeSidebar }) => (
         </div>
         <div className='navbar__title'>
           <h1>
-            <NavLink to='/settings' activeClassName='nav-is-active'>
-              Settings
+            <NavLink to='/currency' activeClassName='nav-is-active'>
+              Currency
             </NavLink>
           </h1>
         </div>

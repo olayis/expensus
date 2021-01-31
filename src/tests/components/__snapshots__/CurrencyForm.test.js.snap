@@ -1,0 +1,391 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render CurrencyForm correctly 1`] = `
+<form
+  className="input-field"
+  onSubmit={[Function]}
+>
+  <div
+    className="input-field__wrapper"
+  >
+    <select
+      aria-label="Select Currency"
+      className="dropdown dropdown--currency"
+      name="currency"
+      onChange={[Function]}
+      value=""
+    >
+      <option
+        value=""
+      >
+        -- Select Currency --
+      </option>
+      <option
+        value="Baht"
+      >
+        Baht (฿)
+      </option>
+      <option
+        value="Danish Krone"
+      >
+        Danish Krone (DKK)
+      </option>
+      <option
+        value="Dollar"
+      >
+        Dollar ($)
+      </option>
+      <option
+        value="Dong"
+      >
+        Dong (₫)
+      </option>
+      <option
+        value="Euro"
+      >
+        Euro (€)
+      </option>
+      <option
+        value="Forint"
+      >
+        Forint (Ft)
+      </option>
+      <option
+        value="Hryvnia"
+      >
+        Hryvnia (₴)
+      </option>
+      <option
+        value="Koruna"
+      >
+        Koruna (Kč)
+      </option>
+      <option
+        value="Lira"
+      >
+        Lira (₺)
+      </option>
+      <option
+        value="Lev"
+      >
+        Lev (лв)
+      </option>
+      <option
+        value="Naira"
+      >
+        Naira (₦)
+      </option>
+      <option
+        value="Norwegian krone"
+      >
+        Norwegian krone (kr)
+      </option>
+      <option
+        value="Pound Sterling"
+      >
+        Pound Sterling (£)
+      </option>
+      <option
+        value="Rand"
+      >
+        Rand (R)
+      </option>
+      <option
+        value="Real"
+      >
+        Real (R$)
+      </option>
+      <option
+        value="Ruble"
+      >
+        Ruble (₽)
+      </option>
+      <option
+        value="Swiss Franc"
+      >
+        Swiss Franc (CHF)
+      </option>
+      <option
+        value="Yen"
+      >
+        Yen (¥)
+      </option>
+      <option
+        value="Yuan"
+      >
+        Yuan (¥)
+      </option>
+      <option
+        value="Zloty"
+      >
+        Złoty (PLN)
+      </option>
+    </select>
+  </div>
+  <button
+    className="btn btn-currency"
+  >
+    Change Currency
+  </button>
+</form>
+`;
+
+exports[`should render CurrencyForm with locale data 1`] = `
+<form
+  className="input-field"
+  onSubmit={[Function]}
+>
+  <div
+    className="input-field__wrapper"
+  >
+    <select
+      aria-label="Select Currency"
+      className="dropdown dropdown--currency"
+      name="currency"
+      onChange={[Function]}
+      value="Pound Sterling"
+    >
+      <option
+        value=""
+      >
+        -- Select Currency --
+      </option>
+      <option
+        value="Baht"
+      >
+        Baht (฿)
+      </option>
+      <option
+        value="Danish Krone"
+      >
+        Danish Krone (DKK)
+      </option>
+      <option
+        value="Dollar"
+      >
+        Dollar ($)
+      </option>
+      <option
+        value="Dong"
+      >
+        Dong (₫)
+      </option>
+      <option
+        value="Euro"
+      >
+        Euro (€)
+      </option>
+      <option
+        value="Forint"
+      >
+        Forint (Ft)
+      </option>
+      <option
+        value="Hryvnia"
+      >
+        Hryvnia (₴)
+      </option>
+      <option
+        value="Koruna"
+      >
+        Koruna (Kč)
+      </option>
+      <option
+        value="Lira"
+      >
+        Lira (₺)
+      </option>
+      <option
+        value="Lev"
+      >
+        Lev (лв)
+      </option>
+      <option
+        value="Naira"
+      >
+        Naira (₦)
+      </option>
+      <option
+        value="Norwegian krone"
+      >
+        Norwegian krone (kr)
+      </option>
+      <option
+        value="Pound Sterling"
+      >
+        Pound Sterling (£)
+      </option>
+      <option
+        value="Rand"
+      >
+        Rand (R)
+      </option>
+      <option
+        value="Real"
+      >
+        Real (R$)
+      </option>
+      <option
+        value="Ruble"
+      >
+        Ruble (₽)
+      </option>
+      <option
+        value="Swiss Franc"
+      >
+        Swiss Franc (CHF)
+      </option>
+      <option
+        value="Yen"
+      >
+        Yen (¥)
+      </option>
+      <option
+        value="Yuan"
+      >
+        Yuan (¥)
+      </option>
+      <option
+        value="Zloty"
+      >
+        Złoty (PLN)
+      </option>
+    </select>
+  </div>
+  <button
+    className="btn btn-currency"
+  >
+    Change Currency
+  </button>
+</form>
+`;
+
+exports[`should render both currencyError "currency" is not provided 1`] = `
+<form
+  className="input-field"
+  onSubmit={[Function]}
+>
+  <div
+    className="input-field__wrapper"
+  >
+    <select
+      aria-label="Select Currency"
+      className="dropdown dropdown--currency"
+      name="currency"
+      onChange={[Function]}
+      value=""
+    >
+      <option
+        value=""
+      >
+        -- Select Currency --
+      </option>
+      <option
+        value="Baht"
+      >
+        Baht (฿)
+      </option>
+      <option
+        value="Danish Krone"
+      >
+        Danish Krone (DKK)
+      </option>
+      <option
+        value="Dollar"
+      >
+        Dollar ($)
+      </option>
+      <option
+        value="Dong"
+      >
+        Dong (₫)
+      </option>
+      <option
+        value="Euro"
+      >
+        Euro (€)
+      </option>
+      <option
+        value="Forint"
+      >
+        Forint (Ft)
+      </option>
+      <option
+        value="Hryvnia"
+      >
+        Hryvnia (₴)
+      </option>
+      <option
+        value="Koruna"
+      >
+        Koruna (Kč)
+      </option>
+      <option
+        value="Lira"
+      >
+        Lira (₺)
+      </option>
+      <option
+        value="Lev"
+      >
+        Lev (лв)
+      </option>
+      <option
+        value="Naira"
+      >
+        Naira (₦)
+      </option>
+      <option
+        value="Norwegian krone"
+      >
+        Norwegian krone (kr)
+      </option>
+      <option
+        value="Pound Sterling"
+      >
+        Pound Sterling (£)
+      </option>
+      <option
+        value="Rand"
+      >
+        Rand (R)
+      </option>
+      <option
+        value="Real"
+      >
+        Real (R$)
+      </option>
+      <option
+        value="Ruble"
+      >
+        Ruble (₽)
+      </option>
+      <option
+        value="Swiss Franc"
+      >
+        Swiss Franc (CHF)
+      </option>
+      <option
+        value="Yen"
+      >
+        Yen (¥)
+      </option>
+      <option
+        value="Yuan"
+      >
+        Yuan (¥)
+      </option>
+      <option
+        value="Zloty"
+      >
+        Złoty (PLN)
+      </option>
+    </select>
+  </div>
+  <button
+    className="btn btn-currency"
+  >
+    Change Currency
+  </button>
+</form>
+`;

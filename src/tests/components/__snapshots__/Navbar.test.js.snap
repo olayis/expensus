@@ -1,116 +1,123 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Navbar correctly 1`] = `
-<nav
-  className="navbar"
->
-  <div
-    aria-label="Expand Sidebar"
-    className="navbar__icon"
-    onClick={[Function]}
+<Fragment>
+  <nav
+    className="navbar"
   >
-    <FontAwesomeIcon
-      border={false}
-      className="fa-icon"
-      fixedWidth={false}
-      flip={null}
-      icon={
-        Object {
-          "icon": Array [
-            448,
-            512,
-            Array [],
-            "f0c9",
-            "M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z",
-          ],
-          "iconName": "bars",
-          "prefix": "fas",
+    <div
+      aria-label="Expand Sidebar"
+      className="navbar__icon"
+      onClick={[Function]}
+    >
+      <FontAwesomeIcon
+        border={false}
+        className="fa-icon"
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              448,
+              512,
+              Array [],
+              "f0c9",
+              "M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z",
+            ],
+            "iconName": "bars",
+            "prefix": "fas",
+          }
         }
-      }
-      inverse={false}
-      listItem={false}
-      mask={null}
-      pull={null}
-      pulse={false}
-      rotation={null}
-      size={null}
-      spin={false}
-      swapOpacity={false}
-      symbol={false}
-      title=""
-      transform={null}
-    />
-  </div>
-  <div
-    className="navbar__center"
-  >
-    <div
-      className="navbar__title"
-    >
-      <h1>
-        <NavLink
-          activeClassName="nav-is-active"
-          to="/dashboard"
-        >
-          Dashboard
-        </NavLink>
-      </h1>
-    </div>
-    <div
-      className="navbar__title"
-    >
-      <h1>
-        <NavLink
-          activeClassName="nav-is-active"
-          to="/create"
-        >
-          Add Expense
-        </NavLink>
-      </h1>
-    </div>
-    <div
-      className="navbar__title"
-    >
-      <h1>
-        <NavLink
-          activeClassName="nav-is-active"
-          to="/edit"
-        >
-          Edit Expense
-        </NavLink>
-      </h1>
-    </div>
-    <div
-      className="navbar__title"
-    >
-      <h1>
-        <NavLink
-          activeClassName="nav-is-active"
-          to="/settings"
-        >
-          Settings
-        </NavLink>
-      </h1>
-    </div>
-  </div>
-  <div
-    className="navbar__right"
-  >
-    <div
-      className="user__wrapper"
-    >
-      <span
-        className="username"
-      >
-        Username
-      </span>
-      <img
-        alt="User Avatar"
-        height="50"
-        src="SvgrURL"
-        width="50"
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        transform={null}
       />
     </div>
-  </div>
-</nav>
+    <div
+      className="navbar__center"
+    >
+      <div
+        className="navbar__title"
+      >
+        <h1>
+          <NavLink
+            activeClassName="nav-is-active"
+            to="/dashboard"
+          >
+            Dashboard
+          </NavLink>
+        </h1>
+      </div>
+      <div
+        className="navbar__title"
+      >
+        <h1>
+          <NavLink
+            activeClassName="nav-is-active"
+            to="/create"
+          >
+            Add Expense
+          </NavLink>
+        </h1>
+      </div>
+      <div
+        className="navbar__title"
+      >
+        <h1>
+          <NavLink
+            activeClassName="nav-is-active"
+            to="/edit"
+          >
+            Edit Expense
+          </NavLink>
+        </h1>
+      </div>
+      <div
+        className="navbar__title"
+      >
+        <h1>
+          <NavLink
+            activeClassName="nav-is-active"
+            to="/currency"
+          >
+            Currency
+          </NavLink>
+        </h1>
+      </div>
+    </div>
+    <div
+      className="navbar__right"
+    >
+      <div
+        className="user__wrapper"
+      >
+        <span
+          className="username"
+        >
+          Username
+        </span>
+        <img
+          alt="User Avatar"
+          height="50"
+          src="SvgrURL"
+          width="50"
+        />
+      </div>
+    </div>
+  </nav>
+  <div
+    aria-label="Close Sidebar Overlay"
+    className="sidebar__overlay--close"
+    onClick={[Function]}
+  />
+</Fragment>
 `;

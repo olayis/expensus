@@ -1,14 +1,13 @@
 // Currency Reducer
-
-const localeReducerDefaultState = { currency: 'Naira' };
+const localeReducerDefaultState = { currency: 'Dollar' };
 
 export default (state = localeReducerDefaultState, action) => {
   switch (action.type) {
-    case 'CHANGE_CURRENCY':
-      return { currency: action.currency };
+    case 'CHANGE_LOCALE':
+      return { locale: action.currency };
 
-    case 'SET_CURRENCY':
-      return action.currency;
+    case 'SET_LOCALE':
+      return action.locale;
 
     default:
       return state;

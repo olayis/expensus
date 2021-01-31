@@ -6,10 +6,10 @@ export const changeLocale = (locale) => ({
   locale,
 });
 
-export const startChangeCurrency = (localeData = {}) => {
+export const startChangeLocale = (localeData = {}) => {
   return (dispatch, getState) => {
     const uid = getState().auth.uid;
-    const { currency = 'Naira' } = localeData;
+    const { currency = 'Dollar' } = localeData;
 
     const locale = { currency };
 

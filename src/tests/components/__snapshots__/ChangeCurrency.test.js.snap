@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ChangeCurrency correctly 1`] = `
+<main
+  className="main-content"
+>
+  <div
+    className="content-container"
+  >
+    <div
+      className="component-container component-container--currency"
+    >
+      <CurrencyForm
+        onSubmit={[Function]}
+      />
+    </div>
+  </div>
+</main>
+`;
