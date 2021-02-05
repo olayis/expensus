@@ -9,6 +9,15 @@ test('should render ExpensesChart with expenses data', () => {
 });
 
 test('should render ExpensesCharts with empty message', () => {
-  const wrapper = shallow(<ExpensesCharts expenses={[]} />);
+  const wrapper = shallow(
+    <ExpensesCharts expenses={[]} expensesWithoutFilters={[]} />
+  );
+  expect(wrapper).toMatchSnapshot();
+});
+
+test('should render ExpensesCharts with filters message', () => {
+  const wrapper = shallow(
+    <ExpensesCharts expenses={[]} expensesWithoutFilters={expenses} />
+  );
   expect(wrapper).toMatchSnapshot();
 });

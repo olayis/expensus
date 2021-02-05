@@ -26,12 +26,12 @@ exports[`should render ErrorPage correctly 1`] = `
       <span
         className="error__action"
       >
-        <Link
+        <button
           className="btn btn--try-again"
-          to="/"
+          onClick={[Function]}
         >
           Try Again
-        </Link>
+        </button>
       </span>
     </div>
   </div>

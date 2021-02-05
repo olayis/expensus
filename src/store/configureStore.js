@@ -4,6 +4,7 @@ import expensesReducer from '../reducers/expenses';
 import filtersReducer from '../reducers/filters';
 import authReducer from '../reducers/auth';
 import localeReducer from '../reducers/locale';
+import userInfoReducer from '../reducers/userInfo';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -14,6 +15,7 @@ export default () => {
       filters: filtersReducer,
       auth: authReducer,
       locale: localeReducer,
+      userInfo: userInfoReducer,
     }),
     composeEnhancers(applyMiddleware(thunk))
   );

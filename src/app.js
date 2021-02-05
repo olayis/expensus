@@ -7,6 +7,7 @@ import { firebase } from './firebase/firebase';
 import { startSetExpenses } from './actions/expenses';
 import configureLocale from './utils/numeralLocale/configureLocale';
 import { login, logout } from './actions/auth';
+import { userInfo } from './actions/userInfo';
 import LoadingPage from './components/LoadingPage';
 import 'normalize.css/normalize.css';
 import 'react-dates/lib/css/_datepicker.css';
@@ -32,6 +33,7 @@ ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     store.dispatch(login(user.uid));
+    store.dispatch(userInfo(user.providerData));
     store.dispatch(startSetExpenses()).then(() => {
       renderApp();
       if (history.location.pathname === '/') {

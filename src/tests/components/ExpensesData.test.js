@@ -9,6 +9,15 @@ test('should render ExpensesData with expenses', () => {
 });
 
 test('should render ExpensesData with empty message', () => {
-  const wrapper = shallow(<ExpensesData expenses={[]} />);
+  const wrapper = shallow(
+    <ExpensesData expenses={[]} expensesWithoutFilters={[]} />
+  );
+  expect(wrapper).toMatchSnapshot();
+});
+
+test('should render ExpensesData with filters message', () => {
+  const wrapper = shallow(
+    <ExpensesData expenses={[]} expensesWithoutFilters={expenses} />
+  );
   expect(wrapper).toMatchSnapshot();
 });

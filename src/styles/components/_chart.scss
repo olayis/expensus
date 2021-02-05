@@ -1,7 +1,7 @@
 .expense-chart {
   box-shadow: 0 0.2rem 0.3rem rgba(#000, 0.15);
   padding: 2rem;
-  border: 1px solid $color-light-blue-2;
+  border: 1px solid #eee;
   border-radius: 8px;
 
   @include respond(phone) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { history } from '../routers/AppRouter';
 import engineer from '../../public/img/QA-Engineer.svg';
 
 const ErrorPage = () => (
@@ -16,9 +16,9 @@ const ErrorPage = () => (
       <div className='error__explanation'>
         Click here to try again.
         <span className='error__action'>
-          <Link className='btn btn--try-again' to='/'>
+          <button className='btn btn--try-again' onClick={() => history.go(0)}>
             Try Again
-          </Link>
+          </button>
         </span>
       </div>
     </div>

@@ -25,12 +25,16 @@ export const ExpenseList = (props) => {
               width='648'
               height='633'
             />
-            <p>
-              No Expenses To Display.{' '}
-              <Link to='/create' className='router-link router-link--add'>
-                Add an Expense
-              </Link>
-            </p>
+            {props.expensesWithoutFilters.length === 0 ? (
+              <p>
+                No Expenses To Display.{' '}
+                <Link to='/create' className='router-link router-link--add'>
+                  Add an Expense
+                </Link>
+              </p>
+            ) : (
+              <p>The current filter(s) doesn't display any expenses.</p>
+            )}
           </div>
         ) : (
           splitEvery(props.expenses, 4).map((expensesChunk, index) => (
@@ -51,6 +55,7 @@ export const ExpenseList = (props) => {
 const mapStateToProps = (state) => {
   return {
     expenses: selectExpenses(state.expenses, state.filters),
+    expensesWithoutFilters: state.expenses,
   };
 };
 

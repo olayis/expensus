@@ -1,10 +1,16 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import user_avatar from '../../public/img/user-avatar.svg';
 
-export const Navbar = ({ sidebarOpen, openSidebar, closeSidebar }) => (
+export const Navbar = ({
+  userInfo,
+  sidebarOpen,
+  openSidebar,
+  closeSidebar,
+}) => (
   <>
     <nav className='navbar'>
       <div
@@ -45,9 +51,21 @@ export const Navbar = ({ sidebarOpen, openSidebar, closeSidebar }) => (
         </div>
       </div>
       <div className='navbar__right'>
-        <div className='user__wrapper'>
-          <span className='username'>Username</span>
-          <img src={user_avatar} alt='User Avatar' width='50' height='50' />
+        <div className='user-info'>
+          <div className='user-info__wrapper'>
+            <img
+              src={userInfo.photoURL || user_avatar}
+              alt='User Avatar'
+              width='50'
+              height='50'
+              aria-label='User Avatar'
+            />
+            <div className='user-info__details'>
+              {userInfo.displayName && <p>{userInfo.displayName}</p>}
+              {userInfo.email && <p>{userInfo.email}</p>}
+              {userInfo.providerId && <p>{userInfo.providerId} Account</p>}
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -63,4 +81,10 @@ export const Navbar = ({ sidebarOpen, openSidebar, closeSidebar }) => (
   </>
 );
 
-export default Navbar;
+const mapStateToProps = (state) => {
+  return {
+    userInfo: state.userInfo.providerData ? state.userInfo.providerData[0] : {},
+  };
+};
+
+export default connect(mapStateToProps)(Navbar);

@@ -2,7 +2,7 @@
 
 exports[`should render Layout correctly 1`] = `
 <Fragment>
-  <Navbar
+  <Connect(Navbar)
     closeSidebar={[Function]}
     openSidebar={[Function]}
     sidebarOpen={false}

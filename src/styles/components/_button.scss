@@ -66,8 +66,10 @@
   &--try-again {
     padding: 0.8rem 2rem;
     background-color: $color-primary;
+    border-color: transparent;
     border-radius: 1rem;
     color: #fff;
+    outline: none;
 
     &,
     &:link,
@@ -91,7 +93,6 @@
     &:visited {
       padding: 0.8rem 2rem;
       font-size: $normal-font-size;
-      margin-top: 3.5rem;
       box-shadow: 0 0.3rem 0.5rem rgba(#000, 0.2);
       text-transform: uppercase;
 

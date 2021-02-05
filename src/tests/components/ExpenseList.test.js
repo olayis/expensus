@@ -9,6 +9,15 @@ test('should render ExpenseList with expenses', () => {
 });
 
 test('should render ExpenseList with empty message', () => {
-  const wrapper = shallow(<ExpenseList expenses={[]} />);
+  const wrapper = shallow(
+    <ExpenseList expenses={[]} expensesWithoutFilters={[]} />
+  );
+  expect(wrapper).toMatchSnapshot();
+});
+
+test('should render ExpenseList with filters message', () => {
+  const wrapper = shallow(
+    <ExpenseList expenses={[]} expensesWithoutFilters={expenses} />
+  );
   expect(wrapper).toMatchSnapshot();
 });

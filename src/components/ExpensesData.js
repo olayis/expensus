@@ -27,11 +27,14 @@ export const ExpensesData = (props) => (
           {props.expenses.length === 0 ? (
             <div>
               <p className='component__message'>
-                No Expenses to download.{' '}
-                <Link to='/create' className='router-link router-link--add'>
-                  Add Expenses
-                </Link>{' '}
-                or change filters to show expenses.
+                No Expenses to delete.{' '}
+                {props.expensesWithoutFilters.length === 0 ? (
+                  <Link to='/create' className='router-link router-link--add'>
+                    Add Expenses
+                  </Link>
+                ) : (
+                  <span>Clear current filters to download expenses</span>
+                )}
               </p>
               <div className='component__content'>
                 <FontAwesomeIcon
@@ -55,6 +58,7 @@ export const ExpensesData = (props) => (
                     createdAt: moment(expense.createdAt).format('DD/MM/YYYY'),
                   }))}
                   aria-label='CSV Link'
+                  filename={'expenses.csv'}
                 >
                   <FontAwesomeIcon
                     icon={faArrowAltCircleDown}
@@ -78,10 +82,13 @@ export const ExpensesData = (props) => (
             <div>
               <p className='component__message'>
                 No Expenses to delete.{' '}
-                <Link to='/create' className='router-link router-link--add'>
-                  Add Expenses
-                </Link>{' '}
-                or change filters to show expenses.
+                {props.expensesWithoutFilters.length === 0 ? (
+                  <Link to='/create' className='router-link router-link--add'>
+                    Add Expenses
+                  </Link>
+                ) : (
+                  <span>Clear current filters to delete expenses</span>
+                )}
               </p>
               <div className='component__content'>
                 <FontAwesomeIcon
@@ -123,6 +130,7 @@ export const ExpensesData = (props) => (
 const mapStateToProps = (state) => {
   return {
     expenses: selectExpenses(state.expenses, state.filters),
+    expensesWithoutFilters: state.expenses,
   };
 };
 

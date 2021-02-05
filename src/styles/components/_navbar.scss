@@ -2,11 +2,11 @@
   background: $color-bg;
   font-size: $normal-font-size;
   grid-area: nav;
-  height: 6rem;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 $l-size;
+  padding: 0 $s-size;
   color: $color-dark-grey;
 
   &__icon {
@@ -30,6 +30,7 @@
     }
 
     a {
+      cursor: default;
       display: none;
       padding: $s-size;
       text-decoration: none;
@@ -44,21 +45,61 @@
     }
   }
 
-  .user__wrapper {
-    .username {
-      font-size: $normal-font-size;
-      font-weight: 700;
+  .user-info {
+    &__wrapper {
+      // .username {
+      //   font-size: $normal-font-size;
+      //   font-weight: 700;
 
-      @include respond(phone) {
-        display: none;
+      //   @include respond(phone) {
+      //     display: none;
+      //   }
+      // }
+
+      img {
+        margin-left: 1rem;
+        border-radius: 50%;
+        height: 4rem;
+        width: 4rem;
+        vertical-align: middle;
+        padding: 4px;
+        cursor: pointer;
+
+        &:hover + .user-info__details {
+          background-color: #fff;
+          display: block;
+          left: 83%;
+          padding: $s-size;
+          border-radius: 3px;
+          box-shadow: 0 0.3rem 0.5rem rgba(#000, 0.2);
+          width: 22rem;
+
+          @include respond(tab-land) {
+            left: 80%;
+          }
+
+          @include respond(tab-port) {
+            left: 75%;
+          }
+
+          @include respond(phone) {
+            left: 55%;
+          }
+        }
       }
     }
 
-    img {
-      margin-left: 1rem;
-      border-radius: 50%;
-      height: 4rem;
-      vertical-align: middle;
+    &__details {
+      display: none;
+      position: absolute;
+
+      p {
+        @include shortenLongText;
+
+        &:first-child {
+          font-weight: 700;
+        }
+      }
     }
   }
 
@@ -66,6 +107,5 @@
     position: fixed;
     width: 100%;
     z-index: 10;
-    padding: 0 $s-size;
   }
 }

@@ -32,7 +32,11 @@ export const ExpensesCharts = (props) => {
               width='773'
               height='532'
             />
-            <p>Start adding Expenses to generate Charts.</p>
+            {props.expensesWithoutFilters.length === 0 ? (
+              <p>Start adding Expenses to generate Charts.</p>
+            ) : (
+              <p>Clear current filters to generate Charts.</p>
+            )}
           </div>
         ) : (
           <div>
@@ -60,30 +64,6 @@ export const ExpensesCharts = (props) => {
               </div>
               <div className='col-1-of-2'>
                 <div className='expense-chart'>
-                  <div className='expense-chart__title'>Expenses Pie</div>
-                  <Chart
-                    className='expense-chart__chart'
-                    width={'100%'}
-                    height={'30rem'}
-                    chartType='PieChart'
-                    loader={
-                      <div className='expense-chart__loader'>
-                        <img src={spinner} alt='' width='200' height='200' />
-                        <p>Loading Chart...</p>
-                      </div>
-                    }
-                    data={pieChartData}
-                    options={{
-                      pieHole: 0.5,
-                    }}
-                    rootProps={{ 'data-test-id': '2' }}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className='row'>
-              <div className='col-1-of-2'>
-                <div className='expense-chart'>
                   <div className='expense-chart__title'>
                     Daily Amount Of Expenses
                   </div>
@@ -103,34 +83,34 @@ export const ExpensesCharts = (props) => {
                   />
                 </div>
               </div>
-              <div className='col-1-of-2'>
-                <div className='expense-chart'>
-                  <div className='expense-chart__title'>
-                    Number of Daily Expenses
-                  </div>
-                  <Chart
-                    className='expense-chart__chart'
-                    width={'100%'}
-                    height={'30rem'}
-                    chartType='LineChart'
-                    loader={
-                      <div className='expense-chart__loader'>
-                        <img src={spinner} alt='' width='200' height='200' />
-                        <p>Loading Line Chart...</p>
-                      </div>
-                    }
-                    data={lineChartData}
-                    options={{
-                      hAxis: {
-                        title: 'Date',
-                      },
-                      vAxis: {
-                        title: 'Number',
-                      },
-                    }}
-                    rootProps={{ 'data-testid': '4' }}
-                  />
+            </div>
+            <div className='row'>
+              <div className='expense-chart'>
+                <div className='expense-chart__title'>
+                  Daily Number of Expenses
                 </div>
+                <Chart
+                  className='expense-chart__chart'
+                  width={'100%'}
+                  height={'30rem'}
+                  chartType='LineChart'
+                  loader={
+                    <div className='expense-chart__loader'>
+                      <img src={spinner} alt='' width='200' height='200' />
+                      <p>Loading Line Chart...</p>
+                    </div>
+                  }
+                  data={lineChartData}
+                  options={{
+                    hAxis: {
+                      title: 'Date',
+                    },
+                    vAxis: {
+                      title: 'Number',
+                    },
+                  }}
+                  rootProps={{ 'data-testid': '4' }}
+                />
               </div>
             </div>
             <div className='row'>
@@ -166,6 +146,7 @@ export const ExpensesCharts = (props) => {
 const mapStateToProps = (state) => {
   return {
     expenses: selectExpenses(state.expenses, state.filters),
+    expensesWithoutFilters: state.expenses,
   };
 };
 
