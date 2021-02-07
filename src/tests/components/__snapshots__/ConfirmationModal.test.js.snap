@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should not render ConfirmationModal if delete button is not clicked 1`] = `
+<div>
+  <Modal
+    aria={
+      Object {
+        "describedby": "full_description",
+        "labelledby": "heading",
+      }
+    }
+    ariaHideApp={true}
+    bodyOpenClassName="ReactModal__Body--open"
+    className="modal"
+    closeTimeoutMS={200}
+    contentLabel="Are you sure?"
+    isOpen={false}
+    parentSelector={[Function]}
+    portalClassName="ReactModalPortal"
+    role="dialog"
+    shouldCloseOnEsc={true}
+    shouldCloseOnOverlayClick={true}
+    shouldFocusAfterRender={true}
+    shouldReturnFocusAfterClose={true}
+  >
+    <h3
+      className="modal__title"
+      id="heading"
+    >
+      Delete Data
+    </h3>
+    <p
+      className="modal__body"
+      id="full_description"
+    >
+      Are you sure you want to delete all of your data on Expensus?
+    </p>
+    <button
+      className="modal__btn--delete"
+    >
+      Delete
+    </button>
+    <button
+      className="modal__btn--cancel"
+    >
+      Cancel
+    </button>
+  </Modal>
+</div>
+`;
+
+exports[`should render ConfirmationModal on delete button click 1`] = `
+<div>
+  <Modal
+    aria={
+      Object {
+        "describedby": "full_description",
+        "labelledby": "heading",
+      }
+    }
+    ariaHideApp={true}
+    bodyOpenClassName="ReactModal__Body--open"
+    className="modal"
+    closeTimeoutMS={200}
+    contentLabel="Are you sure?"
+    isOpen={true}
+    parentSelector={[Function]}
+    portalClassName="ReactModalPortal"
+    role="dialog"
+    shouldCloseOnEsc={true}
+    shouldCloseOnOverlayClick={true}
+    shouldFocusAfterRender={true}
+    shouldReturnFocusAfterClose={true}
+  >
+    <h3
+      className="modal__title"
+      id="heading"
+    >
+      Delete Data
+    </h3>
+    <p
+      className="modal__body"
+      id="full_description"
+    >
+      Are you sure you want to delete all of your data on Expensus?
+    </p>
+    <button
+      className="modal__btn--delete"
+    >
+      Delete
+    </button>
+    <button
+      className="modal__btn--cancel"
+    >
+      Cancel
+    </button>
+  </Modal>
+</div>
+`;

@@ -17,7 +17,11 @@
   .social-link {
     font-size: $large-font-size;
     padding: 0 3px;
-    margin-left: 5px;
+    margin-left: 10px;
+  }
+
+  svg.svg-inline--fa.fa-twitter.fa-w-16.social-link {
+    margin-left: 0;
   }
 
   &--layout {

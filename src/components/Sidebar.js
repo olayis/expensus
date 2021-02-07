@@ -33,6 +33,7 @@ export const Sidebar = ({ startLogout, sidebarOpen, closeSidebar }) => (
           className='fa-icon'
           onClick={() => closeSidebar()}
           aria-label='Close'
+          role='button'
         />
       </span>
     </div>

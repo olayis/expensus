@@ -1,4 +1,5 @@
 import userInfoReducer from '../../reducers/userInfo';
+import providerData from '../fixtures/providerData';
 
 test('should set default state for userInfo', () => {
   const state = userInfoReducer(undefined, { type: '@@INIT' });
@@ -6,7 +7,6 @@ test('should set default state for userInfo', () => {
 });
 
 test('should set providerData for userInfo', () => {
-  const providerData = [{ displayName: 'Test', email: 'test@example.com' }];
   const action = {
     type: 'USER_INFO',
     providerData,

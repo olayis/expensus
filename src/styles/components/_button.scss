@@ -52,10 +52,9 @@
   }
 
   &__signOut {
+    @include resetButtonStyle;
     font-size: $normal-font-size;
     font-weight: 500;
-    background-color: transparent;
-    border: 0;
     color: $color-light-grey;
 
     &:hover {
@@ -129,12 +128,11 @@
 
 .btn-remove-expense {
   &--form {
+    @include resetButtonStyle;
     display: inline-block;
     margin-top: $m-size;
-    background-color: transparent;
     color: $color-grey-2;
     padding: 0.8rem 2rem;
-    border: none;
     position: absolute;
     top: 84%;
     left: 85%;

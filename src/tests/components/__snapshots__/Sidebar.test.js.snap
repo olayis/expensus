@@ -53,6 +53,7 @@ exports[`should render Sidebar correctly 1`] = `
         onClick={[Function]}
         pull={null}
         pulse={false}
+        role="button"
         rotation={null}
         size={null}
         spin={false}

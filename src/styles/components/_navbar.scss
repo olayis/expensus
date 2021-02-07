@@ -47,15 +47,6 @@
 
   .user-info {
     &__wrapper {
-      // .username {
-      //   font-size: $normal-font-size;
-      //   font-weight: 700;
-
-      //   @include respond(phone) {
-      //     display: none;
-      //   }
-      // }
-
       img {
         margin-left: 1rem;
         border-radius: 50%;
@@ -64,33 +55,40 @@
         vertical-align: middle;
         padding: 4px;
         cursor: pointer;
+        transition: all 0.2s;
 
-        &:hover + .user-info__details {
-          background-color: #fff;
-          display: block;
-          left: 83%;
-          padding: $s-size;
-          border-radius: 3px;
-          box-shadow: 0 0.3rem 0.5rem rgba(#000, 0.2);
-          width: 22rem;
+        &:hover {
+          border: 2px solid $color-light-grey;
+          & + .user-info__details {
+            background-color: #fff;
+            visibility: visible;
+            opacity: 1;
+            left: 83%;
+            padding: $s-size;
+            border-radius: 3px;
+            box-shadow: 0 0.3rem 0.5rem rgba(#000, 0.2);
+            width: 22rem;
 
-          @include respond(tab-land) {
-            left: 80%;
-          }
+            @include respond(tab-land) {
+              left: 80%;
+            }
 
-          @include respond(tab-port) {
-            left: 75%;
-          }
+            @include respond(tab-port) {
+              left: 75%;
+            }
 
-          @include respond(phone) {
-            left: 55%;
+            @include respond(phone) {
+              left: 55%;
+            }
           }
         }
       }
     }
 
     &__details {
-      display: none;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.2s;
       position: absolute;
 
       p {

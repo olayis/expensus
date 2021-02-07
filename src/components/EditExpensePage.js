@@ -26,7 +26,6 @@ export class EditExpensePage extends React.Component {
             <button
               onClick={this.onRemove}
               className='btn btn-remove-expense btn-remove-expense--form'
-              aria-label='Remove expense'
             >
               Remove
             </button>

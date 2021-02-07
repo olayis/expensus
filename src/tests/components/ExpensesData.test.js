@@ -21,3 +21,17 @@ test('should render ExpensesData with filters message', () => {
   );
   expect(wrapper).toMatchSnapshot();
 });
+
+test('should handle startDeleteData on click', () => {
+  const handleStartDeleteDataSelected = jest.fn();
+  const startDeleteDataSelected = jest.fn();
+  const wrapper = shallow(
+    <ExpensesData
+      expenses={[]}
+      expensesWithoutFilters={expenses}
+      startDeleteDataSelected={startDeleteDataSelected}
+    />
+  );
+  wrapper.find('.component__delete-btn').simulate('click');
+  expect(startDeleteDataSelected).toHaveBeenCalled();
+});

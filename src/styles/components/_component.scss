@@ -22,8 +22,13 @@
     }
   }
 
+  &__delete-btn {
+    @include resetButtonStyle;
+    cursor: pointer;
+  }
+
   &__illustration {
-    font-size: 25rem;
+    font-size: 20rem;
 
     @include respond(narrow-phone) {
       font-size: 15rem;

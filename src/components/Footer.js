@@ -17,7 +17,7 @@ const Footer = () => (
       Olayis
     </a>
     . All rights reserved.
-    <div className=''>
+    <div>
       <a
         href='https://www.twitter.com/olusegun_os/'
         target='_blank'

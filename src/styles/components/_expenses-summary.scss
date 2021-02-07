@@ -6,7 +6,7 @@
   align-items: center;
 
   @include respond(tab-port) {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   &__word,

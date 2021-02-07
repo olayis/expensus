@@ -1,0 +1,71 @@
+.ReactModalPortal > div {
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opcaity 200ms ease-in-out;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  background: $color-grey-2;
+  color: white;
+  max-width: 30rem;
+  outline: none;
+  padding: $l-size;
+  text-align: center;
+  border-radius: 5px;
+
+  &__title {
+    margin: 0 0 $m-size 0;
+    font-size: $medium-font-size;
+  }
+
+  &__body {
+    font-size: $default-font-size;
+    margin: 0 0 $l-size 0;
+    word-break: keep-all;
+  }
+
+  &__btn {
+    &--cancel {
+      @include resetButtonStyle;
+      margin-right: 2rem;
+      color: $color-dark-grey;
+      background-color: $color-light-blue;
+      font-size: $normal-font-size;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: $color-light;
+        box-shadow: 0 0.8rem 1.5rem rgba(#000, 0.2);
+      }
+    }
+
+    &--delete {
+      @extend .modal__btn--cancel;
+      border: 1px solid $color-light-blue;
+      background-color: transparent;
+      color: #fff;
+
+      &:hover {
+        color: $color-dark-grey;
+      }
+    }
+  }
+}

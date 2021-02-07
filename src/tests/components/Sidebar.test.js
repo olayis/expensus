@@ -13,3 +13,12 @@ test('should call startLogout on button click', () => {
   wrapper.find('button').simulate('click');
   expect(startLogout).toHaveBeenCalled();
 });
+
+test('should close sidebar on close click', () => {
+  const closeSidebar = jest.fn();
+  const wrapper = shallow(
+    <Sidebar closeSidebar={closeSidebar} sidebarOpen={true} />
+  );
+  wrapper.find('.sidebar__close .fa-icon').simulate('click');
+  expect(closeSidebar).toHaveBeenCalled();
+});

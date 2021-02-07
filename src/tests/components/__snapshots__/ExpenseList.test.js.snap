@@ -119,7 +119,7 @@ exports[`should render ExpenseList with expenses 1`] = `
         className="col-1-of-4"
         key="10"
       >
-        <ExpenseListItem
+        <Connect(ExpenseListItem)
           amount={2000}
           category="Bills & Utilities"
           createdAt={0}
@@ -133,7 +133,7 @@ exports[`should render ExpenseList with expenses 1`] = `
         className="col-1-of-4"
         key="21"
       >
-        <ExpenseListItem
+        <Connect(ExpenseListItem)
           amount={35000}
           category="Rent"
           createdAt={"1969-12-27T00:00:00.000Z"}
@@ -147,7 +147,7 @@ exports[`should render ExpenseList with expenses 1`] = `
         className="col-1-of-4"
         key="32"
       >
-        <ExpenseListItem
+        <Connect(ExpenseListItem)
           amount={8000}
           category="Maintenance"
           createdAt={"1970-01-13T00:00:00.000Z"}
@@ -161,7 +161,7 @@ exports[`should render ExpenseList with expenses 1`] = `
         className="col-1-of-4"
         key="43"
       >
-        <ExpenseListItem
+        <Connect(ExpenseListItem)
           amount={1000}
           category="Maintenance"
           createdAt={"1970-01-11T00:00:00.000Z"}
@@ -223,14 +223,14 @@ exports[`should render ExpenseList with filters message 1`] = `
       className="no-expense"
     >
       <img
-        alt="A clipboard showing no data"
+        alt="A filter showing Expenses have been filtered"
         className="no-expense__illustration"
-        height="633"
+        height="608"
         src="SvgrURL"
-        width="648"
+        width="883"
       />
       <p>
-        The current filter(s) doesn't display any expenses.
+        No results for the current filter(s).
       </p>
     </div>
   </div>

@@ -6,6 +6,7 @@ import { faEye } from '@fortawesome/free-regular-svg-icons';
 import ExpenseListItem from './ExpenseListItem';
 import selectExpenses from '../selectors/expenses';
 import no_data from '../../public/img/no_data.svg';
+import filter from '../../public/img/filter.svg';
 import splitEvery from '../utils/helpers/splitEvery';
 
 export const ExpenseList = (props) => {
@@ -17,23 +18,33 @@ export const ExpenseList = (props) => {
         </h2>
         {props.expenses.length === 0 ? (
           <div className='no-expense'>
-            <img
-              src={no_data}
-              alt='A clipboard showing no data'
-              alt='A clipboard showing no data'
-              className='no-expense__illustration'
-              width='648'
-              height='633'
-            />
             {props.expensesWithoutFilters.length === 0 ? (
-              <p>
-                No Expenses To Display.{' '}
-                <Link to='/create' className='router-link router-link--add'>
-                  Add an Expense
-                </Link>
-              </p>
+              <>
+                <img
+                  src={no_data}
+                  alt='A clipboard showing no data'
+                  className='no-expense__illustration'
+                  width='648'
+                  height='633'
+                />
+                <p>
+                  No Expenses To Display.{' '}
+                  <Link to='/create' className='router-link router-link--add'>
+                    Add an Expense
+                  </Link>
+                </p>
+              </>
             ) : (
-              <p>The current filter(s) doesn't display any expenses.</p>
+              <>
+                <img
+                  src={filter}
+                  alt='A filter showing Expenses have been filtered'
+                  className='no-expense__illustration'
+                  width='883'
+                  height='608'
+                />
+                <p>No results for the current filter(s).</p>
+              </>
             )}
           </div>
         ) : (

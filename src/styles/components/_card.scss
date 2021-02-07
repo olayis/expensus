@@ -6,9 +6,28 @@
   border-radius: 3px;
   box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
   transition: transform 0.3s;
+  position: relative;
 
   @include respond(tab-port) {
     padding: 2rem;
+  }
+
+  &__delete {
+    @include resetButtonStyle;
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    color: $color-grey;
+    cursor: pointer;
+
+    &:active {
+      color: $color-danger;
+    }
+  }
+
+  &:hover > .card-box__delete {
+    display: block;
   }
 
   &__description {

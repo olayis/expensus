@@ -151,53 +151,56 @@ exports[`should render ExpensesData with empty message 1`] = `
           <p
             className="component__message"
           >
-            No Expenses to delete.
-             
-            <Link
-              className="router-link router-link--add"
-              to="/create"
-            >
-              Add Expenses
-            </Link>
+            Note: This action is irreversible and will delete all Expensus's data relating to your account permanently.
           </p>
           <div
             className="component__content"
           >
-            <FontAwesomeIcon
-              border={false}
-              className="component__illustration component__illustration--empty"
-              fixedWidth={false}
-              flip={null}
-              icon={
-                Object {
-                  "icon": Array [
-                    512,
-                    512,
-                    Array [],
-                    "f05e",
-                    "M256 8C119.034 8 8 119.033 8 256s111.034 248 248 248 248-111.034 248-248S392.967 8 256 8zm130.108 117.892c65.448 65.448 70 165.481 20.677 235.637L150.47 105.216c70.204-49.356 170.226-44.735 235.638 20.676zM125.892 386.108c-65.448-65.448-70-165.481-20.677-235.637L361.53 406.784c-70.203 49.356-170.226 44.736-235.638-20.676z",
-                  ],
-                  "iconName": "ban",
-                  "prefix": "fas",
+            <button
+              aria-label="Delete your data on Expensus permanently"
+              className="component__delete-btn"
+              onClick={[Function]}
+            >
+              <FontAwesomeIcon
+                border={false}
+                className="component__illustration component__illustration--delete"
+                fixedWidth={false}
+                flip={null}
+                icon={
+                  Object {
+                    "icon": Array [
+                      448,
+                      512,
+                      Array [],
+                      "f2ed",
+                      "M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z",
+                    ],
+                    "iconName": "trash-alt",
+                    "prefix": "far",
+                  }
                 }
-              }
-              inverse={false}
-              listItem={false}
-              mask={null}
-              pull={null}
-              pulse={false}
-              rotation={null}
-              size={null}
-              spin={false}
-              swapOpacity={false}
-              symbol={false}
-              title=""
-              transform={null}
-            />
+                inverse={false}
+                listItem={false}
+                mask={null}
+                pull={null}
+                pulse={false}
+                rotation={null}
+                size={null}
+                spin={false}
+                swapOpacity={false}
+                symbol={false}
+                title=""
+                transform={null}
+              />
+            </button>
           </div>
         </div>
       </div>
     </div>
+    <ConfirmationModal
+      handleDeleteData={[Function]}
+      stopDeleteDataSelected={[Function]}
+    />
   </section>
 </main>
 `;
@@ -261,7 +264,7 @@ exports[`should render ExpensesData with expenses 1`] = `
             className="component__content"
           >
             <CSVLink
-              aria-label="CSV Link"
+              aria-label="CSV Download Link"
               asyncOnClick={false}
               data={
                 Array [
@@ -396,49 +399,10 @@ exports[`should render ExpensesData with expenses 1`] = `
           <div
             className="component__content"
           >
-            <CSVLink
-              aria-label="CSV Link"
-              asyncOnClick={false}
-              data={
-                Array [
-                  Object {
-                    "amount": 20,
-                    "category": "Bills & Utilities",
-                    "createdAt": "01/01/1970",
-                    "description": "Data",
-                    "id": 0,
-                    "note": "",
-                  },
-                  Object {
-                    "amount": 350,
-                    "category": "Rent",
-                    "createdAt": "27/12/1969",
-                    "description": "Home Rentage",
-                    "id": 1,
-                    "note": "",
-                  },
-                  Object {
-                    "amount": 80,
-                    "category": "Maintenance",
-                    "createdAt": "13/01/1970",
-                    "description": "Room Repainting",
-                    "id": 2,
-                    "note": "",
-                  },
-                  Object {
-                    "amount": 10,
-                    "category": "Maintenance",
-                    "createdAt": "11/01/1970",
-                    "description": "Water Pipes Repair",
-                    "id": 3,
-                    "note": "",
-                  },
-                ]
-              }
-              filename="generatedBy_react-csv.csv"
-              separator=","
-              target="_blank"
-              uFEFF={true}
+            <button
+              aria-label="Delete your data on Expensus permanently"
+              className="component__delete-btn"
+              onClick={[Function]}
             >
               <FontAwesomeIcon
                 border={false}
@@ -471,11 +435,15 @@ exports[`should render ExpensesData with expenses 1`] = `
                 title=""
                 transform={null}
               />
-            </CSVLink>
+            </button>
           </div>
         </div>
       </div>
     </div>
+    <ConfirmationModal
+      handleDeleteData={[Function]}
+      stopDeleteDataSelected={[Function]}
+    />
   </section>
 </main>
 `;
@@ -628,50 +596,56 @@ exports[`should render ExpensesData with filters message 1`] = `
           <p
             className="component__message"
           >
-            No Expenses to delete.
-             
-            <span>
-              Clear current filters to delete expenses
-            </span>
+            Note: This action is irreversible and will delete all Expensus's data relating to your account permanently.
           </p>
           <div
             className="component__content"
           >
-            <FontAwesomeIcon
-              border={false}
-              className="component__illustration component__illustration--empty"
-              fixedWidth={false}
-              flip={null}
-              icon={
-                Object {
-                  "icon": Array [
-                    512,
-                    512,
-                    Array [],
-                    "f05e",
-                    "M256 8C119.034 8 8 119.033 8 256s111.034 248 248 248 248-111.034 248-248S392.967 8 256 8zm130.108 117.892c65.448 65.448 70 165.481 20.677 235.637L150.47 105.216c70.204-49.356 170.226-44.735 235.638 20.676zM125.892 386.108c-65.448-65.448-70-165.481-20.677-235.637L361.53 406.784c-70.203 49.356-170.226 44.736-235.638-20.676z",
-                  ],
-                  "iconName": "ban",
-                  "prefix": "fas",
+            <button
+              aria-label="Delete your data on Expensus permanently"
+              className="component__delete-btn"
+              onClick={[Function]}
+            >
+              <FontAwesomeIcon
+                border={false}
+                className="component__illustration component__illustration--delete"
+                fixedWidth={false}
+                flip={null}
+                icon={
+                  Object {
+                    "icon": Array [
+                      448,
+                      512,
+                      Array [],
+                      "f2ed",
+                      "M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z",
+                    ],
+                    "iconName": "trash-alt",
+                    "prefix": "far",
+                  }
                 }
-              }
-              inverse={false}
-              listItem={false}
-              mask={null}
-              pull={null}
-              pulse={false}
-              rotation={null}
-              size={null}
-              spin={false}
-              swapOpacity={false}
-              symbol={false}
-              title=""
-              transform={null}
-            />
+                inverse={false}
+                listItem={false}
+                mask={null}
+                pull={null}
+                pulse={false}
+                rotation={null}
+                size={null}
+                spin={false}
+                swapOpacity={false}
+                symbol={false}
+                title=""
+                transform={null}
+              />
+            </button>
           </div>
         </div>
       </div>
     </div>
+    <ConfirmationModal
+      handleDeleteData={[Function]}
+      stopDeleteDataSelected={[Function]}
+    />
   </section>
 </main>
 `;

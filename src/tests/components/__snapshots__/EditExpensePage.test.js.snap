@@ -24,7 +24,6 @@ exports[`should render editExpensePage correctly 1`] = `
         onSubmit={[Function]}
       />
       <button
-        aria-label="Remove expense"
         className="btn btn-remove-expense btn-remove-expense--form"
         onClick={[Function]}
       >

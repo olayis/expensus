@@ -1,12 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render ExpenseListItem with expense 1`] = `
-<Link
-  className="router-link"
-  to="edit/3"
+<div
+  className="card-box"
 >
-  <div
-    className="card-box"
+  <button
+    aria-label="Remove expense"
+    className="card-box__delete"
+    onClick={[Function]}
+  >
+    <FontAwesomeIcon
+      border={false}
+      className="fa-icon"
+      fixedWidth={false}
+      flip={null}
+      icon={
+        Object {
+          "icon": Array [
+            448,
+            512,
+            Array [],
+            "f1f8",
+            "M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z",
+          ],
+          "iconName": "trash",
+          "prefix": "fas",
+        }
+      }
+      inverse={false}
+      listItem={false}
+      mask={null}
+      pull={null}
+      pulse={false}
+      rotation={null}
+      size={null}
+      spin={false}
+      swapOpacity={false}
+      symbol={false}
+      title=""
+      transform={null}
+    />
+  </button>
+  <Link
+    className="router-link"
+    to="edit/3"
   >
     <h3
       className="card-box__description"
@@ -121,6 +158,6 @@ exports[`should render ExpenseListItem with expense 1`] = `
       />
       Jan 13th, 1970
     </p>
-  </div>
-</Link>
+  </Link>
+</div>
 `;

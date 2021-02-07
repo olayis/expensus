@@ -17,6 +17,7 @@ export const Navbar = ({
         className='navbar__icon'
         onClick={() => openSidebar()}
         aria-label='Expand Sidebar'
+        role='button'
       >
         <FontAwesomeIcon icon={faBars} className='fa-icon' />
       </div>
@@ -81,9 +82,12 @@ export const Navbar = ({
   </>
 );
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, ownProps) => {
   return {
     userInfo: state.userInfo.providerData ? state.userInfo.providerData[0] : {},
+    sidebarOpen: ownProps.sidebarOpen,
+    openSidebar: ownProps.openSidebar,
+    closeSidebar: ownProps.closeSidebar,
   };
 };
 

@@ -49,12 +49,10 @@
   }
 
   &--sort {
+    @include resetButtonStyle;
     color: $color-primary-2;
-    border: 0;
     font-weight: 500;
     padding: 0;
-    outline: none;
-    background-color: transparent;
   }
 
   &--category,
@@ -110,7 +108,8 @@
 }
 
 .text-input--form:focus,
-.textarea--form:focus {
+.textarea--form:focus,
+.dropdown--category:focus {
   transition: all 0.2s;
 
   &::placeholder {

@@ -9,6 +9,7 @@ exports[`should render Navbar correctly 1`] = `
       aria-label="Expand Sidebar"
       className="navbar__icon"
       onClick={[Function]}
+      role="button"
     >
       <FontAwesomeIcon
         border={false}

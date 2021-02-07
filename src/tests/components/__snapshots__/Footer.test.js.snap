@@ -16,9 +16,7 @@ exports[`should render Footer correctly 1`] = `
     Olayis
   </a>
   . All rights reserved.
-  <div
-    className=""
-  >
+  <div>
     <a
       aria-label="Olusegun\\"s Twitter"
       className="footer__link"

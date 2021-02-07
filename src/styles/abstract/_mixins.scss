@@ -28,6 +28,12 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin resetButtonStyle {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
 // MEDIA QUERY MANAGER
 /*
 0 - 600px:      Phone

@@ -4,7 +4,8 @@ import selectLocale from '../../selectors/locale';
 
 export default (store) => {
   store.dispatch(startSetLocale()).then(() => {
-    const currency = store.getState().locale.currency;
+    const currency =
+      store.getState().locale && store.getState().locale.currency;
     numeral.locale(selectLocale(currency));
   });
 };
