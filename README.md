@@ -30,7 +30,6 @@
   - [Installation](#installation)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
-- [Screenshots](#screenshots)
 - [License](#license)
 - [Contact](#contact)
 - [Dependencies Documentations](#dependencies-documentations)
@@ -65,7 +64,7 @@ To get a local copy up and running follow these simple steps.
 
 - Firebase and Env Variables
   - Create development/production and test databases on [firebase](https://console.firebase.google.com/) for the application.
-  - Create `.env.development` and `.env.test` files in then root directory of the project and add the Firebase SDK snippet config in
+  - After getting a local copy on your system create `.env.development` and `.env.test` files in the root directory of the project and add the Firebase SDK snippet config in
     the `Key=Value` format e.g.
     <br>
     `FIREBASE_API_KEY=your api key`
@@ -73,8 +72,6 @@ To get a local copy up and running follow these simple steps.
     `FIREBASE_AUTH_DOMAIN=your application auth domain`
     <br>
     `FIREBASE_DATABASE_URL=your database url`
-    <br>
-    `FIREBASE_PROJECT_ID=project id`
     <br>
     `...`
 
@@ -86,14 +83,10 @@ To get a local copy up and running follow these simple steps.
 
 2.Install all the dependencies of the project
 
-    npm install
-    or
     yarn
 
 3.Run webpack development server
 
-    npm run build:dev
-    or
     yarn build:dev
 
     Runs the app in the development mode.
@@ -104,8 +97,6 @@ To get a local copy up and running follow these simple steps.
 
 4.Testing the application
 
-    npm run test
-    or
     yarn test
 
     Launches the test runner.
@@ -118,16 +109,12 @@ To get a local copy up and running follow these simple steps.
 
 5.Run webpack production build
 
-    npm run build:prod
-    or
     yarn build:prod
 
     Builds the app for production.
 
 6.Start up server to view app in production mode
 
-    npm run start
-    or
     yarn start
 
     Open http://localhost:9000 to view the production mode in the browser.
@@ -148,16 +135,6 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## Screenshots
-
-- Login page
-
-- Dashboard page
-
-- Add Expense page
-
-- Edit Expense page
-
 <!-- LICENSE -->
 
 ## License
@@ -174,7 +151,7 @@ Olayinka Olusegun
 - LinkedIn - <https://linkedin.com/in/olusegun-olayinka>
 - Twitter - [@olusegun_os](https://twitter.com/olusegun_os)
 
-Project Link: <https://github.com/olayis/expensus>
+Project Link: <https://expensus.herokuapp.com>
 
 ## Dependencies Documentations
 

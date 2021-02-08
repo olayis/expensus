@@ -60,11 +60,6 @@ export const Sidebar = ({ startLogout, sidebarOpen, closeSidebar }) => (
             <FontAwesomeIcon icon={faFileDownload} className='fa-icon' /> Data
           </NavLink>
         </li>
-        <li className='sidebar__link'>
-          <NavLink to='/settings' activeClassName='is-active'>
-            <FontAwesomeIcon icon={faCog} className='fa-icon' /> Settings
-          </NavLink>
-        </li>
       </ul>
       <ul className='sidebar__navigation--sub'>
         <li className='sidebar__link sidebar__signOut'>

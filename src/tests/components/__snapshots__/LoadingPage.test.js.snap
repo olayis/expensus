@@ -10,7 +10,9 @@ exports[`should render LoadingPage correctly 1`] = `
     <img
       alt=""
       className="loader__image"
+      height="47"
       src="test-file-stub"
+      width="47"
     />
     <p
       className="loader__text"
