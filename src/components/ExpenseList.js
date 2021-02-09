@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import moment from 'moment';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-regular-svg-icons';
@@ -43,7 +44,18 @@ export const ExpenseList = (props) => {
                   width='883'
                   height='608'
                 />
-                <p>No results for the current filter(s).</p>
+                <p>
+                  No results found{' '}
+                  {props.filters.text && `for "${props.filters.text}"`}{' '}
+                  {props.filters.startDate &&
+                    `starting from ${moment(props.filters.startDate).format(
+                      'MMM Do, YYYY'
+                    )}`}{' '}
+                  {props.filters.endDate &&
+                    `ending at ${moment(props.filters.endDate).format(
+                      'MMM Do, YYYY'
+                    )}`}
+                </p>
               </>
             )}
           </div>
@@ -67,6 +79,7 @@ const mapStateToProps = (state) => {
   return {
     expenses: selectExpenses(state.expenses, state.filters),
     expensesWithoutFilters: state.expenses,
+    filters: state.filters,
   };
 };
 

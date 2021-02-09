@@ -6,8 +6,8 @@ test('should set up default filter values', () => {
   expect(state).toEqual({
     text: '',
     sortBy: 'date(recent)',
-    startDate: moment().startOf('month'),
-    endDate: moment().endOf('month'),
+    startDate: null,
+    endDate: null,
   });
 });
 

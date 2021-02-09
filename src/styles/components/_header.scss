@@ -74,11 +74,11 @@
             }
 
             @include respond(tab-port) {
-              left: 75%;
+              left: 70%;
             }
 
             @include respond(phone) {
-              left: 55%;
+              left: 50%;
             }
           }
         }

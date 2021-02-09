@@ -1,5 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render ExpenseList with dates filter message 1`] = `
+<section
+  className="content-container"
+>
+  <div
+    className="component-container"
+  >
+    <h2
+      className="heading-secondary"
+    >
+      <FontAwesomeIcon
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              576,
+              512,
+              Array [],
+              "f06e",
+              "M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z",
+            ],
+            "iconName": "eye",
+            "prefix": "far",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
+       Expenses Overview
+    </h2>
+    <div
+      className="no-expense"
+    >
+      <img
+        alt="A filter showing Expenses have been filtered"
+        className="no-expense__illustration"
+        height="608"
+        src="SvgrURL"
+        width="883"
+      />
+      <p>
+        No results found
+         
+         
+        starting from Jan 1st, 1970
+         
+        ending at Jan 5th, 1970
+      </p>
+    </div>
+  </div>
+</section>
+`;
+
 exports[`should render ExpenseList with empty message 1`] = `
 <section
   className="content-container"
@@ -62,6 +128,71 @@ exports[`should render ExpenseList with empty message 1`] = `
         >
           Add an Expense
         </Link>
+      </p>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`should render ExpenseList with endDate filter message 1`] = `
+<section
+  className="content-container"
+>
+  <div
+    className="component-container"
+  >
+    <h2
+      className="heading-secondary"
+    >
+      <FontAwesomeIcon
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              576,
+              512,
+              Array [],
+              "f06e",
+              "M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z",
+            ],
+            "iconName": "eye",
+            "prefix": "far",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
+       Expenses Overview
+    </h2>
+    <div
+      className="no-expense"
+    >
+      <img
+        alt="A filter showing Expenses have been filtered"
+        className="no-expense__illustration"
+        height="608"
+        src="SvgrURL"
+        width="883"
+      />
+      <p>
+        No results found
+         
+         
+         
+        ending at Jan 5th, 1970
       </p>
     </div>
   </div>
@@ -176,7 +307,7 @@ exports[`should render ExpenseList with expenses 1`] = `
 </section>
 `;
 
-exports[`should render ExpenseList with filters message 1`] = `
+exports[`should render ExpenseList with startDate filter message 1`] = `
 <section
   className="content-container"
 >
@@ -230,7 +361,143 @@ exports[`should render ExpenseList with filters message 1`] = `
         width="883"
       />
       <p>
-        No results for the current filter(s).
+        No results found
+         
+         
+        starting from Jan 1st, 1970
+         
+      </p>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`should render ExpenseList with text and date filters message 1`] = `
+<section
+  className="content-container"
+>
+  <div
+    className="component-container"
+  >
+    <h2
+      className="heading-secondary"
+    >
+      <FontAwesomeIcon
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              576,
+              512,
+              Array [],
+              "f06e",
+              "M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z",
+            ],
+            "iconName": "eye",
+            "prefix": "far",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
+       Expenses Overview
+    </h2>
+    <div
+      className="no-expense"
+    >
+      <img
+        alt="A filter showing Expenses have been filtered"
+        className="no-expense__illustration"
+        height="608"
+        src="SvgrURL"
+        width="883"
+      />
+      <p>
+        No results found
+         
+        for "bills"
+         
+        starting from Jan 1st, 1970
+         
+        ending at Jan 5th, 1970
+      </p>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`should render ExpenseList with text filter message 1`] = `
+<section
+  className="content-container"
+>
+  <div
+    className="component-container"
+  >
+    <h2
+      className="heading-secondary"
+    >
+      <FontAwesomeIcon
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              576,
+              512,
+              Array [],
+              "f06e",
+              "M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z",
+            ],
+            "iconName": "eye",
+            "prefix": "far",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
+       Expenses Overview
+    </h2>
+    <div
+      className="no-expense"
+    >
+      <img
+        alt="A filter showing Expenses have been filtered"
+        className="no-expense__illustration"
+        height="608"
+        src="SvgrURL"
+        width="883"
+      />
+      <p>
+        No results found
+         
+        for "bills"
+         
+         
       </p>
     </div>
   </div>

@@ -9,6 +9,7 @@ app.use(
   '/',
   expressStaticGzip(distPath, {
     enableBrotli: true,
+    orderPreference: ['br', 'gz'],
   })
 );
 

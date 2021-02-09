@@ -2,7 +2,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { DateRangePicker } from 'react-dates';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import {
+  faSearch,
+  faFilter,
+  faCircle,
+} from '@fortawesome/free-solid-svg-icons';
 import {
   setTextFilter,
   sortByDateRecent,
@@ -20,11 +24,14 @@ import 'react-dates/initialize';
 export class ExpenseListFilters extends React.Component {
   state = {
     calendarFocused: null,
+    showFilter: false,
+    hasFilters: false,
   };
 
   onDatesChange = ({ startDate, endDate }) => {
     this.props.setStartDate(startDate);
     this.props.setEndDate(endDate);
+    this.handleHasFilters();
   };
 
   onFocusChange = (calendarFocused) => {
@@ -67,57 +74,106 @@ export class ExpenseListFilters extends React.Component {
     }
   };
 
+  onToggleFiltersVisibility = () => {
+    this.setState((prevState) => ({
+      showFilter: !prevState.showFilter,
+    }));
+  };
+
+  handleHasFilters = () => {
+    this.props.filters.startDate
+      ? this.setState(() => ({
+          hasFilters: true,
+        }))
+      : this.props.filters.endDate
+      ? this.setState(() => ({
+          hasFilters: true,
+        }))
+      : this.setState(() => ({
+          hasFilters: false,
+        }));
+  };
+
   render() {
     return (
       <div className='content-container'>
         <div className='filter-container'>
           <div className='input-group'>
-            <div className='input-group__item'>
-              <input
-                className='text-input text-input--search'
-                type='text'
-                placeholder='Search'
-                value={this.props.filters.text}
-                onChange={this.onTextChange}
-                aria-label='Search expenses'
-                name='search'
-              />
-              <FontAwesomeIcon
-                icon={faSearch}
-                className='text-input--search__icon'
-              />
-            </div>
-            <div className='input-group__item dropdown'>
-              <label className='text-input__label'>Sort by: </label>
-              <select
-                className='dropdown--sort'
-                value={this.props.filters.sortBy}
-                onChange={this.onSortChange}
-                aria-label='Sort expenses'
-                name='sort'
+            <div className='mobile-filter'>
+              <div className='input-group__item'>
+                <input
+                  className='text-input text-input--search'
+                  type='text'
+                  placeholder='Search'
+                  value={this.props.filters.text}
+                  onChange={this.onTextChange}
+                  aria-label='Search expenses'
+                  name='search'
+                />
+                <FontAwesomeIcon
+                  icon={faSearch}
+                  className='text-input--search__icon'
+                />
+              </div>
+              <span
+                className={`d-none mobile-filter__toggler ${
+                  this.state.showFilter ? 'mobile-filter__toggler--active' : ''
+                }`}
+                onClick={this.onToggleFiltersVisibility}
+                role='button'
+                aria-label='toggle filter'
               >
-                <option value='date(recent)'>Date (Recent)</option>
-                <option value='date(oldest)'>Date (Oldest)</option>
-                <option value='amount(highest)'>Amount (Highest)</option>
-                <option value='amount(lowest)'>Amount (Lowest)</option>
-                <option value='description(a_to_z)'>A to Z</option>
-                <option value='description(z_to_a)'>Z to A</option>
-                <option value='category'>Category</option>
-              </select>
+                <FontAwesomeIcon
+                  icon={faFilter}
+                  className='mobile-filter__icon'
+                />{' '}
+                <span className='mobile-filter__text'>Show Filters</span>
+                {this.state.hasFilters && (
+                  <sup>
+                    <FontAwesomeIcon icon={faCircle} />
+                  </sup>
+                )}
+              </span>
             </div>
-            <div className='input-group__item'>
-              <DateRangePicker
-                startDate={this.props.filters.startDate}
-                startDateId='unique_start_date_id'
-                endDate={this.props.filters.endDate}
-                endDateId='unique_end_date_id'
-                onDatesChange={this.onDatesChange}
-                focusedInput={this.state.calendarFocused}
-                onFocusChange={this.onFocusChange}
-                showClearDates={true}
-                numberOfMonths={1}
-                isOutsideRange={() => false}
-              />
+            <div
+              className={`mobile-filter__toggle ${
+                this.state.showFilter
+                  ? 'mobile-filter--show'
+                  : 'mobile-filter--hide'
+              }`}
+            >
+              <div className='input-group__item dropdown'>
+                <label className='text-input__label'>Sort by: </label>
+                <select
+                  className='dropdown--sort'
+                  value={this.props.filters.sortBy}
+                  onChange={this.onSortChange}
+                  aria-label='Sort expenses'
+                  name='sort'
+                >
+                  <option value='date(recent)'>Date (Recent)</option>
+                  <option value='date(oldest)'>Date (Oldest)</option>
+                  <option value='amount(highest)'>Amount (Highest)</option>
+                  <option value='amount(lowest)'>Amount (Lowest)</option>
+                  <option value='description(a_to_z)'>A to Z</option>
+                  <option value='description(z_to_a)'>Z to A</option>
+                  <option value='category'>Category</option>
+                </select>
+              </div>
+              <div className='input-group__item'>
+                <DateRangePicker
+                  startDate={this.props.filters.startDate}
+                  startDateId='unique_start_date_id'
+                  endDate={this.props.filters.endDate}
+                  endDateId='unique_end_date_id'
+                  onDatesChange={this.onDatesChange}
+                  focusedInput={this.state.calendarFocused}
+                  onFocusChange={this.onFocusChange}
+                  showClearDates={true}
+                  numberOfMonths={1}
+                  isOutsideRange={() => false}
+                />
+              </div>
             </div>
           </div>
         </div>

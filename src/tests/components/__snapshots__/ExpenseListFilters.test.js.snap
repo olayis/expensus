@@ -11,207 +11,259 @@ exports[`should render ExpenseListFilters correctly 1`] = `
       className="input-group"
     >
       <div
-        className="input-group__item"
+        className="mobile-filter"
       >
-        <input
-          aria-label="Search expenses"
-          className="text-input text-input--search"
-          name="search"
-          onChange={[Function]}
-          placeholder="Search"
-          type="text"
-          value=""
-        />
-        <FontAwesomeIcon
-          border={false}
-          className="text-input--search__icon"
-          fixedWidth={false}
-          flip={null}
-          icon={
-            Object {
-              "icon": Array [
-                512,
-                512,
-                Array [],
-                "f002",
-                "M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z",
-              ],
-              "iconName": "search",
-              "prefix": "fas",
+        <div
+          className="input-group__item"
+        >
+          <input
+            aria-label="Search expenses"
+            className="text-input text-input--search"
+            name="search"
+            onChange={[Function]}
+            placeholder="Search"
+            type="text"
+            value=""
+          />
+          <FontAwesomeIcon
+            border={false}
+            className="text-input--search__icon"
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  512,
+                  512,
+                  Array [],
+                  "f002",
+                  "M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z",
+                ],
+                "iconName": "search",
+                "prefix": "fas",
+              }
             }
-          }
-          inverse={false}
-          listItem={false}
-          mask={null}
-          pull={null}
-          pulse={false}
-          rotation={null}
-          size={null}
-          spin={false}
-          swapOpacity={false}
-          symbol={false}
-          title=""
-          transform={null}
-        />
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        </div>
+        <span
+          aria-label="toggle filter"
+          className="d-none mobile-filter__toggler "
+          onClick={[Function]}
+          role="button"
+        >
+          <FontAwesomeIcon
+            border={false}
+            className="mobile-filter__icon"
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  512,
+                  512,
+                  Array [],
+                  "f0b0",
+                  "M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z",
+                ],
+                "iconName": "filter",
+                "prefix": "fas",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+           
+          <span
+            className="mobile-filter__text"
+          >
+            Show Filters
+          </span>
+        </span>
       </div>
       <div
-        className="input-group__item dropdown"
+        className="mobile-filter__toggle mobile-filter--hide"
       >
-        <label
-          className="text-input__label"
+        <div
+          className="input-group__item dropdown"
         >
-          Sort by: 
-        </label>
-        <select
-          aria-label="Sort expenses"
-          className="dropdown--sort"
-          name="sort"
-          onChange={[Function]}
-          value="date(recent)"
-        >
-          <option
+          <label
+            className="text-input__label"
+          >
+            Sort by: 
+          </label>
+          <select
+            aria-label="Sort expenses"
+            className="dropdown--sort"
+            name="sort"
+            onChange={[Function]}
             value="date(recent)"
           >
-            Date (Recent)
-          </option>
-          <option
-            value="date(oldest)"
-          >
-            Date (Oldest)
-          </option>
-          <option
-            value="amount(highest)"
-          >
-            Amount (Highest)
-          </option>
-          <option
-            value="amount(lowest)"
-          >
-            Amount (Lowest)
-          </option>
-          <option
-            value="description(a_to_z)"
-          >
-            A to Z
-          </option>
-          <option
-            value="description(z_to_a)"
-          >
-            Z to A
-          </option>
-          <option
-            value="category"
-          >
-            Category
-          </option>
-        </select>
-      </div>
-      <div
-        className="input-group__item"
-      >
-        <withStyles(DateRangePicker)
-          anchorDirection="left"
-          appendToBody={false}
-          block={false}
-          calendarInfoPosition="bottom"
-          customArrowIcon={null}
-          customCloseIcon={null}
-          customInputIcon={null}
-          dayPickerNavigationInlineStyles={null}
-          daySize={39}
-          disableScroll={false}
-          disabled={false}
-          displayFormat={[Function]}
-          enableOutsideDays={false}
-          endDate={null}
-          endDateId="unique_end_date_id"
-          endDatePlaceholderText="End Date"
-          firstDayOfWeek={null}
-          focusedInput={null}
-          hideKeyboardShortcutsPanel={false}
-          horizontalMargin={0}
-          initialVisibleMonth={null}
-          inputIconPosition="before"
-          isDayBlocked={[Function]}
-          isDayHighlighted={[Function]}
-          isOutsideRange={[Function]}
-          isRTL={false}
-          keepFocusOnInput={false}
-          keepOpenOnDateSelect={false}
-          minimumNights={1}
-          monthFormat="MMMM YYYY"
-          navNext={null}
-          navPosition="navPositionTop"
-          navPrev={null}
-          noBorder={false}
-          numberOfMonths={1}
-          onClose={[Function]}
-          onDatesChange={[Function]}
-          onFocusChange={[Function]}
-          onNextMonthClick={[Function]}
-          onPrevMonthClick={[Function]}
-          openDirection="down"
-          orientation="horizontal"
-          phrases={
-            Object {
-              "calendarLabel": "Calendar",
-              "chooseAvailableEndDate": [Function],
-              "chooseAvailableStartDate": [Function],
-              "clearDates": "Clear Dates",
-              "closeDatePicker": "Close",
-              "dateIsSelected": [Function],
-              "dateIsSelectedAsEndDate": [Function],
-              "dateIsSelectedAsStartDate": [Function],
-              "dateIsUnavailable": [Function],
-              "enterKey": "Enter key",
-              "escape": "Escape key",
-              "focusStartDate": "Interact with the calendar and add the check-in date for your trip.",
-              "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-              "homeEnd": "Home and end keys",
-              "jumpToNextMonth": "Move forward to switch to the next month.",
-              "jumpToPrevMonth": "Move backward to switch to the previous month.",
-              "keyboardBackwardNavigationInstructions": "Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-              "keyboardForwardNavigationInstructions": "Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-              "keyboardShortcuts": "Keyboard Shortcuts",
-              "leftArrowRightArrow": "Right and left arrow keys",
-              "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-              "moveFocusByOneMonth": "Switch months.",
-              "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-              "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-              "openThisPanel": "Open this panel.",
-              "pageUpPageDown": "page up and page down keys",
-              "questionMark": "Question mark",
-              "returnFocusToInput": "Return to the date input field.",
-              "roleDescription": "datepicker",
-              "selectFocusedDate": "Select the date in focus.",
-              "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-              "upArrowDownArrow": "up and down arrow keys",
+            <option
+              value="date(recent)"
+            >
+              Date (Recent)
+            </option>
+            <option
+              value="date(oldest)"
+            >
+              Date (Oldest)
+            </option>
+            <option
+              value="amount(highest)"
+            >
+              Amount (Highest)
+            </option>
+            <option
+              value="amount(lowest)"
+            >
+              Amount (Lowest)
+            </option>
+            <option
+              value="description(a_to_z)"
+            >
+              A to Z
+            </option>
+            <option
+              value="description(z_to_a)"
+            >
+              Z to A
+            </option>
+            <option
+              value="category"
+            >
+              Category
+            </option>
+          </select>
+        </div>
+        <div
+          className="input-group__item"
+        >
+          <withStyles(DateRangePicker)
+            anchorDirection="left"
+            appendToBody={false}
+            block={false}
+            calendarInfoPosition="bottom"
+            customArrowIcon={null}
+            customCloseIcon={null}
+            customInputIcon={null}
+            dayPickerNavigationInlineStyles={null}
+            daySize={39}
+            disableScroll={false}
+            disabled={false}
+            displayFormat={[Function]}
+            enableOutsideDays={false}
+            endDate={null}
+            endDateId="unique_end_date_id"
+            endDatePlaceholderText="End Date"
+            firstDayOfWeek={null}
+            focusedInput={null}
+            hideKeyboardShortcutsPanel={false}
+            horizontalMargin={0}
+            initialVisibleMonth={null}
+            inputIconPosition="before"
+            isDayBlocked={[Function]}
+            isDayHighlighted={[Function]}
+            isOutsideRange={[Function]}
+            isRTL={false}
+            keepFocusOnInput={false}
+            keepOpenOnDateSelect={false}
+            minimumNights={1}
+            monthFormat="MMMM YYYY"
+            navNext={null}
+            navPosition="navPositionTop"
+            navPrev={null}
+            noBorder={false}
+            numberOfMonths={1}
+            onClose={[Function]}
+            onDatesChange={[Function]}
+            onFocusChange={[Function]}
+            onNextMonthClick={[Function]}
+            onPrevMonthClick={[Function]}
+            openDirection="down"
+            orientation="horizontal"
+            phrases={
+              Object {
+                "calendarLabel": "Calendar",
+                "chooseAvailableEndDate": [Function],
+                "chooseAvailableStartDate": [Function],
+                "clearDates": "Clear Dates",
+                "closeDatePicker": "Close",
+                "dateIsSelected": [Function],
+                "dateIsSelectedAsEndDate": [Function],
+                "dateIsSelectedAsStartDate": [Function],
+                "dateIsUnavailable": [Function],
+                "enterKey": "Enter key",
+                "escape": "Escape key",
+                "focusStartDate": "Interact with the calendar and add the check-in date for your trip.",
+                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                "homeEnd": "Home and end keys",
+                "jumpToNextMonth": "Move forward to switch to the next month.",
+                "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                "keyboardBackwardNavigationInstructions": "Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+                "keyboardForwardNavigationInstructions": "Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+                "keyboardShortcuts": "Keyboard Shortcuts",
+                "leftArrowRightArrow": "Right and left arrow keys",
+                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+                "moveFocusByOneMonth": "Switch months.",
+                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+                "openThisPanel": "Open this panel.",
+                "pageUpPageDown": "page up and page down keys",
+                "questionMark": "Question mark",
+                "returnFocusToInput": "Return to the date input field.",
+                "roleDescription": "datepicker",
+                "selectFocusedDate": "Select the date in focus.",
+                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                "upArrowDownArrow": "up and down arrow keys",
+              }
             }
-          }
-          readOnly={false}
-          regular={false}
-          renderCalendarInfo={null}
-          renderDayContents={null}
-          renderMonthElement={null}
-          renderMonthText={null}
-          renderNavNextButton={null}
-          renderNavPrevButton={null}
-          renderWeekHeaderElement={null}
-          reopenPickerOnClearDates={false}
-          required={false}
-          screenReaderInputMessage=""
-          showClearDates={true}
-          showDefaultInputIcon={false}
-          small={false}
-          startDate={null}
-          startDateId="unique_start_date_id"
-          startDatePlaceholderText="Start Date"
-          verticalHeight={null}
-          verticalSpacing={22}
-          weekDayFormat="dd"
-          withFullScreenPortal={false}
-          withPortal={false}
-        />
+            readOnly={false}
+            regular={false}
+            renderCalendarInfo={null}
+            renderDayContents={null}
+            renderMonthElement={null}
+            renderMonthText={null}
+            renderNavNextButton={null}
+            renderNavPrevButton={null}
+            renderWeekHeaderElement={null}
+            reopenPickerOnClearDates={false}
+            required={false}
+            screenReaderInputMessage=""
+            showClearDates={true}
+            showDefaultInputIcon={false}
+            small={false}
+            startDate={null}
+            startDateId="unique_start_date_id"
+            startDatePlaceholderText="Start Date"
+            verticalHeight={null}
+            verticalSpacing={22}
+            weekDayFormat="dd"
+            withFullScreenPortal={false}
+            withPortal={false}
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -229,207 +281,259 @@ exports[`should render ExpenseListFilters with alt data correctly 1`] = `
       className="input-group"
     >
       <div
-        className="input-group__item"
+        className="mobile-filter"
       >
-        <input
-          aria-label="Search expenses"
-          className="text-input text-input--search"
-          name="search"
-          onChange={[Function]}
-          placeholder="Search"
-          type="text"
-          value="bills"
-        />
-        <FontAwesomeIcon
-          border={false}
-          className="text-input--search__icon"
-          fixedWidth={false}
-          flip={null}
-          icon={
-            Object {
-              "icon": Array [
-                512,
-                512,
-                Array [],
-                "f002",
-                "M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z",
-              ],
-              "iconName": "search",
-              "prefix": "fas",
+        <div
+          className="input-group__item"
+        >
+          <input
+            aria-label="Search expenses"
+            className="text-input text-input--search"
+            name="search"
+            onChange={[Function]}
+            placeholder="Search"
+            type="text"
+            value="bills"
+          />
+          <FontAwesomeIcon
+            border={false}
+            className="text-input--search__icon"
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  512,
+                  512,
+                  Array [],
+                  "f002",
+                  "M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z",
+                ],
+                "iconName": "search",
+                "prefix": "fas",
+              }
             }
-          }
-          inverse={false}
-          listItem={false}
-          mask={null}
-          pull={null}
-          pulse={false}
-          rotation={null}
-          size={null}
-          spin={false}
-          swapOpacity={false}
-          symbol={false}
-          title=""
-          transform={null}
-        />
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        </div>
+        <span
+          aria-label="toggle filter"
+          className="d-none mobile-filter__toggler "
+          onClick={[Function]}
+          role="button"
+        >
+          <FontAwesomeIcon
+            border={false}
+            className="mobile-filter__icon"
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  512,
+                  512,
+                  Array [],
+                  "f0b0",
+                  "M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z",
+                ],
+                "iconName": "filter",
+                "prefix": "fas",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+           
+          <span
+            className="mobile-filter__text"
+          >
+            Show Filters
+          </span>
+        </span>
       </div>
       <div
-        className="input-group__item dropdown"
+        className="mobile-filter__toggle mobile-filter--hide"
       >
-        <label
-          className="text-input__label"
+        <div
+          className="input-group__item dropdown"
         >
-          Sort by: 
-        </label>
-        <select
-          aria-label="Sort expenses"
-          className="dropdown--sort"
-          name="sort"
-          onChange={[Function]}
-          value="amount(highest)"
-        >
-          <option
-            value="date(recent)"
+          <label
+            className="text-input__label"
           >
-            Date (Recent)
-          </option>
-          <option
-            value="date(oldest)"
-          >
-            Date (Oldest)
-          </option>
-          <option
+            Sort by: 
+          </label>
+          <select
+            aria-label="Sort expenses"
+            className="dropdown--sort"
+            name="sort"
+            onChange={[Function]}
             value="amount(highest)"
           >
-            Amount (Highest)
-          </option>
-          <option
-            value="amount(lowest)"
-          >
-            Amount (Lowest)
-          </option>
-          <option
-            value="description(a_to_z)"
-          >
-            A to Z
-          </option>
-          <option
-            value="description(z_to_a)"
-          >
-            Z to A
-          </option>
-          <option
-            value="category"
-          >
-            Category
-          </option>
-        </select>
-      </div>
-      <div
-        className="input-group__item"
-      >
-        <withStyles(DateRangePicker)
-          anchorDirection="left"
-          appendToBody={false}
-          block={false}
-          calendarInfoPosition="bottom"
-          customArrowIcon={null}
-          customCloseIcon={null}
-          customInputIcon={null}
-          dayPickerNavigationInlineStyles={null}
-          daySize={39}
-          disableScroll={false}
-          disabled={false}
-          displayFormat={[Function]}
-          enableOutsideDays={false}
-          endDate={"1970-01-05T00:00:00.000Z"}
-          endDateId="unique_end_date_id"
-          endDatePlaceholderText="End Date"
-          firstDayOfWeek={null}
-          focusedInput={null}
-          hideKeyboardShortcutsPanel={false}
-          horizontalMargin={0}
-          initialVisibleMonth={null}
-          inputIconPosition="before"
-          isDayBlocked={[Function]}
-          isDayHighlighted={[Function]}
-          isOutsideRange={[Function]}
-          isRTL={false}
-          keepFocusOnInput={false}
-          keepOpenOnDateSelect={false}
-          minimumNights={1}
-          monthFormat="MMMM YYYY"
-          navNext={null}
-          navPosition="navPositionTop"
-          navPrev={null}
-          noBorder={false}
-          numberOfMonths={1}
-          onClose={[Function]}
-          onDatesChange={[Function]}
-          onFocusChange={[Function]}
-          onNextMonthClick={[Function]}
-          onPrevMonthClick={[Function]}
-          openDirection="down"
-          orientation="horizontal"
-          phrases={
-            Object {
-              "calendarLabel": "Calendar",
-              "chooseAvailableEndDate": [Function],
-              "chooseAvailableStartDate": [Function],
-              "clearDates": "Clear Dates",
-              "closeDatePicker": "Close",
-              "dateIsSelected": [Function],
-              "dateIsSelectedAsEndDate": [Function],
-              "dateIsSelectedAsStartDate": [Function],
-              "dateIsUnavailable": [Function],
-              "enterKey": "Enter key",
-              "escape": "Escape key",
-              "focusStartDate": "Interact with the calendar and add the check-in date for your trip.",
-              "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-              "homeEnd": "Home and end keys",
-              "jumpToNextMonth": "Move forward to switch to the next month.",
-              "jumpToPrevMonth": "Move backward to switch to the previous month.",
-              "keyboardBackwardNavigationInstructions": "Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-              "keyboardForwardNavigationInstructions": "Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-              "keyboardShortcuts": "Keyboard Shortcuts",
-              "leftArrowRightArrow": "Right and left arrow keys",
-              "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-              "moveFocusByOneMonth": "Switch months.",
-              "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-              "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-              "openThisPanel": "Open this panel.",
-              "pageUpPageDown": "page up and page down keys",
-              "questionMark": "Question mark",
-              "returnFocusToInput": "Return to the date input field.",
-              "roleDescription": "datepicker",
-              "selectFocusedDate": "Select the date in focus.",
-              "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-              "upArrowDownArrow": "up and down arrow keys",
+            <option
+              value="date(recent)"
+            >
+              Date (Recent)
+            </option>
+            <option
+              value="date(oldest)"
+            >
+              Date (Oldest)
+            </option>
+            <option
+              value="amount(highest)"
+            >
+              Amount (Highest)
+            </option>
+            <option
+              value="amount(lowest)"
+            >
+              Amount (Lowest)
+            </option>
+            <option
+              value="description(a_to_z)"
+            >
+              A to Z
+            </option>
+            <option
+              value="description(z_to_a)"
+            >
+              Z to A
+            </option>
+            <option
+              value="category"
+            >
+              Category
+            </option>
+          </select>
+        </div>
+        <div
+          className="input-group__item"
+        >
+          <withStyles(DateRangePicker)
+            anchorDirection="left"
+            appendToBody={false}
+            block={false}
+            calendarInfoPosition="bottom"
+            customArrowIcon={null}
+            customCloseIcon={null}
+            customInputIcon={null}
+            dayPickerNavigationInlineStyles={null}
+            daySize={39}
+            disableScroll={false}
+            disabled={false}
+            displayFormat={[Function]}
+            enableOutsideDays={false}
+            endDate={"1970-01-05T00:00:00.000Z"}
+            endDateId="unique_end_date_id"
+            endDatePlaceholderText="End Date"
+            firstDayOfWeek={null}
+            focusedInput={null}
+            hideKeyboardShortcutsPanel={false}
+            horizontalMargin={0}
+            initialVisibleMonth={null}
+            inputIconPosition="before"
+            isDayBlocked={[Function]}
+            isDayHighlighted={[Function]}
+            isOutsideRange={[Function]}
+            isRTL={false}
+            keepFocusOnInput={false}
+            keepOpenOnDateSelect={false}
+            minimumNights={1}
+            monthFormat="MMMM YYYY"
+            navNext={null}
+            navPosition="navPositionTop"
+            navPrev={null}
+            noBorder={false}
+            numberOfMonths={1}
+            onClose={[Function]}
+            onDatesChange={[Function]}
+            onFocusChange={[Function]}
+            onNextMonthClick={[Function]}
+            onPrevMonthClick={[Function]}
+            openDirection="down"
+            orientation="horizontal"
+            phrases={
+              Object {
+                "calendarLabel": "Calendar",
+                "chooseAvailableEndDate": [Function],
+                "chooseAvailableStartDate": [Function],
+                "clearDates": "Clear Dates",
+                "closeDatePicker": "Close",
+                "dateIsSelected": [Function],
+                "dateIsSelectedAsEndDate": [Function],
+                "dateIsSelectedAsStartDate": [Function],
+                "dateIsUnavailable": [Function],
+                "enterKey": "Enter key",
+                "escape": "Escape key",
+                "focusStartDate": "Interact with the calendar and add the check-in date for your trip.",
+                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                "homeEnd": "Home and end keys",
+                "jumpToNextMonth": "Move forward to switch to the next month.",
+                "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                "keyboardBackwardNavigationInstructions": "Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+                "keyboardForwardNavigationInstructions": "Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+                "keyboardShortcuts": "Keyboard Shortcuts",
+                "leftArrowRightArrow": "Right and left arrow keys",
+                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+                "moveFocusByOneMonth": "Switch months.",
+                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+                "openThisPanel": "Open this panel.",
+                "pageUpPageDown": "page up and page down keys",
+                "questionMark": "Question mark",
+                "returnFocusToInput": "Return to the date input field.",
+                "roleDescription": "datepicker",
+                "selectFocusedDate": "Select the date in focus.",
+                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                "upArrowDownArrow": "up and down arrow keys",
+              }
             }
-          }
-          readOnly={false}
-          regular={false}
-          renderCalendarInfo={null}
-          renderDayContents={null}
-          renderMonthElement={null}
-          renderMonthText={null}
-          renderNavNextButton={null}
-          renderNavPrevButton={null}
-          renderWeekHeaderElement={null}
-          reopenPickerOnClearDates={false}
-          required={false}
-          screenReaderInputMessage=""
-          showClearDates={true}
-          showDefaultInputIcon={false}
-          small={false}
-          startDate={"1970-01-01T00:00:00.000Z"}
-          startDateId="unique_start_date_id"
-          startDatePlaceholderText="Start Date"
-          verticalHeight={null}
-          verticalSpacing={22}
-          weekDayFormat="dd"
-          withFullScreenPortal={false}
-          withPortal={false}
-        />
+            readOnly={false}
+            regular={false}
+            renderCalendarInfo={null}
+            renderDayContents={null}
+            renderMonthElement={null}
+            renderMonthText={null}
+            renderNavNextButton={null}
+            renderNavPrevButton={null}
+            renderWeekHeaderElement={null}
+            reopenPickerOnClearDates={false}
+            required={false}
+            screenReaderInputMessage=""
+            showClearDates={true}
+            showDefaultInputIcon={false}
+            small={false}
+            startDate={"1970-01-01T00:00:00.000Z"}
+            startDateId="unique_start_date_id"
+            startDatePlaceholderText="Start Date"
+            verticalHeight={null}
+            verticalSpacing={22}
+            weekDayFormat="dd"
+            withFullScreenPortal={false}
+            withPortal={false}
+          />
+        </div>
       </div>
     </div>
   </div>
