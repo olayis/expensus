@@ -1,26 +1,26 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Navbar } from '../../components/Navbar';
+import { Header } from '../../components/Header';
 import providerData from '../fixtures/providerData';
 
-test('should render Navbar correctly', () => {
-  const wrapper = shallow(<Navbar userInfo={providerData} />);
+test('should render Header correctly', () => {
+  const wrapper = shallow(<Header userInfo={providerData} />);
   expect(wrapper).toMatchSnapshot();
 });
 
 test('should open sidebar on expand sidebar click', () => {
   const openSidebar = jest.fn();
   const wrapper = shallow(
-    <Navbar userInfo={providerData} openSidebar={openSidebar} />
+    <Header userInfo={providerData} openSidebar={openSidebar} />
   );
-  wrapper.find('.navbar__icon').simulate('click');
+  wrapper.find('.header__icon').simulate('click');
   expect(openSidebar).toHaveBeenCalled();
 });
 
 test('should close sidebar on overlay click', () => {
   const closeSidebar = jest.fn();
   const wrapper = shallow(
-    <Navbar
+    <Header
       userInfo={providerData}
       closeSidebar={closeSidebar}
       sidebarOpen={true}

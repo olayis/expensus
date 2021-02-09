@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Navbar correctly 1`] = `
+exports[`should render Header correctly 1`] = `
 <Fragment>
-  <nav
-    className="navbar"
+  <header
+    className="header"
   >
     <div
       aria-label="Expand Sidebar"
-      className="navbar__icon"
+      className="header__icon"
       onClick={[Function]}
       role="button"
     >
@@ -44,10 +44,10 @@ exports[`should render Navbar correctly 1`] = `
       />
     </div>
     <div
-      className="navbar__center"
+      className="header__center"
     >
       <div
-        className="navbar__title"
+        className="header__title"
       >
         <h1>
           <NavLink
@@ -56,47 +56,35 @@ exports[`should render Navbar correctly 1`] = `
           >
             Dashboard
           </NavLink>
-        </h1>
-      </div>
-      <div
-        className="navbar__title"
-      >
-        <h1>
           <NavLink
             activeClassName="nav-is-active"
             to="/create"
           >
             Add Expense
           </NavLink>
-        </h1>
-      </div>
-      <div
-        className="navbar__title"
-      >
-        <h1>
           <NavLink
             activeClassName="nav-is-active"
             to="/edit"
           >
             Edit Expense
           </NavLink>
-        </h1>
-      </div>
-      <div
-        className="navbar__title"
-      >
-        <h1>
           <NavLink
             activeClassName="nav-is-active"
             to="/currency"
           >
             Currency
           </NavLink>
+          <NavLink
+            activeClassName="nav-is-active"
+            to="/data"
+          >
+            Data
+          </NavLink>
         </h1>
       </div>
     </div>
     <div
-      className="navbar__right"
+      className="header__right"
     >
       <div
         className="user-info"
@@ -106,7 +94,6 @@ exports[`should render Navbar correctly 1`] = `
         >
           <img
             alt="User Avatar"
-            aria-label="User Avatar"
             height="50"
             src="SvgrURL"
             width="50"
@@ -117,7 +104,7 @@ exports[`should render Navbar correctly 1`] = `
         </div>
       </div>
     </div>
-  </nav>
+  </header>
   <div
     aria-label="Close Sidebar Overlay"
     className="sidebar__overlay--close"

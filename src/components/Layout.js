@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
+import Header from './Header';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 
@@ -16,7 +16,7 @@ const Layout = () => {
 
   return (
     <>
-      <Navbar
+      <Header
         sidebarOpen={sidebarOpen}
         openSidebar={openSidebar}
         closeSidebar={closeSidebar}
