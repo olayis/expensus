@@ -48,25 +48,25 @@ export const LoginPage = ({
           onClick={startGoogleLogin}
           className='btn btn__login btn__login--google'
         >
-          <FontAwesomeIcon icon={faGoogle} /> Continue with Google
+          <FontAwesomeIcon icon={faGoogle} /> <h2>Continue with Google</h2>
         </button>
         <button
           onClick={startFacebookLogin}
           className='btn btn__login btn__login--facebook'
         >
-          <FontAwesomeIcon icon={faFacebookF} /> Continue with Facebook
+          <FontAwesomeIcon icon={faFacebookF} /> <h2>Continue with Facebook</h2>
         </button>
         <button
           onClick={startTwitterLogin}
           className='btn btn__login btn__login--twitter'
         >
-          <FontAwesomeIcon icon={faTwitter} /> Continue with Twitter
+          <FontAwesomeIcon icon={faTwitter} /> <h2>Continue with Twitter</h2>
         </button>
         <button
           onClick={startYahooLogin}
           className='btn btn__login btn__login--yahoo'
         >
-          <FontAwesomeIcon icon={faYahoo} /> Continue with Yahoo
+          <FontAwesomeIcon icon={faYahoo} /> <h2>Continue with Yahoo</h2>
         </button>
       </div>
       <Footer />

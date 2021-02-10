@@ -47,7 +47,7 @@ export const Header = ({
           <div className='user-info__wrapper'>
             <img
               src={userInfo.photoURL || user_avatar}
-              alt='User Avatar'
+              alt={userInfo.displayName}
               width='50'
               height='50'
             />

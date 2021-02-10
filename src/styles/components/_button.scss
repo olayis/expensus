@@ -25,8 +25,17 @@
     }
 
     @include respond(narrow-phone) {
-      font-size: $normal-font-size;
       width: 22rem;
+    }
+
+    h2 {
+      font-size: $default-font-size;
+      display: inline-block;
+      font-weight: 500;
+
+      @include respond(phone) {
+        font-size: $normal-font-size;
+      }
     }
 
     &:hover {
