@@ -92,6 +92,10 @@
     color: $color-light;
     text-align: center;
     margin-bottom: 6rem;
+
+    @include respond(phone) {
+      margin-bottom: 4rem;
+    }
   }
 }
 

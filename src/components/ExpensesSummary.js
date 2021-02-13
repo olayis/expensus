@@ -2,12 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import numeral from 'numeral';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
 import selectExpenses from '../selectors/expenses';
 import selectExpensesTotal from '../selectors/exepenses-total';
 
-export const ExpensesSummary = ({ expenseCount, expensesTotal }) => {
+export const ExpensesSummary = ({
+  expenseCount,
+  expensesTotal,
+  hiddenExpenses,
+}) => {
   const expenseWord = expenseCount === 1 ? 'Expense' : 'Expenses';
   const formattedExpensesTotal = numeral(expensesTotal / 100).format('$0,0.00');
+  const filterExpenseWord = hiddenExpenses === 1 ? 'expense' : 'expenses';
 
   return (
     <div className='content-container'>
@@ -29,6 +36,14 @@ export const ExpensesSummary = ({ expenseCount, expensesTotal }) => {
             Add Expense
           </Link>
         </div>
+        {hiddenExpenses ? (
+          <div className='summary__hidden'>
+            <FontAwesomeIcon className='fa-icon' icon={faExclamationCircle} />
+            {hiddenExpenses} {filterExpenseWord} hidden expenses due to filters.
+          </div>
+        ) : (
+          ''
+        )}
       </div>
     </div>
   );
@@ -36,10 +51,12 @@ export const ExpensesSummary = ({ expenseCount, expensesTotal }) => {
 
 const mapStateToProps = (state) => {
   const visibleExpenses = selectExpenses(state.expenses, state.filters);
+  const hiddenExpenses = state.expenses.length - visibleExpenses.length;
 
   return {
     expenseCount: visibleExpenses.length,
     expensesTotal: selectExpensesTotal(visibleExpenses),
+    hiddenExpenses,
   };
 };
 

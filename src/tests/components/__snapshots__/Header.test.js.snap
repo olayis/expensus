@@ -93,7 +93,6 @@ exports[`should render Header correctly 1`] = `
           className="user-info__wrapper"
         >
           <img
-            alt="User Avatar"
             height="50"
             src="SvgrURL"
             width="50"

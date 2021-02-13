@@ -20,6 +20,12 @@
     }
   }
 
+  &__hidden {
+    margin-top: 2rem;
+    color: $color-primary-2;
+    flex-basis: 100%;
+  }
+
   &--top {
     color: $color-grey-2;
     font-size: $normal-font-size;

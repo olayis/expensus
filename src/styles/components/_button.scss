@@ -33,7 +33,7 @@
       display: inline-block;
       font-weight: 500;
 
-      @include respond(phone) {
+      @include respond(narrow-phone) {
         font-size: $normal-font-size;
       }
     }
@@ -157,6 +157,7 @@
 
     &:hover {
       color: $color-danger;
+      font-weight: 700;
     }
   }
 }

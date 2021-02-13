@@ -47,6 +47,7 @@
 
   .user-info {
     &__wrapper {
+      z-index: 1000;
       img {
         margin-left: 1rem;
         border-radius: 50%;

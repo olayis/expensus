@@ -50,7 +50,7 @@
 .DateInput_input {
   font-size: $normal-font-size;
   color: $color-dark-grey;
-  padding: 3px 11px 2px;
+  padding: 0px 0px 0px 2px;
 
   @include respond(tab-port) {
     font-size: $default-font-size;
