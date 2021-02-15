@@ -10,8 +10,8 @@ import authErrorReducer from '../reducers/authErrors';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-export default () => {
-  const store = createStore(
+const configureStore = () => {
+  const reduxStore = createStore(
     combineReducers({
       expenses: expensesReducer,
       filters: filtersReducer,
@@ -24,5 +24,8 @@ export default () => {
     composeEnhancers(applyMiddleware(thunk))
   );
 
-  return store;
+  return reduxStore;
 };
+
+const store = configureStore();
+export default store;

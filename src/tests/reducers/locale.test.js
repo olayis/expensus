@@ -3,7 +3,7 @@ import locales from '../fixtures/locales';
 
 test('should set default state', () => {
   const state = localeReducer(undefined, { type: '@@INIT' });
-  expect(state).toEqual({ currency: 'Dollar' });
+  expect(state).toEqual({ currency: null });
 });
 
 test('should update a locale', () => {

@@ -102,7 +102,7 @@ test('should set up edit expense action object', () => {
   });
 });
 
-test('should edit expense from database', (done) => {
+test('should edit expense on database', (done) => {
   const store = createMockStore(defaultAuthState);
   const id = expenses[0].id;
   const updates = { amount: 500 };

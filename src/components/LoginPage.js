@@ -23,8 +23,6 @@ import {
 } from '../actions/authErrors';
 import Footer from './Footer';
 
-const { quote, author } = randomQuote();
-
 export const LoginPage = ({
   startGoogleLogin,
   startFacebookLogin,
@@ -33,6 +31,8 @@ export const LoginPage = ({
   authErrors,
   cancelAuthNetworkError,
   cancelAuthOtherErrors,
+  quote,
+  author,
 }) => (
   <>
     <div className='split-layout'>
@@ -92,7 +92,10 @@ export const LoginPage = ({
     </div>
     {authErrors.networkError ? (
       <div className='auth-error'>
-        <button className='auth-error__close' onClick={cancelAuthNetworkError}>
+        <button
+          className='auth-error__close auth-error__close--network'
+          onClick={cancelAuthNetworkError}
+        >
           &#10006;
         </button>
         <span className='auth-error__text'>Network Error.</span>
@@ -105,13 +108,18 @@ export const LoginPage = ({
     )}
     {authErrors.otherErrors ? (
       <div className='auth-error'>
-        <button className='auth-error__close' onClick={cancelAuthOtherErrors}>
+        <button
+          className='auth-error__close auth-error__close--others'
+          onClick={cancelAuthOtherErrors}
+        >
           &#10006;
         </button>
         <span className='auth-error__text'>
           Oops! Something went wrong while authenticating...
         </span>
-        <span className='auth-error__explanation'>Please try again.</span>
+        <span className='auth-error__explanation'>
+          Please try again and if the problem persists, contact us.
+        </span>
       </div>
     ) : (
       ''
@@ -120,8 +128,11 @@ export const LoginPage = ({
 );
 
 const mapStateToProps = (state) => {
+  const { quote, author } = randomQuote();
   return {
     authErrors: state.authErrors,
+    quote,
+    author,
   };
 };
 

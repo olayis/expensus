@@ -61,6 +61,27 @@ test('should render amountError if "amount" is not provided but "description" is
   expect(wrapper).toMatchSnapshot();
 });
 
+test('should render amountError if amount is greater than or equal to 9007199254740991', () => {
+  const wrapper = shallow(<ExpenseForm />);
+  expect(wrapper).toMatchSnapshot();
+
+  wrapper.find('[placeholder="Description"]').simulate('change', {
+    target: {
+      value: expenses[0].description,
+    },
+  });
+  wrapper.find('[placeholder="Amount"]').simulate('change', {
+    target: { value: '9007199254740991' },
+  });
+  wrapper.find('form').simulate('submit', {
+    preventDefault: () => {},
+  });
+
+  expect(wrapper.state('amountError').length).toBeGreaterThan(0);
+  expect(wrapper.state('descriptionError').length).toBe(0);
+  expect(wrapper).toMatchSnapshot();
+});
+
 test('should set description on input change', () => {
   const value = 'New Description';
   const wrapper = shallow(<ExpenseForm />);

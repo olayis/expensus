@@ -1,0 +1,752 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should only render network error message when networkError is true 1`] = `
+<Fragment>
+  <div
+    className="split-layout"
+  >
+    <div
+      className="split-layout__left"
+    >
+      <div
+        className="login-content"
+      >
+        <div
+          className="login-content__logo-box"
+        >
+          <Link
+            to="/"
+          >
+            <img
+              alt="Expensus Logo"
+              className="login-content__logo"
+              height="37"
+              src="SvgrURL"
+              width="195"
+            />
+          </Link>
+        </div>
+        <h1
+          className="login-content__message"
+        >
+          Hi! Sign in to start managing your expenses.
+        </h1>
+        <button
+          className="btn btn__login btn__login--google"
+        >
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  488,
+                  512,
+                  Array [],
+                  "f1a0",
+                  "M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z",
+                ],
+                "iconName": "google",
+                "prefix": "fab",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+           
+          <h2>
+            Continue with Google
+          </h2>
+        </button>
+        <button
+          className="btn btn__login btn__login--facebook"
+        >
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f39e",
+                  "M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z",
+                ],
+                "iconName": "facebook-f",
+                "prefix": "fab",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+           
+          <h2>
+            Continue with Facebook
+          </h2>
+        </button>
+        <button
+          className="btn btn__login btn__login--twitter"
+        >
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  512,
+                  512,
+                  Array [],
+                  "f099",
+                  "M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z",
+                ],
+                "iconName": "twitter",
+                "prefix": "fab",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+           
+          <h2>
+            Continue with Twitter
+          </h2>
+        </button>
+        <button
+          className="btn btn__login btn__login--yahoo"
+        >
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  512,
+                  512,
+                  Array [],
+                  "f19e",
+                  "M223.69,141.06,167,284.23,111,141.06H14.93L120.76,390.19,82.19,480h94.17L317.27,141.06Zm105.4,135.79a58.22,58.22,0,1,0,58.22,58.22A58.22,58.22,0,0,0,329.09,276.85ZM394.65,32l-93,223.47H406.44L499.07,32Z",
+                ],
+                "iconName": "yahoo",
+                "prefix": "fab",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+           
+          <h2>
+            Continue with Yahoo
+          </h2>
+        </button>
+      </div>
+      <Footer />
+    </div>
+    <div
+      className="split-layout__right"
+    >
+      <div
+        className="quotes"
+      >
+        <U
+          element="span"
+          getAfterInit={[Function]}
+          getBeforeInit={[Function]}
+          options={Object {}}
+        >
+          <span
+            className="quotes--text"
+          >
+            “
+            Random quote
+            "
+          </span>
+          <br />
+          <span
+            className="quotes--author"
+          >
+            — 
+            Random quote's author
+          </span>
+        </U>
+      </div>
+    </div>
+  </div>
+  <div
+    className="auth-error"
+  >
+    <button
+      className="auth-error__close auth-error__close--network"
+    >
+      ✖
+    </button>
+    <span
+      className="auth-error__text"
+    >
+      Network Error.
+    </span>
+    <span
+      className="auth-error__explanation"
+    >
+      Please check your internet connection and try again.
+    </span>
+  </div>
+</Fragment>
+`;
+
+exports[`should only render otherErrors message when otherErrors is true 1`] = `
+<Fragment>
+  <div
+    className="split-layout"
+  >
+    <div
+      className="split-layout__left"
+    >
+      <div
+        className="login-content"
+      >
+        <div
+          className="login-content__logo-box"
+        >
+          <Link
+            to="/"
+          >
+            <img
+              alt="Expensus Logo"
+              className="login-content__logo"
+              height="37"
+              src="SvgrURL"
+              width="195"
+            />
+          </Link>
+        </div>
+        <h1
+          className="login-content__message"
+        >
+          Hi! Sign in to start managing your expenses.
+        </h1>
+        <button
+          className="btn btn__login btn__login--google"
+        >
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  488,
+                  512,
+                  Array [],
+                  "f1a0",
+                  "M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z",
+                ],
+                "iconName": "google",
+                "prefix": "fab",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+           
+          <h2>
+            Continue with Google
+          </h2>
+        </button>
+        <button
+          className="btn btn__login btn__login--facebook"
+        >
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f39e",
+                  "M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z",
+                ],
+                "iconName": "facebook-f",
+                "prefix": "fab",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+           
+          <h2>
+            Continue with Facebook
+          </h2>
+        </button>
+        <button
+          className="btn btn__login btn__login--twitter"
+        >
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  512,
+                  512,
+                  Array [],
+                  "f099",
+                  "M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z",
+                ],
+                "iconName": "twitter",
+                "prefix": "fab",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+           
+          <h2>
+            Continue with Twitter
+          </h2>
+        </button>
+        <button
+          className="btn btn__login btn__login--yahoo"
+        >
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  512,
+                  512,
+                  Array [],
+                  "f19e",
+                  "M223.69,141.06,167,284.23,111,141.06H14.93L120.76,390.19,82.19,480h94.17L317.27,141.06Zm105.4,135.79a58.22,58.22,0,1,0,58.22,58.22A58.22,58.22,0,0,0,329.09,276.85ZM394.65,32l-93,223.47H406.44L499.07,32Z",
+                ],
+                "iconName": "yahoo",
+                "prefix": "fab",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+           
+          <h2>
+            Continue with Yahoo
+          </h2>
+        </button>
+      </div>
+      <Footer />
+    </div>
+    <div
+      className="split-layout__right"
+    >
+      <div
+        className="quotes"
+      >
+        <U
+          element="span"
+          getAfterInit={[Function]}
+          getBeforeInit={[Function]}
+          options={Object {}}
+        >
+          <span
+            className="quotes--text"
+          >
+            “
+            Random quote
+            "
+          </span>
+          <br />
+          <span
+            className="quotes--author"
+          >
+            — 
+            Random quote's author
+          </span>
+        </U>
+      </div>
+    </div>
+  </div>
+  <div
+    className="auth-error"
+  >
+    <button
+      className="auth-error__close auth-error__close--others"
+    >
+      ✖
+    </button>
+    <span
+      className="auth-error__text"
+    >
+      Oops! Something went wrong while authenticating...
+    </span>
+    <span
+      className="auth-error__explanation"
+    >
+      Please try again and if the problem persists, contact us.
+    </span>
+  </div>
+</Fragment>
+`;
+
+exports[`should render Login page correctly 1`] = `
+<Fragment>
+  <div
+    className="split-layout"
+  >
+    <div
+      className="split-layout__left"
+    >
+      <div
+        className="login-content"
+      >
+        <div
+          className="login-content__logo-box"
+        >
+          <Link
+            to="/"
+          >
+            <img
+              alt="Expensus Logo"
+              className="login-content__logo"
+              height="37"
+              src="SvgrURL"
+              width="195"
+            />
+          </Link>
+        </div>
+        <h1
+          className="login-content__message"
+        >
+          Hi! Sign in to start managing your expenses.
+        </h1>
+        <button
+          className="btn btn__login btn__login--google"
+          onClick={[MockFunction]}
+        >
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  488,
+                  512,
+                  Array [],
+                  "f1a0",
+                  "M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z",
+                ],
+                "iconName": "google",
+                "prefix": "fab",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+           
+          <h2>
+            Continue with Google
+          </h2>
+        </button>
+        <button
+          className="btn btn__login btn__login--facebook"
+          onClick={[MockFunction]}
+        >
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f39e",
+                  "M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z",
+                ],
+                "iconName": "facebook-f",
+                "prefix": "fab",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+           
+          <h2>
+            Continue with Facebook
+          </h2>
+        </button>
+        <button
+          className="btn btn__login btn__login--twitter"
+          onClick={[MockFunction]}
+        >
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  512,
+                  512,
+                  Array [],
+                  "f099",
+                  "M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z",
+                ],
+                "iconName": "twitter",
+                "prefix": "fab",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+           
+          <h2>
+            Continue with Twitter
+          </h2>
+        </button>
+        <button
+          className="btn btn__login btn__login--yahoo"
+          onClick={[MockFunction]}
+        >
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  512,
+                  512,
+                  Array [],
+                  "f19e",
+                  "M223.69,141.06,167,284.23,111,141.06H14.93L120.76,390.19,82.19,480h94.17L317.27,141.06Zm105.4,135.79a58.22,58.22,0,1,0,58.22,58.22A58.22,58.22,0,0,0,329.09,276.85ZM394.65,32l-93,223.47H406.44L499.07,32Z",
+                ],
+                "iconName": "yahoo",
+                "prefix": "fab",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+           
+          <h2>
+            Continue with Yahoo
+          </h2>
+        </button>
+      </div>
+      <Footer />
+    </div>
+    <div
+      className="split-layout__right"
+    >
+      <div
+        className="quotes"
+      >
+        <U
+          element="span"
+          getAfterInit={[Function]}
+          getBeforeInit={[Function]}
+          options={Object {}}
+        >
+          <span
+            className="quotes--text"
+          >
+            “
+            Random quote
+            "
+          </span>
+          <br />
+          <span
+            className="quotes--author"
+          >
+            — 
+            Random quote's author
+          </span>
+        </U>
+      </div>
+    </div>
+  </div>
+  <div
+    className="auth-error"
+  >
+    <button
+      className="auth-error__close auth-error__close--network"
+      onClick={[MockFunction]}
+    >
+      ✖
+    </button>
+    <span
+      className="auth-error__text"
+    >
+      Network Error.
+    </span>
+    <span
+      className="auth-error__explanation"
+    >
+      Please check your internet connection and try again.
+    </span>
+  </div>
+  <div
+    className="auth-error"
+  >
+    <button
+      className="auth-error__close auth-error__close--others"
+      onClick={[MockFunction]}
+    >
+      ✖
+    </button>
+    <span
+      className="auth-error__text"
+    >
+      Oops! Something went wrong while authenticating...
+    </span>
+    <span
+      className="auth-error__explanation"
+    >
+      Please try again and if the problem persists, contact us.
+    </span>
+  </div>
+</Fragment>
+`;

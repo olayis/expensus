@@ -1,5 +1,7 @@
 import React from 'react';
+import store from '../store/configureStore';
 import ErrorPage from './ErrorPage';
+import { startErrorLog } from '../actions/errorLog';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -12,7 +14,7 @@ class ErrorBoundary extends React.Component {
   }
 
   componentDidCatch(error, errorInfo) {
-    // logErrorToMyService(error, errorInfo);
+    store.dispatch(startErrorLog(error, errorInfo));
   }
 
   render() {

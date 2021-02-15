@@ -1,3 +1,4 @@
+import store from '../../store/configureStore';
 import {
   firebase,
   googleAuthProvider,
@@ -11,7 +12,7 @@ import {
   cancelAuthNetworkError,
   cancelAuthOtherErrors,
 } from '../../actions/authErrors';
-import { store } from '../../app';
+import { startErrorLog } from '../../actions/errorLog';
 
 const getProviderForProviderId = (id) => {
   switch (id) {
@@ -59,5 +60,11 @@ export default (error) => {
     setTimeout(() => {
       store.dispatch(cancelAuthOtherErrors());
     }, 15000);
+
+    const authError = {
+      message: 'Authentication Other Errors',
+      stack: 'authErrorHandler.js, auth.js',
+    };
+    store.dispatch(startErrorLog(authError, error.code));
   }
 };

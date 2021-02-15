@@ -1,20 +1,16 @@
 // APPLICATION ERROR BOUNDARY LOG
-export const errorBoundaryLog = (error) => ({
-  type: 'ERROR_BOUNDARY_LOG',
-  error,
-});
+import database from '../firebase/firebase';
 
-export const startAddExpense = (errorData = {}) => {
-  return (dispatch) => {
-    const { error = '', errorInfo = '' } = errorData;
+export const startErrorLog = (
+  error = { message: '', stack: '' },
+  errorInfo = ''
+) => {
+  return () => {
+    const { message, stack } = error;
+    const errorDetails = { message, stack };
+    const errorTime = new Date().toString();
+    const errorData = { errorDetails, errorInfo, errorTime };
 
-    const error = { error, errorInfo };
-
-    return database
-      .ref(`errors`)
-      .push(error)
-      .then((ref) => {
-        dispatch(errorBoundaryLog({ id: ref.key, ...error }));
-      });
+    return database.ref(`errors`).push(errorData);
   };
 };

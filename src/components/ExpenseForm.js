@@ -72,6 +72,15 @@ export default class ExpenseForm extends React.Component {
         amountError: 'Please provide an amount.',
         descriptionError: '',
       }));
+    } else if (this.state.amount >= 9007199254740991) {
+      /* Ensure amount is lesser than Number.MAX_SAFE_INTEGER (2^53 - 1)
+       ** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER
+       */
+      this.setState(() => ({
+        amountError:
+          'Amount should not be greater than 9,007,199,254,740,990 or ~9 quadrillion',
+        descriptionError: '',
+      }));
     } else {
       this.setState(() => ({ descriptionError: '', amountError: '' }));
       this.props.onSubmit({

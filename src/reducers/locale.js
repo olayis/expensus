@@ -1,5 +1,5 @@
 // Currency Reducer
-const localeReducerDefaultState = { currency: 'Dollar' };
+const localeReducerDefaultState = { currency: null };
 
 export default (state = localeReducerDefaultState, action) => {
   switch (action.type) {
