@@ -47,7 +47,6 @@
 
   .user-info {
     &__wrapper {
-      z-index: 1000;
       img {
         margin-left: 1rem;
         border-radius: 50%;
@@ -69,6 +68,7 @@
             border-radius: 3px;
             box-shadow: 0 0.3rem 0.5rem rgba(#000, 0.2);
             width: 22rem;
+            z-index: 100;
 
             @include respond(tab-land) {
               left: 80%;

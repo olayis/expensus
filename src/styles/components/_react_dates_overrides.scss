@@ -50,7 +50,7 @@
 .DateInput_input {
   font-size: $normal-font-size;
   color: $color-dark-grey;
-  padding: 0px 0px 0px 2px;
+  padding: 3px 0 0 1.2rem;
 
   @include respond(tab-port) {
     font-size: $default-font-size;
@@ -58,7 +58,7 @@
 }
 
 .SingleDatePickerInput {
-  padding: 1rem;
+  padding: 0.7rem 1rem 1rem 0;
   border-radius: 5px;
 }
 
@@ -68,4 +68,13 @@
   @include respond(tab-port) {
     font-size: $default-font-size;
   }
+}
+
+.SingleDatePicker,
+.SingleDatePickerInput {
+  width: 100%;
+}
+
+.SingleDatePickerInput__withBorder {
+  border: 1px solid #cacccd;
 }

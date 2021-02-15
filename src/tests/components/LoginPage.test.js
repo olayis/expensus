@@ -31,3 +31,37 @@ test('should call startYahooLogin on button click', () => {
   wrapper.find('.btn__login--yahoo').simulate('click');
   expect(startYahooLogin).toHaveBeenCalled();
 });
+
+test('should call cancelAuthNetworkError on button click', () => {
+  const cancelAuthNetworkError = jest.fn();
+  const authErrors = {
+    networkError: true,
+    otherErrors: null,
+  };
+
+  const wrapper = shallow(
+    <LoginPage
+      cancelAuthNetworkError={cancelAuthNetworkError}
+      authErrors={authErrors}
+    />
+  );
+  wrapper.find('.auth-error__close').simulate('click');
+  expect(cancelAuthNetworkError).toHaveBeenCalled();
+});
+
+test('should call cancelAuthOtherErrors on button click', () => {
+  const cancelAuthOtherErrors = jest.fn();
+  const authErrors = {
+    networkError: false,
+    otherErrors: true,
+  };
+
+  const wrapper = shallow(
+    <LoginPage
+      cancelAuthOtherErrors={cancelAuthNetworkError}
+      authErrors={authErrors}
+    />
+  );
+  wrapper.find('.auth-error__close').simulate('click');
+  expect(cancelAuthOtherErrors).toHaveBeenCalled();
+});

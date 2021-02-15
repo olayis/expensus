@@ -22,3 +22,14 @@ test('should render ExpensesSummary with 1 expense', () => {
   );
   expect(wrapper).toMatchSnapshot();
 });
+
+test('should render ExpensesSummary with multiple expenses and hidden expenses', () => {
+  const wrapper = shallow(
+    <ExpensesSummary
+      expenseCount={17}
+      expensesTotal={264020}
+      hiddenExpenses={5}
+    />
+  );
+  expect(wrapper).toMatchSnapshot();
+});

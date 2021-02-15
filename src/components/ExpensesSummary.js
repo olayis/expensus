@@ -39,7 +39,7 @@ export const ExpensesSummary = ({
         {hiddenExpenses ? (
           <div className='summary__hidden'>
             <FontAwesomeIcon className='fa-icon' icon={faExclamationCircle} />
-            {hiddenExpenses} {filterExpenseWord} hidden expenses due to filters.
+            {hiddenExpenses} {filterExpenseWord} hidden due to filters.
           </div>
         ) : (
           ''

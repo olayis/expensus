@@ -107,6 +107,10 @@
   padding: 0 $xl-size;
   font-size: $large-font-size;
 
+  @include respond(tab-land) {
+    top: 78%;
+  }
+
   &--text {
     font-weight: 700;
   }

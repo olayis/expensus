@@ -5,22 +5,7 @@ import {
   twitterAuthprovider,
   yahooAuthProvider,
 } from '../firebase/firebase';
-
-const getProviderForProviderId = (id) => {
-  switch (id) {
-    case 'google.com':
-      return googleAuthProvider;
-
-    case 'facebook.com':
-      return facebookAuthProvider;
-
-    case 'twitter.com':
-      return twitterAuthprovider;
-
-    case 'yahoo.com':
-      return yahooAuthProvider;
-  }
-};
+import authErrorHandler from '../utils/helpers/authErrorHandler';
 
 export const login = (uid) => ({
   type: 'LOGIN',
@@ -33,26 +18,7 @@ export const startGoogleLogin = () => {
       .auth()
       .signInWithPopup(googleAuthProvider)
       .catch((error) => {
-        if (error.code === 'auth/account-exists-with-different-credential') {
-          const pendingCred = error.credential;
-          const email = error.email;
-          firebase
-            .auth()
-            .fetchSignInMethodsForEmail(email)
-            .then((methods) => {
-              const provider = getProviderForProviderId(methods[0]);
-              firebase
-                .auth()
-                .signInWithPopup(provider)
-                .then((result) => {
-                  result.user
-                    .linkWithCredential(pendingCred)
-                    .then(function (usercred) {
-                      return;
-                    });
-                });
-            });
-        }
+        authErrorHandler(error);
       });
   };
 };
@@ -63,26 +29,7 @@ export const startFacebookLogin = () => {
       .auth()
       .signInWithPopup(facebookAuthProvider)
       .catch((error) => {
-        if (error.code === 'auth/account-exists-with-different-credential') {
-          const pendingCred = error.credential;
-          const email = error.email;
-          firebase
-            .auth()
-            .fetchSignInMethodsForEmail(email)
-            .then((methods) => {
-              const provider = getProviderForProviderId(methods[0]);
-              firebase
-                .auth()
-                .signInWithPopup(provider)
-                .then((result) => {
-                  result.user
-                    .linkWithCredential(pendingCred)
-                    .then(function (usercred) {
-                      return;
-                    });
-                });
-            });
-        }
+        authErrorHandler(error);
       });
   };
 };
@@ -93,26 +40,7 @@ export const startTwitterLogin = () => {
       .auth()
       .signInWithPopup(twitterAuthprovider)
       .catch((error) => {
-        if (error.code === 'auth/account-exists-with-different-credential') {
-          const pendingCred = error.credential;
-          const email = error.email;
-          firebase
-            .auth()
-            .fetchSignInMethodsForEmail(email)
-            .then((methods) => {
-              const provider = getProviderForProviderId(methods[0]);
-              firebase
-                .auth()
-                .signInWithPopup(provider)
-                .then((result) => {
-                  result.user
-                    .linkWithCredential(pendingCred)
-                    .then(function (usercred) {
-                      return;
-                    });
-                });
-            });
-        }
+        authErrorHandler(error);
       });
   };
 };
@@ -123,26 +51,7 @@ export const startYahooLogin = () => {
       .auth()
       .signInWithPopup(yahooAuthProvider)
       .catch((error) => {
-        if (error.code === 'auth/account-exists-with-different-credential') {
-          const pendingCred = error.credential;
-          const email = error.email;
-          firebase
-            .auth()
-            .fetchSignInMethodsForEmail(email)
-            .then((methods) => {
-              const provider = getProviderForProviderId(methods[0]);
-              firebase
-                .auth()
-                .signInWithPopup(provider)
-                .then((result) => {
-                  result.user
-                    .linkWithCredential(pendingCred)
-                    .then(function (usercred) {
-                      return;
-                    });
-                });
-            });
-        }
+        authErrorHandler(error);
       });
   };
 };
