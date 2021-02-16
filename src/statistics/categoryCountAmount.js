@@ -12,7 +12,7 @@ export default (expenses) => {
       return arr;
     }, {})
   ).map((expense) => [
-    expense.category,
+    `${expense.category.substring(0, 3)}...`,
     expense.amount / 100,
     expense.count,
     expense.category,
