@@ -14,7 +14,10 @@ export class ChangeCurrency extends React.Component {
       <main className='main-content'>
         <div className='content-container'>
           <div className='component-container component-container--currency'>
-            <CurrencyForm onSubmit={this.onSubmit} />
+            <CurrencyForm
+              onSubmit={this.onSubmit}
+              currency={this.props.currency}
+            />
           </div>
         </div>
       </main>
@@ -22,8 +25,12 @@ export class ChangeCurrency extends React.Component {
   }
 }
 
+const mapStateToProps = (state) => ({
+  currency: state.locale ? state.locale.currency : '',
+});
+
 const mapDispatchToProps = (dispatch) => ({
   startChangeLocale: (currency) => dispatch(startChangeLocale(currency)),
 });
 
-export default connect(undefined, mapDispatchToProps)(ChangeCurrency);
+export default connect(mapStateToProps, mapDispatchToProps)(ChangeCurrency);

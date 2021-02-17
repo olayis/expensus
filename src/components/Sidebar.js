@@ -27,14 +27,13 @@ export const Sidebar = ({ startLogout, sidebarOpen, closeSidebar }) => (
         />
         <span className='sidebar__expensus'>Expensus</span>
       </Link>
-      <span className='sidebar__close'>
-        <FontAwesomeIcon
-          icon={faTimes}
-          className='fa-icon'
-          onClick={() => closeSidebar()}
-          aria-label='Close'
-          role='button'
-        />
+      <span
+        className='sidebar__close'
+        onClick={() => closeSidebar()}
+        aria-label='Close'
+        role='button'
+      >
+        &#10006;
       </span>
     </div>
     <nav className='sidebar__navigation'>

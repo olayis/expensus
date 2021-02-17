@@ -162,3 +162,10 @@ test('should set calendar focus on change', () => {
   });
   expect(wrapper.state('calendarFocused')).toBe(true);
 });
+
+test('should call goBack prop when back button is clicked', () => {
+  const goBackSpy = jest.fn();
+  const wrapper = shallow(<ExpenseForm goBack={goBackSpy} />);
+  wrapper.find('.input-field__back').simulate('click');
+  expect(goBackSpy).toHaveBeenCalled();
+});

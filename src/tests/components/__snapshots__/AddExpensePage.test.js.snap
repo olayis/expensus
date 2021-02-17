@@ -11,6 +11,7 @@ exports[`should render AddExpensePage correctly 1`] = `
       className="add-expense-container"
     >
       <ExpenseForm
+        goBack={[Function]}
         onSubmit={[Function]}
       />
     </div>

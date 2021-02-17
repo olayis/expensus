@@ -14,6 +14,10 @@ export class EditExpensePage extends React.Component {
     this.props.history.push('/');
   };
 
+  goBack = () => {
+    this.props.history.goBack();
+  };
+
   render() {
     return (
       <main className='main-content'>
@@ -22,6 +26,7 @@ export class EditExpensePage extends React.Component {
             <ExpenseForm
               expense={this.props.expense}
               onSubmit={this.onSubmit}
+              goBack={this.goBack}
             />
             <button
               onClick={this.onRemove}

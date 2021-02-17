@@ -7,7 +7,7 @@ export default class CurrencyForm extends React.Component {
     super(props);
 
     this.state = {
-      currency: props.locale ? props.locale.currency : '',
+      currency: props.currency,
       currencyError: '',
     };
   }

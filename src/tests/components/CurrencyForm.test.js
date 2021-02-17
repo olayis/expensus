@@ -9,12 +9,12 @@ test('should render CurrencyForm correctly', () => {
 });
 
 test('should render CurrencyForm with locale data', () => {
-  const wrapper = shallow(<CurrencyForm locale={locales[1]} />);
+  const wrapper = shallow(<CurrencyForm currency={locales[1].currency} />);
   expect(wrapper).toMatchSnapshot();
 });
 
-test('should render both currencyError "currency" is not provided', () => {
-  const wrapper = shallow(<CurrencyForm />);
+test('should render currencyError if "currency" is not provided', () => {
+  const wrapper = shallow(<CurrencyForm currency={''} />);
   expect(wrapper).toMatchSnapshot();
 
   wrapper.find('form').simulate('submit', {
@@ -26,7 +26,7 @@ test('should render both currencyError "currency" is not provided', () => {
 
 test('should set currency on select', () => {
   const value = 'New Currency';
-  const wrapper = shallow(<CurrencyForm />);
+  const wrapper = shallow(<CurrencyForm currency={locales[2].currency} />);
   wrapper.find('.dropdown').simulate('change', {
     target: { value },
   });
@@ -35,7 +35,7 @@ test('should set currency on select', () => {
 
 test('should not set currency if input data is invalid', () => {
   const value = '';
-  const wrapper = shallow(<CurrencyForm />);
+  const wrapper = shallow(<CurrencyForm currency={locales[1].currency} />);
   wrapper.find('.dropdown').simulate('change', {
     target: { value },
   });
@@ -45,7 +45,7 @@ test('should not set currency if input data is invalid', () => {
 test('should call onSubmit prop for valid form submission', () => {
   const onSubmitSpy = jest.fn();
   const wrapper = shallow(
-    <CurrencyForm locale={locales[0]} onSubmit={onSubmitSpy} />
+    <CurrencyForm currency={locales[1].currency} onSubmit={onSubmitSpy} />
   );
   wrapper.find('form').simulate('submit', {
     preventDefault: () => {},
@@ -53,6 +53,6 @@ test('should call onSubmit prop for valid form submission', () => {
 
   expect(wrapper.state('currencyError')).toBe('');
   expect(onSubmitSpy).toHaveBeenLastCalledWith({
-    currency: locales[0].currency,
+    currency: locales[1].currency,
   });
 });

@@ -21,6 +21,7 @@ exports[`should render editExpensePage correctly 1`] = `
             "note": "",
           }
         }
+        goBack={[Function]}
         onSubmit={[Function]}
       />
       <button

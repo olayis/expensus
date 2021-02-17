@@ -5,6 +5,11 @@ exports[`should render ExpenseForm correctly 1`] = `
   className="input-field"
   onSubmit={[Function]}
 >
+  <span
+    className="input-field__back"
+  >
+    ←
+  </span>
   <div
     className="input-field__wrapper"
   >
@@ -268,6 +273,11 @@ exports[`should render ExpenseForm with expense data 1`] = `
   className="input-field"
   onSubmit={[Function]}
 >
+  <span
+    className="input-field__back"
+  >
+    ←
+  </span>
   <div
     className="input-field__wrapper"
   >
@@ -531,6 +541,11 @@ exports[`should render amountError if "amount" is not provided but "description"
   className="input-field"
   onSubmit={[Function]}
 >
+  <span
+    className="input-field__back"
+  >
+    ←
+  </span>
   <div
     className="input-field__wrapper"
   >
@@ -794,6 +809,11 @@ exports[`should render amountError if "amount" is not provided but "description"
   className="input-field"
   onSubmit={[Function]}
 >
+  <span
+    className="input-field__back"
+  >
+    ←
+  </span>
   <div
     className="input-field__wrapper"
   >
@@ -1093,6 +1113,11 @@ exports[`should render amountError if amount is greater than or equal to 9007199
   className="input-field"
   onSubmit={[Function]}
 >
+  <span
+    className="input-field__back"
+  >
+    ←
+  </span>
   <div
     className="input-field__wrapper"
   >
@@ -1356,6 +1381,11 @@ exports[`should render amountError if amount is greater than or equal to 9007199
   className="input-field"
   onSubmit={[Function]}
 >
+  <span
+    className="input-field__back"
+  >
+    ←
+  </span>
   <div
     className="input-field__wrapper"
   >
@@ -1655,6 +1685,11 @@ exports[`should render both descriptionError and amountError if "description" an
   className="input-field"
   onSubmit={[Function]}
 >
+  <span
+    className="input-field__back"
+  >
+    ←
+  </span>
   <div
     className="input-field__wrapper"
   >
@@ -1918,6 +1953,11 @@ exports[`should render descriptionError if "description" is not provided but "am
   className="input-field"
   onSubmit={[Function]}
 >
+  <span
+    className="input-field__back"
+  >
+    ←
+  </span>
   <div
     className="input-field__wrapper"
   >
@@ -2181,6 +2221,11 @@ exports[`should render descriptionError if "description" is not provided but "am
   className="input-field"
   onSubmit={[Function]}
 >
+  <span
+    className="input-field__back"
+  >
+    ←
+  </span>
   <div
     className="input-field__wrapper"
   >

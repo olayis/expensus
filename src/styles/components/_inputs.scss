@@ -105,6 +105,12 @@
     margin: 0.8rem 0 0 1rem;
     font-size: $small-font-size;
   }
+
+  &__back {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
 }
 
 .text-input--form:focus,

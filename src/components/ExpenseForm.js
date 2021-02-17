@@ -96,6 +96,9 @@ export default class ExpenseForm extends React.Component {
   render() {
     return (
       <form className='input-field' onSubmit={this.onSubmit}>
+        <span className='input-field__back' onClick={this.props.goBack}>
+          &#8592;
+        </span>
         <div className='input-field__wrapper'>
           <input
             className={

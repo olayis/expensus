@@ -8,12 +8,17 @@ export class AddExpensePage extends React.Component {
     this.props.startAddExpense(expense);
     this.props.history.push('/');
   };
+
+  goBack = () => {
+    this.props.history.goBack();
+  };
+
   render() {
     return (
       <main className='main-content'>
         <div className='content-container'>
           <div className='add-expense-container'>
-            <ExpenseForm onSubmit={this.onSubmit} />
+            <ExpenseForm onSubmit={this.onSubmit} goBack={this.goBack} />
           </div>
         </div>
       </main>

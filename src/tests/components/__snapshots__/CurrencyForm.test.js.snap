@@ -13,7 +13,6 @@ exports[`should render CurrencyForm correctly 1`] = `
       className="dropdown dropdown--currency"
       name="currency"
       onChange={[Function]}
-      value=""
     >
       <option
         value=""
@@ -260,7 +259,7 @@ exports[`should render CurrencyForm with locale data 1`] = `
 </form>
 `;
 
-exports[`should render both currencyError "currency" is not provided 1`] = `
+exports[`should render currencyError if "currency" is not provided 1`] = `
 <form
   className="input-field"
   onSubmit={[Function]}

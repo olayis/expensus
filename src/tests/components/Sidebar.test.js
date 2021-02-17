@@ -19,6 +19,6 @@ test('should close sidebar on close click', () => {
   const wrapper = shallow(
     <Sidebar closeSidebar={closeSidebar} sidebarOpen={true} />
   );
-  wrapper.find('.sidebar__close .fa-icon').simulate('click');
+  wrapper.find('.sidebar__close').simulate('click');
   expect(closeSidebar).toHaveBeenCalled();
 });
