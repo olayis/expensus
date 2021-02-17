@@ -23,7 +23,6 @@ test('should render ExpensesData with filters message', () => {
 });
 
 test('should handle startDeleteData on click', () => {
-  const handleStartDeleteDataSelected = jest.fn();
   const startDeleteDataSelected = jest.fn();
   const wrapper = shallow(
     <ExpensesData
@@ -34,4 +33,17 @@ test('should handle startDeleteData on click', () => {
   );
   wrapper.find('.component__delete-btn').simulate('click');
   expect(startDeleteDataSelected).toHaveBeenCalled();
+});
+
+test('should call goBack prop when back button is clicked', () => {
+  const history = { goBack: jest.fn() };
+  const wrapper = shallow(
+    <ExpensesData
+      expenses={[]}
+      expensesWithoutFilters={expenses}
+      history={history}
+    />
+  );
+  wrapper.find('.input-field__back').simulate('click');
+  expect(history.goBack).toHaveBeenCalled();
 });

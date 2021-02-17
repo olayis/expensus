@@ -11,6 +11,7 @@ exports[`should render ChangeCurrency correctly 1`] = `
       className="component-container component-container--currency"
     >
       <CurrencyForm
+        goBack={[Function]}
         onSubmit={[Function]}
       />
     </div>

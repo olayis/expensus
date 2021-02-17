@@ -5,6 +5,11 @@ exports[`should render CurrencyForm correctly 1`] = `
   className="input-field"
   onSubmit={[Function]}
 >
+  <span
+    className="input-field__back"
+  >
+    ←
+  </span>
   <div
     className="input-field__wrapper"
   >
@@ -134,6 +139,11 @@ exports[`should render CurrencyForm with locale data 1`] = `
   className="input-field"
   onSubmit={[Function]}
 >
+  <span
+    className="input-field__back"
+  >
+    ←
+  </span>
   <div
     className="input-field__wrapper"
   >
@@ -264,6 +274,11 @@ exports[`should render currencyError if "currency" is not provided 1`] = `
   className="input-field"
   onSubmit={[Function]}
 >
+  <span
+    className="input-field__back"
+  >
+    ←
+  </span>
   <div
     className="input-field__wrapper"
   >

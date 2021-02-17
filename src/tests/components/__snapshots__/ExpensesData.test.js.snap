@@ -7,6 +7,12 @@ exports[`should render ExpensesData with empty message 1`] = `
   <section
     className="content-container"
   >
+    <span
+      className="input-field__back"
+      onClick={[Function]}
+    >
+      ←
+    </span>
     <div
       className="component-container"
     >
@@ -212,6 +218,12 @@ exports[`should render ExpensesData with expenses 1`] = `
   <section
     className="content-container"
   >
+    <span
+      className="input-field__back"
+      onClick={[Function]}
+    >
+      ←
+    </span>
     <div
       className="component-container"
     >
@@ -455,6 +467,12 @@ exports[`should render ExpensesData with filters message 1`] = `
   <section
     className="content-container"
   >
+    <span
+      className="input-field__back"
+      onClick={[Function]}
+    >
+      ←
+    </span>
     <div
       className="component-container"
     >

@@ -37,9 +37,16 @@ export const ExpensesData = (props) => {
     props.stopDeleteDataSelected();
   };
 
+  const goBack = () => {
+    props.history.goBack();
+  };
+
   return (
     <main className='main-content'>
       <section className='content-container'>
+        <span className='input-field__back' onClick={goBack}>
+          &#8592;
+        </span>
         <div className='component-container'>
           <div className='component'>
             <h2 className='heading-secondary'>

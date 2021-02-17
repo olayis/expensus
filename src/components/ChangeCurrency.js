@@ -9,6 +9,11 @@ export class ChangeCurrency extends React.Component {
     this.props.history.push('/');
     this.props.history.go(0);
   };
+
+  goBack = () => {
+    this.props.history.goBack();
+  };
+
   render() {
     return (
       <main className='main-content'>
@@ -17,6 +22,7 @@ export class ChangeCurrency extends React.Component {
             <CurrencyForm
               onSubmit={this.onSubmit}
               currency={this.props.currency}
+              goBack={this.goBack}
             />
           </div>
         </div>

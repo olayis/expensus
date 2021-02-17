@@ -110,6 +110,10 @@
     font-size: 2.4rem;
     margin-bottom: 2rem;
     cursor: pointer;
+
+    @include respond(phone) {
+      margin-bottom: 1rem;
+    }
   }
 }
 

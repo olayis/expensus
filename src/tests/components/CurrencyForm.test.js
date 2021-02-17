@@ -56,3 +56,10 @@ test('should call onSubmit prop for valid form submission', () => {
     currency: locales[1].currency,
   });
 });
+
+test('should call goBack prop when back button is clicked', () => {
+  const goBackSpy = jest.fn();
+  const wrapper = shallow(<CurrencyForm goBack={goBackSpy} />);
+  wrapper.find('.input-field__back').simulate('click');
+  expect(goBackSpy).toHaveBeenCalled();
+});
