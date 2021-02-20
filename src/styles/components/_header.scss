@@ -22,26 +22,22 @@
     }
   }
 
+  &__center {
+    max-width: calc(100vw - 40%);
+  }
+
   &__title {
     display: none;
+    padding: $s-size;
+    color: $color-primary-dark;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    @include shortenLongText;
 
     @include respond(tab-land) {
       display: inline-block;
-    }
-
-    a {
-      cursor: default;
-      display: none;
-      padding: $s-size;
-      text-decoration: none;
-      transition: all 0.2s;
-      color: $color-primary-dark;
-      font-size: $medium-font-size;
-      font-weight: 500;
-    }
-
-    .nav-is-active {
-      display: inline-block !important;
     }
   }
 

@@ -1,5 +1,9 @@
 {
-  "setupFiles": ["raf/polyFill", "<rootDir>/src/tests/setupTests.js"],
+  "setupFiles": [
+    "raf/polyFill",
+    "<rootDir>/src/tests/setupTests.js",
+    "<rootDir>/src/tests/__mocks__/react-router-dom.js"
+  ],
   "snapshotSerializers": ["enzyme-to-json/serializer"],
   "moduleNameMapper": {
     "\\.svg": "<rootDir>/src/tests/__mocks__/svgrMock.js",

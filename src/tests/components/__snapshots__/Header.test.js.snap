@@ -46,42 +46,11 @@ exports[`should render Header correctly 1`] = `
     <div
       className="header__center"
     >
-      <div
+      <h1
         className="header__title"
       >
-        <h1>
-          <NavLink
-            activeClassName="nav-is-active"
-            to="/dashboard"
-          >
-            Dashboard
-          </NavLink>
-          <NavLink
-            activeClassName="nav-is-active"
-            to="/create"
-          >
-            Add Expense
-          </NavLink>
-          <NavLink
-            activeClassName="nav-is-active"
-            to="/edit"
-          >
-            Edit Expense
-          </NavLink>
-          <NavLink
-            activeClassName="nav-is-active"
-            to="/currency"
-          >
-            Currency
-          </NavLink>
-          <NavLink
-            activeClassName="nav-is-active"
-            to="/data"
-          >
-            Data
-          </NavLink>
-        </h1>
-      </div>
+        HEADER-TITLE
+      </h1>
     </div>
     <div
       className="header__right"
