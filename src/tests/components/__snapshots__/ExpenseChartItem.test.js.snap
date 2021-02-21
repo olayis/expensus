@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseChartItem with chart data 1`] = `
+<div
+  className="expense-chart"
+>
+  <div
+    className="expense-chart__title"
+  >
+    Chart Title
+  </div>
+  <Chart
+    chartActions={null}
+    chartEvents={null}
+    chartType="Chart Type"
+    chartWrapperParams={Object {}}
+    className="expense-chart__chart"
+    columns={null}
+    controls={null}
+    data={
+      Array [
+        1,
+        2,
+        3,
+      ]
+    }
+    diffdata={null}
+    formatters={null}
+    getChartEditor={null}
+    getChartWrapper={[Function]}
+    graphID={null}
+    graph_id={null}
+    height="50rem"
+    legendToggle={false}
+    legend_toggle={false}
+    loader={
+      <div
+        className="expense-chart__loader"
+      >
+        <img
+          alt=""
+          height="200"
+          src="test-file-stub"
+          width="200"
+        />
+        <p>
+          Loading Chart...
+        </p>
+      </div>
+    }
+    options={
+      Object {
+        "colors": null,
+      }
+    }
+    render={null}
+    rootProps={
+      Object {
+        "data-testid": "1",
+      }
+    }
+    rows={null}
+    spreadSheetQueryParameters={
+      Object {
+        "gid": 1,
+        "headers": 1,
+      }
+    }
+    spreadSheetUrl={null}
+    style={Object {}}
+    toolbarID={null}
+    toolbarItems={null}
+    width="100%"
+  />
+</div>
+`;

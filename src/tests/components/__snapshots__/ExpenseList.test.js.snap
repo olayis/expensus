@@ -1,204 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render ExpenseList with dates filter message 1`] = `
-<section
-  className="content-container"
->
-  <div
-    className="component-container"
-  >
-    <h2
-      className="heading-secondary"
-    >
-      <FontAwesomeIcon
-        border={false}
-        className=""
-        fixedWidth={false}
-        flip={null}
-        icon={
-          Object {
-            "icon": Array [
-              576,
-              512,
-              Array [],
-              "f06e",
-              "M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z",
-            ],
-            "iconName": "eye",
-            "prefix": "far",
-          }
-        }
-        inverse={false}
-        listItem={false}
-        mask={null}
-        pull={null}
-        pulse={false}
-        rotation={null}
-        size={null}
-        spin={false}
-        swapOpacity={false}
-        symbol={false}
-        title=""
-        transform={null}
-      />
-       Expenses Overview
-    </h2>
-    <div
-      className="no-expense"
-    >
-      <img
-        alt="A filter showing Expenses have been filtered"
-        className="no-expense__illustration"
-        height="608"
-        src="SvgrURL"
-        width="883"
-      />
-      <p>
-        No results found
-         
-         
-        starting from Jan 1st, 1970
-         
-        ending at Jan 5th, 1970
-      </p>
-    </div>
-  </div>
-</section>
-`;
-
-exports[`should render ExpenseList with empty message 1`] = `
-<section
-  className="content-container"
->
-  <div
-    className="component-container"
-  >
-    <h2
-      className="heading-secondary"
-    >
-      <FontAwesomeIcon
-        border={false}
-        className=""
-        fixedWidth={false}
-        flip={null}
-        icon={
-          Object {
-            "icon": Array [
-              576,
-              512,
-              Array [],
-              "f06e",
-              "M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z",
-            ],
-            "iconName": "eye",
-            "prefix": "far",
-          }
-        }
-        inverse={false}
-        listItem={false}
-        mask={null}
-        pull={null}
-        pulse={false}
-        rotation={null}
-        size={null}
-        spin={false}
-        swapOpacity={false}
-        symbol={false}
-        title=""
-        transform={null}
-      />
-       Expenses Overview
-    </h2>
-    <div
-      className="no-expense"
-    >
-      <img
-        alt="A clipboard showing no data"
-        className="no-expense__illustration"
-        height="633"
-        src="SvgrURL"
-        width="648"
-      />
-      <p>
-        No Expenses To Display.
-         
-        <Link
-          className="router-link router-link--add"
-          to="/create"
-        >
-          Add an Expense
-        </Link>
-      </p>
-    </div>
-  </div>
-</section>
-`;
-
-exports[`should render ExpenseList with endDate filter message 1`] = `
-<section
-  className="content-container"
->
-  <div
-    className="component-container"
-  >
-    <h2
-      className="heading-secondary"
-    >
-      <FontAwesomeIcon
-        border={false}
-        className=""
-        fixedWidth={false}
-        flip={null}
-        icon={
-          Object {
-            "icon": Array [
-              576,
-              512,
-              Array [],
-              "f06e",
-              "M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z",
-            ],
-            "iconName": "eye",
-            "prefix": "far",
-          }
-        }
-        inverse={false}
-        listItem={false}
-        mask={null}
-        pull={null}
-        pulse={false}
-        rotation={null}
-        size={null}
-        spin={false}
-        swapOpacity={false}
-        symbol={false}
-        title=""
-        transform={null}
-      />
-       Expenses Overview
-    </h2>
-    <div
-      className="no-expense"
-    >
-      <img
-        alt="A filter showing Expenses have been filtered"
-        className="no-expense__illustration"
-        height="608"
-        src="SvgrURL"
-        width="883"
-      />
-      <p>
-        No results found
-         
-         
-         
-        ending at Jan 5th, 1970
-      </p>
-    </div>
-  </div>
-</section>
-`;
-
 exports[`should render ExpenseList with expenses 1`] = `
 <section
   className="content-container"
@@ -244,7 +45,7 @@ exports[`should render ExpenseList with expenses 1`] = `
     </h2>
     <div
       className="row"
-      key="0"
+      key="1"
     >
       <div
         className="col-1-of-4"
@@ -256,7 +57,6 @@ exports[`should render ExpenseList with expenses 1`] = `
           createdAt={0}
           description="Data"
           id="1"
-          key="1"
           note=""
         />
       </div>
@@ -270,7 +70,6 @@ exports[`should render ExpenseList with expenses 1`] = `
           createdAt={"1969-12-27T00:00:00.000Z"}
           description="Home Rentage"
           id="2"
-          key="2"
           note=""
         />
       </div>
@@ -284,7 +83,6 @@ exports[`should render ExpenseList with expenses 1`] = `
           createdAt={"1970-01-13T00:00:00.000Z"}
           description="Room Repainting"
           id="3"
-          key="3"
           note=""
         />
       </div>
@@ -298,7 +96,6 @@ exports[`should render ExpenseList with expenses 1`] = `
           createdAt={"1970-01-11T00:00:00.000Z"}
           description="Water Pipes Repair"
           id="4"
-          key="4"
           note=""
         />
       </div>
@@ -307,7 +104,7 @@ exports[`should render ExpenseList with expenses 1`] = `
 </section>
 `;
 
-exports[`should render ExpenseList with startDate filter message 1`] = `
+exports[`should render NoExpense if there are no expenses 1`] = `
 <section
   className="content-container"
 >
@@ -350,156 +147,9 @@ exports[`should render ExpenseList with startDate filter message 1`] = `
       />
        Expenses Overview
     </h2>
-    <div
-      className="no-expense"
-    >
-      <img
-        alt="A filter showing Expenses have been filtered"
-        className="no-expense__illustration"
-        height="608"
-        src="SvgrURL"
-        width="883"
-      />
-      <p>
-        No results found
-         
-         
-        starting from Jan 1st, 1970
-         
-      </p>
-    </div>
-  </div>
-</section>
-`;
-
-exports[`should render ExpenseList with text and date filters message 1`] = `
-<section
-  className="content-container"
->
-  <div
-    className="component-container"
-  >
-    <h2
-      className="heading-secondary"
-    >
-      <FontAwesomeIcon
-        border={false}
-        className=""
-        fixedWidth={false}
-        flip={null}
-        icon={
-          Object {
-            "icon": Array [
-              576,
-              512,
-              Array [],
-              "f06e",
-              "M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z",
-            ],
-            "iconName": "eye",
-            "prefix": "far",
-          }
-        }
-        inverse={false}
-        listItem={false}
-        mask={null}
-        pull={null}
-        pulse={false}
-        rotation={null}
-        size={null}
-        spin={false}
-        swapOpacity={false}
-        symbol={false}
-        title=""
-        transform={null}
-      />
-       Expenses Overview
-    </h2>
-    <div
-      className="no-expense"
-    >
-      <img
-        alt="A filter showing Expenses have been filtered"
-        className="no-expense__illustration"
-        height="608"
-        src="SvgrURL"
-        width="883"
-      />
-      <p>
-        No results found
-         
-        for "bills"
-         
-        starting from Jan 1st, 1970
-         
-        ending at Jan 5th, 1970
-      </p>
-    </div>
-  </div>
-</section>
-`;
-
-exports[`should render ExpenseList with text filter message 1`] = `
-<section
-  className="content-container"
->
-  <div
-    className="component-container"
-  >
-    <h2
-      className="heading-secondary"
-    >
-      <FontAwesomeIcon
-        border={false}
-        className=""
-        fixedWidth={false}
-        flip={null}
-        icon={
-          Object {
-            "icon": Array [
-              576,
-              512,
-              Array [],
-              "f06e",
-              "M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z",
-            ],
-            "iconName": "eye",
-            "prefix": "far",
-          }
-        }
-        inverse={false}
-        listItem={false}
-        mask={null}
-        pull={null}
-        pulse={false}
-        rotation={null}
-        size={null}
-        spin={false}
-        swapOpacity={false}
-        symbol={false}
-        title=""
-        transform={null}
-      />
-       Expenses Overview
-    </h2>
-    <div
-      className="no-expense"
-    >
-      <img
-        alt="A filter showing Expenses have been filtered"
-        className="no-expense__illustration"
-        height="608"
-        src="SvgrURL"
-        width="883"
-      />
-      <p>
-        No results found
-         
-        for "bills"
-         
-         
-      </p>
-    </div>
+    <Connect(NoExpense)
+      expensesWithoutFilters={Array []}
+    />
   </div>
 </section>
 `;

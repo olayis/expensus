@@ -21,7 +21,14 @@ const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 const facebookAuthProvider = new firebase.auth.FacebookAuthProvider();
 const twitterAuthprovider = new firebase.auth.TwitterAuthProvider();
 const yahooAuthProvider = new firebase.auth.OAuthProvider('yahoo.com');
-const analytics = firebase.analytics();
+
+const analyticsMock = {
+  logEvent: () => {},
+  setCurrentScreen: () => {},
+  setUserId: () => {},
+};
+const analytics =
+  process.env.NODE_ENV !== 'test' ? firebase.analytics() : analyticsMock;
 
 export {
   firebase,

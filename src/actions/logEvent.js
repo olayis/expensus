@@ -5,4 +5,4 @@ const logEvent = (event, ...info) => {
   return () => analytics.logEvent(event, ...info);
 };
 
-export { logEvent as default };
+export default logEvent;

@@ -6,7 +6,7 @@ exports[`should render expensus dashboard page correctly 1`] = `
 >
   <Connect(ExpensesSummary) />
   <Connect(ExpenseListFilters) />
-  <Connect(ExpenseList) />
-  <Connect(ExpensesCharts) />
+  <ExpenseList />
+  <ExpenseChart />
 </main>
 `;

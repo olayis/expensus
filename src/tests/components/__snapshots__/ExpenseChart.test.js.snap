@@ -1,0 +1,360 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseChart with empty message 1`] = `
+<section
+  className="content-container"
+>
+  <div
+    className="component-container component-container--chart"
+  >
+    <h2
+      className="heading-secondary"
+    >
+      <FontAwesomeIcon
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              512,
+              512,
+              Array [],
+              "f080",
+              "M396.8 352h22.4c6.4 0 12.8-6.4 12.8-12.8V108.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v230.4c0 6.4 6.4 12.8 12.8 12.8zm-192 0h22.4c6.4 0 12.8-6.4 12.8-12.8V140.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v198.4c0 6.4 6.4 12.8 12.8 12.8zm96 0h22.4c6.4 0 12.8-6.4 12.8-12.8V204.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v134.4c0 6.4 6.4 12.8 12.8 12.8zM496 400H48V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16zm-387.2-48h22.4c6.4 0 12.8-6.4 12.8-12.8v-70.4c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v70.4c0 6.4 6.4 12.8 12.8 12.8z",
+            ],
+            "iconName": "chart-bar",
+            "prefix": "far",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
+       Expenses Charts
+    </h2>
+    <div
+      className="no-expense"
+    >
+      <img
+        alt="A man looking at charts"
+        className="no-expense__illustration"
+        height="532"
+        src="SvgrURL"
+        width="773"
+      />
+      <p>
+        Start adding Expenses to generate Charts.
+      </p>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`should render ExpenseChart with filters message 1`] = `
+<section
+  className="content-container"
+>
+  <div
+    className="component-container component-container--chart"
+  >
+    <h2
+      className="heading-secondary"
+    >
+      <FontAwesomeIcon
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              512,
+              512,
+              Array [],
+              "f080",
+              "M396.8 352h22.4c6.4 0 12.8-6.4 12.8-12.8V108.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v230.4c0 6.4 6.4 12.8 12.8 12.8zm-192 0h22.4c6.4 0 12.8-6.4 12.8-12.8V140.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v198.4c0 6.4 6.4 12.8 12.8 12.8zm96 0h22.4c6.4 0 12.8-6.4 12.8-12.8V204.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v134.4c0 6.4 6.4 12.8 12.8 12.8zM496 400H48V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16zm-387.2-48h22.4c6.4 0 12.8-6.4 12.8-12.8v-70.4c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v70.4c0 6.4 6.4 12.8 12.8 12.8z",
+            ],
+            "iconName": "chart-bar",
+            "prefix": "far",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
+       Expenses Charts
+    </h2>
+    <div
+      className="no-expense"
+    >
+      <img
+        alt="A man looking at charts"
+        className="no-expense__illustration"
+        height="532"
+        src="SvgrURL"
+        width="773"
+      />
+      <p>
+        Clear current filters to generate Charts.
+      </p>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`should render ExpensesChart with expenses data 1`] = `
+<section
+  className="content-container"
+>
+  <div
+    className="component-container component-container--chart"
+  >
+    <h2
+      className="heading-secondary"
+    >
+      <FontAwesomeIcon
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              512,
+              512,
+              Array [],
+              "f080",
+              "M396.8 352h22.4c6.4 0 12.8-6.4 12.8-12.8V108.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v230.4c0 6.4 6.4 12.8 12.8 12.8zm-192 0h22.4c6.4 0 12.8-6.4 12.8-12.8V140.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v198.4c0 6.4 6.4 12.8 12.8 12.8zm96 0h22.4c6.4 0 12.8-6.4 12.8-12.8V204.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v134.4c0 6.4 6.4 12.8 12.8 12.8zM496 400H48V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16zm-387.2-48h22.4c6.4 0 12.8-6.4 12.8-12.8v-70.4c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v70.4c0 6.4 6.4 12.8 12.8 12.8z",
+            ],
+            "iconName": "chart-bar",
+            "prefix": "far",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
+       Expenses Charts
+    </h2>
+    <div>
+      <div
+        className="row"
+      >
+        <div
+          className="col-1-of-2"
+        >
+          <ExpenseChartItem
+            chartRootProps={
+              Object {
+                "data-testid": "1",
+              }
+            }
+            chartType="PieChart"
+            data={
+              Array [
+                Array [
+                  "Title",
+                  "Amount",
+                ],
+                Array [
+                  "Data",
+                  20,
+                ],
+                Array [
+                  "Home Rentage",
+                  350,
+                ],
+                Array [
+                  "Room Repainting",
+                  80,
+                ],
+                Array [
+                  "Water Pipes Repair",
+                  10,
+                ],
+              ]
+            }
+            height="30rem"
+            title="Expenses (By Percentage)"
+            width="100%"
+          />
+        </div>
+        <div
+          className="col-1-of-2"
+        >
+          <ExpenseChartItem
+            chartRootProps={
+              Object {
+                "data-testid": "2",
+              }
+            }
+            chartType="Bar"
+            data={
+              Array [
+                Array [
+                  "Date",
+                  "Amount",
+                ],
+                Array [
+                  "01/01",
+                  20,
+                ],
+                Array [
+                  "27/12",
+                  350,
+                ],
+                Array [
+                  "13/01",
+                  80,
+                ],
+                Array [
+                  "11/01",
+                  10,
+                ],
+              ]
+            }
+            height="30rem"
+            title="Daily Amount Of Expenses"
+            width="100%"
+          />
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <ExpenseChartItem
+          chartRootProps={
+            Object {
+              "data-testid": "3",
+            }
+          }
+          chartType="LineChart"
+          data={
+            Array [
+              Array [
+                "Date",
+                "Number Of Expenses",
+              ],
+              Array [
+                "01/01",
+                1,
+              ],
+              Array [
+                "27/12",
+                1,
+              ],
+              Array [
+                "13/01",
+                1,
+              ],
+              Array [
+                "11/01",
+                1,
+              ],
+            ]
+          }
+          height="30rem"
+          options={
+            Object {
+              "hAxis": Object {
+                "title": "Date",
+              },
+              "vAxis": Object {
+                "title": "Number",
+              },
+            }
+          }
+          title="Daily Number of Expenses"
+          width="100%"
+        />
+      </div>
+      <div
+        className="row"
+      >
+        <ExpenseChartItem
+          chartRootProps={
+            Object {
+              "data-testid": "4",
+            }
+          }
+          chartType="BubbleChart"
+          data={
+            Array [
+              Array [
+                "ID",
+                "Total",
+                "Number",
+                "Category",
+                "Percentage",
+              ],
+              Array [
+                "Bil...",
+                20,
+                1,
+                "Bills & Utilities",
+                4.3478260869565215,
+              ],
+              Array [
+                "Ren...",
+                350,
+                1,
+                "Rent",
+                76.08695652173914,
+              ],
+              Array [
+                "Mai...",
+                90,
+                2,
+                "Maintenance",
+                19.565217391304348,
+              ],
+            ]
+          }
+          height="50rem"
+          options={
+            Object {
+              "hAxis": Object {
+                "title": "Category",
+              },
+              "vAxis": Object {
+                "title": "Number",
+              },
+            }
+          }
+          title="Daily Number of Expenses"
+          width="100%"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;
