@@ -1,6 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
+import 'firebase/analytics';
 
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -20,6 +21,7 @@ const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 const facebookAuthProvider = new firebase.auth.FacebookAuthProvider();
 const twitterAuthprovider = new firebase.auth.TwitterAuthProvider();
 const yahooAuthProvider = new firebase.auth.OAuthProvider('yahoo.com');
+const analytics = firebase.analytics();
 
 export {
   firebase,
@@ -27,5 +29,6 @@ export {
   facebookAuthProvider,
   twitterAuthprovider,
   yahooAuthProvider,
+  analytics,
   database as default,
 };

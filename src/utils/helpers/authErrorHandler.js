@@ -12,7 +12,7 @@ import {
   cancelAuthNetworkError,
   cancelAuthOtherErrors,
 } from '../../actions/authErrors';
-import { startErrorLog } from '../../actions/errorLog';
+import { startLogError } from '../../actions/logError';
 
 const getProviderForProviderId = (id) => {
   switch (id) {
@@ -65,6 +65,6 @@ export default (error) => {
       message: 'Authentication Other Errors',
       stack: 'authErrorHandler.js, auth.js',
     };
-    store.dispatch(startErrorLog(authError, error.code));
+    store.dispatch(startLogError(authError, error.code));
   }
 };

@@ -125,6 +125,9 @@ module.exports = {
       'process.env.FIREBASE_MEASUREMENT_ID': JSON.stringify(
         process.env.FIREBASE_MEASUREMENT_ID
       ),
+      'process.env.FIREBASE_APP_ID': JSON.stringify(
+        process.env.FIREBASE_APP_ID
+      ),
     }),
     new CompressionPlugin({
       filename: '[path][base].gz',

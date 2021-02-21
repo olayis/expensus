@@ -1,7 +1,7 @@
 // APPLICATION ERROR BOUNDARY LOG
 import database from '../firebase/firebase';
 
-export const startErrorLog = (
+export const startLogError = (
   error = { message: '', stack: '' },
   errorInfo = ''
 ) => {

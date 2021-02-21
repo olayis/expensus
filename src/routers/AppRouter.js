@@ -5,6 +5,7 @@ import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 import LayoutLoadingPage from '../components/LayoutLoadingPage';
 import ErrorBoundary from '../components/ErrorBoundary';
+import logEvent from '../actions/logEvent';
 
 const ExpensusDashboardPage = lazy(() =>
   import('../components/ExpensusDashboardPage')
@@ -18,6 +19,10 @@ const ChangeCurrency = lazy(() => import('../components/ChangeCurrency'));
 const ComingSoonPage = lazy(() => import('../components/ComingSoonPage'));
 
 export const history = createHistory();
+
+history.listen((location) => {
+  logEvent('page_view', { page: location.pathname });
+});
 
 const AppRouter = () => (
   <Router history={history}>
