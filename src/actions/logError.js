@@ -6,11 +6,14 @@ export const startLogError = (
   errorInfo = ''
 ) => {
   return () => {
+    // Extract 'message' and 'stack' from the error object
     const { message, stack } = error;
     const errorDetails = { message, stack };
     const errorTime = new Date().toString();
     const errorData = { errorDetails, errorInfo, errorTime };
 
-    return database.ref(`errors`).push(errorData);
+    return database.ref('errors').push(errorData);
   };
 };
+
+export default startLogError;

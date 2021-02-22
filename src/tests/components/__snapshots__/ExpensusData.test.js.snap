@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpensusData with expenses 1`] = `
+<main
+  className="main-content"
+>
+  <div
+    className="content-container"
+  >
+    <span
+      className="input-field__back"
+      onClick={[Function]}
+    >
+      ←
+    </span>
+    <div
+      className="component-container"
+    >
+      <ExpensusDataDownload
+        expenses={
+          Array [
+            Object {
+              "amount": 2000,
+              "category": "Bills & Utilities",
+              "createdAt": 0,
+              "description": "Data",
+              "id": "1",
+              "note": "",
+            },
+            Object {
+              "amount": 35000,
+              "category": "Rent",
+              "createdAt": "1969-12-27T00:00:00.000Z",
+              "description": "Home Rentage",
+              "id": "2",
+              "note": "",
+            },
+            Object {
+              "amount": 8000,
+              "category": "Maintenance",
+              "createdAt": "1970-01-13T00:00:00.000Z",
+              "description": "Room Repainting",
+              "id": "3",
+              "note": "",
+            },
+            Object {
+              "amount": 1000,
+              "category": "Maintenance",
+              "createdAt": "1970-01-11T00:00:00.000Z",
+              "description": "Water Pipes Repair",
+              "id": "4",
+              "note": "",
+            },
+          ]
+        }
+      />
+    </div>
+    <div
+      className="component-container margin-top-md"
+    >
+      <Connect(ExpensusDataDelete) />
+    </div>
+  </div>
+</main>
+`;
+
+exports[`should render NoExpense component if there are no visible expenses 1`] = `
+<main
+  className="main-content"
+>
+  <div
+    className="content-container"
+  >
+    <span
+      className="input-field__back"
+      onClick={[Function]}
+    >
+      ←
+    </span>
+    <div
+      className="component-container"
+    >
+      <Connect(NoExpense)
+        filterImage="SvgrURL"
+        filterImageAlt="A man illustrating access denied"
+        noDataImage="SvgrURL"
+        noDataImageAlt="A man illustrating access denied"
+        noExpenseText="There are currently no expenses to download."
+      />
+    </div>
+  </div>
+</main>
+`;

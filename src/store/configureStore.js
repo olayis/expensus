@@ -5,7 +5,6 @@ import filtersReducer from '../reducers/filters';
 import authReducer from '../reducers/auth';
 import localeReducer from '../reducers/locale';
 import userInfoReducer from '../reducers/userInfo';
-import dataReducer from '../reducers/data';
 import authErrorReducer from '../reducers/authErrors';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -18,7 +17,6 @@ const configureStore = () => {
       auth: authReducer,
       locale: localeReducer,
       userInfo: userInfoReducer,
-      data: dataReducer,
       authErrors: authErrorReducer,
     }),
     composeEnhancers(applyMiddleware(thunk))

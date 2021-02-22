@@ -8,9 +8,7 @@ test('should render ExpenseList with expenses', () => {
   expect(wrapper).toMatchSnapshot();
 });
 
-test('should render NoExpense if there are no expenses', () => {
-  const wrapper = shallow(
-    <ExpenseList expenses={[]} expensesWithoutFilters={[]} />
-  );
+test('should render NoExpense component if there are no expenses', () => {
+  const wrapper = shallow(<ExpenseList expenses={[]} />);
   expect(wrapper).toMatchSnapshot();
 });

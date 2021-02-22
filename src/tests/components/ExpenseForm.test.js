@@ -61,27 +61,6 @@ test('should render amountError if "amount" is not provided but "description" is
   expect(wrapper).toMatchSnapshot();
 });
 
-test('should render amountError if amount is greater than or equal to 9007199254740991', () => {
-  const wrapper = shallow(<ExpenseForm />);
-  expect(wrapper).toMatchSnapshot();
-
-  wrapper.find('[placeholder="Description"]').simulate('change', {
-    target: {
-      value: expenses[0].description,
-    },
-  });
-  wrapper.find('[placeholder="Amount"]').simulate('change', {
-    target: { value: '9007199254740991' },
-  });
-  wrapper.find('form').simulate('submit', {
-    preventDefault: () => {},
-  });
-
-  expect(wrapper.state('amountError').length).toBeGreaterThan(0);
-  expect(wrapper.state('descriptionError').length).toBe(0);
-  expect(wrapper).toMatchSnapshot();
-});
-
 test('should set description on input change', () => {
   const value = 'New Description';
   const wrapper = shallow(<ExpenseForm />);
@@ -89,6 +68,15 @@ test('should set description on input change', () => {
     target: { value },
   });
   expect(wrapper.state('description')).toBe(value);
+});
+
+test('should clear descriptionError on input change', () => {
+  const value = 'New Description';
+  const wrapper = shallow(<ExpenseForm />);
+  wrapper.find('input').at(0).simulate('change', {
+    target: { value },
+  });
+  expect(wrapper.state('descriptionError')).toBe('');
 });
 
 test('should set note on textarea', () => {
@@ -109,6 +97,15 @@ test('should set amount if input data is valid', () => {
   expect(wrapper.state('amount')).toBe(value);
 });
 
+test('should clear amountError if input data is valid', () => {
+  const value = '23.50';
+  const wrapper = shallow(<ExpenseForm />);
+  wrapper.find('input').at(1).simulate('change', {
+    target: { value },
+  });
+  expect(wrapper.state('amountError')).toBe('');
+});
+
 test('should set category on select change', () => {
   const value = 'Maintenance';
   const wrapper = shallow(<ExpenseForm />);
@@ -119,6 +116,15 @@ test('should set category on select change', () => {
 });
 
 test('should not set amount if input data is invalid', () => {
+  const value = '12.432';
+  const wrapper = shallow(<ExpenseForm />);
+  wrapper.find('input').at(1).simulate('change', {
+    target: { value },
+  });
+  expect(wrapper.state('amount')).toBe('');
+});
+
+test('should not set amount if input data is greater than or equal to 9007199254740991', () => {
   const value = '12.432';
   const wrapper = shallow(<ExpenseForm />);
   wrapper.find('input').at(1).simulate('change', {

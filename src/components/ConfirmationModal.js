@@ -7,9 +7,9 @@ const ConfirmationModal = (props) => {
   return (
     <div>
       <Modal
-        contentLabel='Are you sure?'
-        isOpen={!!props.deleteSelected}
-        onRequestClose={props.stopDeleteDataSelected}
+        contentLabel={props.modalTitle}
+        isOpen={props.modalSelected}
+        onRequestClose={props.cancelModalSelection}
         closeTimeoutMS={200}
         className='modal'
         aria={{
@@ -18,17 +18,20 @@ const ConfirmationModal = (props) => {
         }}
       >
         <h3 id='heading' className='modal__title'>
-          Delete Data
+          {props.modalTitle}
         </h3>
         <p id='full_description' className='modal__body'>
-          Are you sure you want to delete all of your data on Expensus?
+          {props.modalDescription}
         </p>
-        <button className='modal__btn--delete' onClick={props.handleDeleteData}>
-          Delete
+        <button
+          className='modal__btn--action'
+          onClick={props.handleModalAction}
+        >
+          {props.actionButtonLabel}
         </button>
         <button
           className='modal__btn--cancel'
-          onClick={props.stopDeleteDataSelected}
+          onClick={props.cancelModalSelection}
         >
           Cancel
         </button>

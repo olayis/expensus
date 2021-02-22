@@ -8,16 +8,7 @@ test('should render ExpensesChart with expenses data', () => {
   expect(wrapper).toMatchSnapshot();
 });
 
-test('should render ExpenseChart with empty message', () => {
-  const wrapper = shallow(
-    <ExpenseChart expenses={[]} expensesWithoutFilters={[]} />
-  );
-  expect(wrapper).toMatchSnapshot();
-});
-
-test('should render ExpenseChart with filters message', () => {
-  const wrapper = shallow(
-    <ExpenseChart expenses={[]} expensesWithoutFilters={expenses} />
-  );
+test('should render NoExpense component if there are no visible expenses', () => {
+  const wrapper = shallow(<ExpenseChart expenses={[]} />);
   expect(wrapper).toMatchSnapshot();
 });

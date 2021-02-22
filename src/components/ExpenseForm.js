@@ -23,7 +23,7 @@ export default class ExpenseForm extends React.Component {
 
   onDescriptionChange = (e) => {
     const description = e.target.value;
-    this.setState(() => ({ description }));
+    this.setState(() => ({ description, descriptionError: '' }));
   };
 
   onNoteChange = (e) => {
@@ -35,7 +35,15 @@ export default class ExpenseForm extends React.Component {
     const amount = e.target.value;
 
     if (!amount || amount.match(/^\d{1,}(\.\d{0,2})?$/)) {
-      this.setState(() => ({ amount }));
+      /* Ensure amount is lesser than Number.MAX_SAFE_INTEGER (2^53 - 1)
+       ** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER
+       */
+      amount <= 9007199254740991
+        ? this.setState(() => ({ amount, amountError: '' }))
+        : this.setState(() => ({
+            amountError:
+              'Amount should not be greater than 9,007,199,254,740,990 or ~9 quadrillion',
+          }));
     }
   };
 
@@ -70,15 +78,6 @@ export default class ExpenseForm extends React.Component {
     } else if (!this.state.amount) {
       this.setState(() => ({
         amountError: 'Please provide an amount.',
-        descriptionError: '',
-      }));
-    } else if (this.state.amount >= 9007199254740991) {
-      /* Ensure amount is lesser than Number.MAX_SAFE_INTEGER (2^53 - 1)
-       ** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER
-       */
-      this.setState(() => ({
-        amountError:
-          'Amount should not be greater than 9,007,199,254,740,990 or ~9 quadrillion',
         descriptionError: '',
       }));
     } else {
@@ -140,6 +139,7 @@ export default class ExpenseForm extends React.Component {
             onChange={this.onAmountChange}
             aria-label='Expense amount'
             name='amount'
+            step='any'
           />
           <span
             className={

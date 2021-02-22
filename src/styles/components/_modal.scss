@@ -7,6 +7,8 @@
   display: flex;
   justify-content: center;
   transition: opcaity 200ms ease-in-out;
+  overflow-y: scroll;
+  z-index: 20;
 }
 
 .ReactModalPortal .ReactModal__Overlay--after-open {
@@ -57,7 +59,7 @@
       }
     }
 
-    &--delete {
+    &--action {
       @extend .modal__btn--cancel;
       border: 1px solid $color-light-blue;
       background-color: transparent;
@@ -68,4 +70,8 @@
       }
     }
   }
+}
+
+.ReactModalPortal {
+  overflow-y: scroll;
 }

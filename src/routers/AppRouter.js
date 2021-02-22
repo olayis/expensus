@@ -14,7 +14,7 @@ const AddExpensePage = lazy(() => import('../components/AddExpensePage'));
 const EditExpensePage = lazy(() => import('../components/EditExpensePage'));
 const NotFoundPage = lazy(() => import('../components/NotFoundPage'));
 const LoginPage = lazy(() => import('../components/LoginPage'));
-const ExpensesData = lazy(() => import('../components/ExpensesData'));
+const ExpensusData = lazy(() => import('../components/ExpensusData'));
 const ChangeCurrency = lazy(() => import('../components/ChangeCurrency'));
 const ComingSoonPage = lazy(() => import('../components/ComingSoonPage'));
 
@@ -34,7 +34,7 @@ const AppRouter = () => (
             <PrivateRoute path='/dashboard' component={ExpensusDashboardPage} />
             <PrivateRoute path='/create' component={AddExpensePage} />
             <PrivateRoute path='/edit/:id' component={EditExpensePage} />
-            <PrivateRoute path='/data' component={ExpensesData} />
+            <PrivateRoute path='/data' component={ExpensusData} />
             <PrivateRoute path='/currency' component={ChangeCurrency} />
             <PrivateRoute path='/settings' component={ComingSoonPage} />
             <Route component={NotFoundPage} />

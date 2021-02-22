@@ -104,7 +104,7 @@ exports[`should render ExpenseList with expenses 1`] = `
 </section>
 `;
 
-exports[`should render NoExpense if there are no expenses 1`] = `
+exports[`should render NoExpense component if there are no expenses 1`] = `
 <section
   className="content-container"
 >
@@ -148,7 +148,11 @@ exports[`should render NoExpense if there are no expenses 1`] = `
        Expenses Overview
     </h2>
     <Connect(NoExpense)
-      expensesWithoutFilters={Array []}
+      filterImage="SvgrURL"
+      filterImageAlt="A filter showing Expenses have been filtered"
+      noDataImage="SvgrURL"
+      noDataImageAlt="A clipboard showing no data"
+      noExpenseText="No Expenses To Display."
     />
   </div>
 </section>

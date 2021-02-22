@@ -7,6 +7,7 @@ import dailyAmount from '../statistics/dailyAmount';
 import dailyCount from '../statistics/dailyCount';
 import expenseAmount from '../statistics/descriptionAmount';
 import ExpenseChartItem from './ExpenseChartItem';
+import NoExpense from './NoExpense';
 
 const ExpenseChart = (props) => {
   const pieChartData = expenseAmount(props.expenses);
@@ -21,20 +22,14 @@ const ExpenseChart = (props) => {
           <FontAwesomeIcon icon={faChartBar} /> Expenses Charts
         </h2>
         {props.expenses.length === 0 ? (
-          <div className='no-expense'>
-            <img
-              src={charts}
-              alt='A man looking at charts'
-              className='no-expense__illustration'
-              width='773'
-              height='532'
-            />
-            {props.expensesWithoutFilters.length === 0 ? (
-              <p>Start adding Expenses to generate Charts.</p>
-            ) : (
-              <p>Clear current filters to generate Charts.</p>
-            )}
-          </div>
+          <NoExpense
+            expensesWithoutFilters={props.expensesWithoutFilters}
+            noDataImage={charts}
+            noDataImageAlt='A man looking at charts'
+            filterImage={charts}
+            filterImageAlt='A man looking at charts'
+            noExpenseText='Start adding expenses to generate charts.'
+          />
         ) : (
           <div>
             <div className='row'>

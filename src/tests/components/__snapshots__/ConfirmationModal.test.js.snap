@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should not render ConfirmationModal if delete button is not clicked 1`] = `
+exports[`should not render ConfirmationModal if action button is not clicked 1`] = `
 <div>
   <Modal
     aria={
@@ -13,7 +13,6 @@ exports[`should not render ConfirmationModal if delete button is not clicked 1`]
     bodyOpenClassName="ReactModal__Body--open"
     className="modal"
     closeTimeoutMS={200}
-    contentLabel="Are you sure?"
     isOpen={false}
     parentSelector={[Function]}
     portalClassName="ReactModalPortal"
@@ -26,20 +25,14 @@ exports[`should not render ConfirmationModal if delete button is not clicked 1`]
     <h3
       className="modal__title"
       id="heading"
-    >
-      Delete Data
-    </h3>
+    />
     <p
       className="modal__body"
       id="full_description"
-    >
-      Are you sure you want to delete all of your data on Expensus?
-    </p>
+    />
     <button
-      className="modal__btn--delete"
-    >
-      Delete
-    </button>
+      className="modal__btn--action"
+    />
     <button
       className="modal__btn--cancel"
     >
@@ -49,7 +42,7 @@ exports[`should not render ConfirmationModal if delete button is not clicked 1`]
 </div>
 `;
 
-exports[`should render ConfirmationModal on delete button click 1`] = `
+exports[`should render ConfirmationModal on confirmation button click 1`] = `
 <div>
   <Modal
     aria={
@@ -62,8 +55,9 @@ exports[`should render ConfirmationModal on delete button click 1`] = `
     bodyOpenClassName="ReactModal__Body--open"
     className="modal"
     closeTimeoutMS={200}
-    contentLabel="Are you sure?"
+    contentLabel="MODAL TITLE"
     isOpen={true}
+    onRequestClose={[MockFunction]}
     parentSelector={[Function]}
     portalClassName="ReactModalPortal"
     role="dialog"
@@ -76,21 +70,23 @@ exports[`should render ConfirmationModal on delete button click 1`] = `
       className="modal__title"
       id="heading"
     >
-      Delete Data
+      MODAL TITLE
     </h3>
     <p
       className="modal__body"
       id="full_description"
     >
-      Are you sure you want to delete all of your data on Expensus?
+      MODAL DESCRIPTION
     </p>
     <button
-      className="modal__btn--delete"
+      className="modal__btn--action"
+      onClick={[MockFunction]}
     >
-      Delete
+      ACTION
     </button>
     <button
       className="modal__btn--cancel"
+      onClick={[MockFunction]}
     >
       Cancel
     </button>

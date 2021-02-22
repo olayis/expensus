@@ -2,22 +2,20 @@ import React from 'react';
 import moment from 'moment';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import no_data from '../../public/img/no_data.svg';
-import filter from '../../public/img/filter.svg';
 
 export const NoExpense = (props) => (
   <div className='no-expense'>
     {props.expensesWithoutFilters.length === 0 ? (
       <>
         <img
-          src={no_data}
-          alt='A clipboard showing no data'
+          src={props.noDataImage}
+          alt={props.noDataImageAlt}
           className='no-expense__illustration'
           width='648'
           height='633'
         />
         <p>
-          No Expenses To Display.{' '}
+          {props.noExpenseText}{' '}
           <Link to='/create' className='router-link router-link--add'>
             Add an Expense
           </Link>
@@ -26,8 +24,8 @@ export const NoExpense = (props) => (
     ) : (
       <>
         <img
-          src={filter}
-          alt='A filter showing Expenses have been filtered'
+          src={props.filterImage}
+          alt={props.filterImageAlt}
           className='no-expense__illustration'
           width='883'
           height='608'

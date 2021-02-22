@@ -3,22 +3,16 @@ import { shallow } from 'enzyme';
 import expenses from '../fixtures/expenses';
 import { ExpenseListItem } from '../../components/ExpenseListItem';
 
-let wrapper, startRemoveExpense;
-
+let wrapper;
 beforeEach(() => {
-  startRemoveExpense = jest.fn();
-  wrapper = shallow(
-    <ExpenseListItem {...expenses[2]} startRemoveExpense={startRemoveExpense} />
-  );
+  wrapper = shallow(<ExpenseListItem {...expenses[2]} />);
 });
 
 test('should render ExpenseListItem with expense', () => {
   expect(wrapper).toMatchSnapshot();
 });
 
-test('should handle startRemoveExpense on click', () => {
+test('should render confirmation modal on remove button click', () => {
   wrapper.find('.card-box__delete').simulate('click');
-  expect(startRemoveExpense).toHaveBeenLastCalledWith({
-    id: expenses[2].id,
-  });
+  expect(wrapper.state('modalSelected')).toBe(true);
 });

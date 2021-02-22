@@ -1,9 +1,5 @@
 import database from '../firebase/firebase';
-
-// DELETE_DATA
-export const deleteData = () => ({
-  type: 'DELETE_DATA',
-});
+import startLogError from './logError';
 
 export const startDeleteData = () => {
   return (dispatch, getState) => {
@@ -11,26 +7,16 @@ export const startDeleteData = () => {
     return database
       .ref(`users/${uid}`)
       .remove()
-      .then(() => {
-        dispatch(deleteData());
+      .catch((errorInfo) => {
+        startLogError(
+          {
+            message: "Failed to delete users' data",
+            stack: 'src/actions/data.js',
+          },
+          errorInfo
+        );
       });
   };
 };
 
-// DELETE_DATA_SELECTED
-export const deleteDataSelected = (deleteSelected) => ({
-  type: 'DELETE_DATA_SELECTED',
-  deleteSelected,
-});
-
-export const startDeleteDataSelected = () => {
-  return (dispatch) => {
-    return dispatch(deleteDataSelected(true));
-  };
-};
-
-export const stopDeleteDataSelected = () => {
-  return (dispatch) => {
-    return dispatch(deleteDataSelected(false));
-  };
-};
+export default startDeleteData;

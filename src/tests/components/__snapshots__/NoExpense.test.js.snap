@@ -5,7 +5,7 @@ exports[`should render NoExpense with dates filter message 1`] = `
   className="no-expense"
 >
   <img
-    alt="A filter showing Expenses have been filtered"
+    alt="FILTER ALT"
     className="no-expense__illustration"
     height="608"
     src="SvgrURL"
@@ -26,14 +26,14 @@ exports[`should render NoExpense with empty message 1`] = `
   className="no-expense"
 >
   <img
-    alt="A clipboard showing no data"
+    alt="NO DATA ALT"
     className="no-expense__illustration"
     height="633"
     src="SvgrURL"
     width="648"
   />
   <p>
-    No Expenses To Display.
+    NO EXPENSE TEXT
      
     <Link
       className="router-link router-link--add"
@@ -50,7 +50,7 @@ exports[`should render NoExpense with endDate filter message 1`] = `
   className="no-expense"
 >
   <img
-    alt="A filter showing Expenses have been filtered"
+    alt="FILTER ALT"
     className="no-expense__illustration"
     height="608"
     src="SvgrURL"
@@ -70,7 +70,7 @@ exports[`should render NoExpense with startDate filter message 1`] = `
   className="no-expense"
 >
   <img
-    alt="A filter showing Expenses have been filtered"
+    alt="FILTER ALT"
     className="no-expense__illustration"
     height="608"
     src="SvgrURL"
@@ -90,7 +90,7 @@ exports[`should render NoExpense with text and date filters message 1`] = `
   className="no-expense"
 >
   <img
-    alt="A filter showing Expenses have been filtered"
+    alt="FILTER ALT"
     className="no-expense__illustration"
     height="608"
     src="SvgrURL"
@@ -112,7 +112,7 @@ exports[`should render NoExpense with text filter message 1`] = `
   className="no-expense"
 >
   <img
-    alt="A filter showing Expenses have been filtered"
+    alt="FILTER ALT"
     className="no-expense__illustration"
     height="608"
     src="SvgrURL"

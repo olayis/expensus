@@ -12,7 +12,7 @@ import {
   cancelAuthNetworkError,
   cancelAuthOtherErrors,
 } from '../../actions/authErrors';
-import { startLogError } from '../../actions/logError';
+import startLogError from '../../actions/logError';
 
 const getProviderForProviderId = (id) => {
   switch (id) {
