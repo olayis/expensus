@@ -4,6 +4,7 @@ import { CSVLink } from 'react-csv';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileCsv } from '@fortawesome/free-solid-svg-icons';
 import { faArrowAltCircleDown } from '@fortawesome/free-regular-svg-icons';
+import logEvent from '../actions/logEvent';
 
 const ExpensusDataDownload = (props) => {
   return (
@@ -26,6 +27,9 @@ const ExpensusDataDownload = (props) => {
             }))}
             aria-label='CSV Download Link'
             filename={'expenses.csv'}
+            onClick={() =>
+              logEvent('download_expense', { info: 'User downloaded data' })
+            }
           >
             <FontAwesomeIcon
               icon={faArrowAltCircleDown}

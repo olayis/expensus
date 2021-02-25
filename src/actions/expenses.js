@@ -1,4 +1,5 @@
 import database from '../firebase/firebase';
+import logEvent from './logEvent';
 
 // ADD_EXPENSE
 export const addExpense = (expense) => ({
@@ -24,6 +25,7 @@ export const startAddExpense = (expenseData = {}) => {
       .push(expense)
       .then((ref) => {
         dispatch(addExpense({ id: ref.key, ...expense }));
+        logEvent('add_expense', { info: 'User added an expense' });
       });
   };
 };
@@ -42,6 +44,7 @@ export const startRemoveExpense = ({ id } = {}) => {
       .remove()
       .then(() => {
         dispatch(removeExpense({ id }));
+        logEvent('remove_expense', { info: 'User removed an expense' });
       });
   };
 };
@@ -61,6 +64,7 @@ export const startEditExpense = (id, updates) => {
       .update(updates)
       .then(() => {
         dispatch(editExpense(id, updates));
+        logEvent('remove_expense', { info: 'User edited an expense' });
       });
   };
 };

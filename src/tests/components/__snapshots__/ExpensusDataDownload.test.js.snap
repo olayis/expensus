@@ -89,6 +89,7 @@ exports[`should render ExpensusDataDownload 1`] = `
           ]
         }
         filename="expenses.csv"
+        onClick={[Function]}
         separator=","
         target="_blank"
         uFEFF={true}

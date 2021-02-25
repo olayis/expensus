@@ -6,6 +6,11 @@
     cursor: default;
   }
 
+  &:focus {
+    border: 2px solid $color-primary-2;
+    font-weight: 500;
+  }
+
   &__login {
     padding: 1rem 4rem;
     display: block;

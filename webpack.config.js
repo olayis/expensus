@@ -7,6 +7,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const isDevelopment = process.env.NODE_ENV === 'development';
 const CompressionPlugin = require('compression-webpack-plugin');
 const zlib = require('zlib');
+const RobotstxtPlugin = require('robotstxt-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 //   .BundleAnalyzerPlugin;
 
@@ -149,6 +150,7 @@ module.exports = {
       minRatio: 0.8,
       deleteOriginalAssets: false,
     }),
+    new RobotstxtPlugin({ filePath: '/robots.txt' }),
     // new BundleAnalyzerPlugin(),
   ],
   resolve: {

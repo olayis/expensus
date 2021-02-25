@@ -49,10 +49,14 @@
   }
 
   &--sort {
-    @include resetButtonStyle;
+    border: 1px solid #cacccd;
     color: $color-primary-2;
     font-weight: 500;
-    padding: 0;
+    padding: 0.4rem 1rem;
+  }
+
+  &--sort:focus {
+    border-color: $color-primary;
   }
 
   &--category,

@@ -11,6 +11,7 @@ import {
 import { faTags, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { startRemoveExpense } from '../actions/expenses';
 import ConfirmationModal from './ConfirmationModal';
+import logEvent from '../actions/logEvent';
 
 export class ExpenseListItem extends React.Component {
   constructor(props) {
@@ -23,6 +24,9 @@ export class ExpenseListItem extends React.Component {
 
   onRemove = () => {
     this.props.startRemoveExpense({ id: this.props.id });
+    logEvent('remove_expense_dashboard', {
+      info: 'User removed an expense from dashboard page',
+    });
   };
 
   toggleModalSelection = () => {

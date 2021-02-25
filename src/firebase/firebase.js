@@ -28,7 +28,7 @@ const analyticsMock = {
   setUserId: () => {},
 };
 const analytics =
-  process.env.NODE_ENV !== 'test' ? firebase.analytics() : analyticsMock;
+  process.env.NODE_ENV === 'production' ? firebase.analytics() : analyticsMock;
 
 export {
   firebase,

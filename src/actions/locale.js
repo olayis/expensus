@@ -1,4 +1,5 @@
 import database from '../firebase/firebase';
+import logEvent from '../actions/logEvent';
 
 // CHANGE_LOCALE
 export const changeLocale = (locale) => ({
@@ -18,6 +19,7 @@ export const startChangeLocale = (localeData = {}) => {
       .update(locale)
       .then(() => {
         dispatch(changeLocale(locale));
+        logEvent('change_currency', { info: 'User changed base currency' });
       });
   };
 };
