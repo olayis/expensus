@@ -6,6 +6,7 @@ import PublicRoute from './PublicRoute';
 import LayoutLoadingPage from '../components/LayoutLoadingPage';
 import ErrorBoundary from '../components/ErrorBoundary';
 import logEvent from '../actions/logEvent';
+import LoginPage from '../components/LoginPage';
 
 const ExpensusDashboardPage = lazy(() =>
   import('../components/ExpensusDashboardPage')
@@ -13,7 +14,6 @@ const ExpensusDashboardPage = lazy(() =>
 const AddExpensePage = lazy(() => import('../components/AddExpensePage'));
 const EditExpensePage = lazy(() => import('../components/EditExpensePage'));
 const NotFoundPage = lazy(() => import('../components/NotFoundPage'));
-const LoginPage = lazy(() => import('../components/LoginPage'));
 const ExpensusData = lazy(() => import('../components/ExpensusData'));
 const ChangeCurrency = lazy(() => import('../components/ChangeCurrency'));
 const ComingSoonPage = lazy(() => import('../components/ComingSoonPage'));
