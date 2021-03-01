@@ -9,6 +9,7 @@ import configureLocale from './utils/numeralLocale/configureLocale';
 import { login, logout } from './actions/auth';
 import { userInfo } from './actions/userInfo';
 import LoadingPage from './components/LoadingPage';
+import splash from '../public/img/splash.gif';
 import 'normalize.css/normalize.css';
 import 'react-dates/lib/css/_datepicker.css';
 import './styles/main.scss';
@@ -27,7 +28,10 @@ const renderApp = () => {
   }
 };
 
-ReactDOM.render(<LoadingPage />, document.getElementById('app'));
+ReactDOM.render(
+  <LoadingPage img={splash} width='262' height='98' hideLoadingText={true} />,
+  document.getElementById('app')
+);
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {

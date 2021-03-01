@@ -14,7 +14,9 @@ class ErrorBoundary extends React.Component {
   }
 
   componentDidCatch(error, errorInfo) {
-    store.dispatch(startLogError(error, errorInfo));
+    process.env.NODE_ENV === 'Production'
+      ? store.dispatch(startLogError(error, errorInfo))
+      : '';
   }
 
   render() {

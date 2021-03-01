@@ -1,17 +1,17 @@
 import React from 'react';
-import loadingGif from '../../public/img/loading.gif';
+import spinner from '../../public/img/spinner.gif';
 
-const LoadingPage = () => (
+const LoadingPage = (props) => (
   <div className='loader'>
     <div className='loader__content'>
       <img
-        src={loadingGif}
+        src={props.img || spinner}
         className='loader__image'
         alt=''
-        width='47'
-        height='47'
+        width={props.width || '200'}
+        height={props.height || '200'}
       />
-      <p className='loader__text'>Loading...</p>
+      {props.hideLoadingText ? '' : <p className='loader__text'>Loading...</p>}
     </div>
   </div>
 );
