@@ -4,11 +4,6 @@
   "main": "index.js",
   "author": "Olayinka Olusegun",
   "license": "MIT",
-  "engines": {
-    "node": "12.x",
-    "npm": "6.x",
-    "yarn": "1.x"
-  },
   "scripts": {
     "build:dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
     "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",

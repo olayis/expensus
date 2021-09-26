@@ -10,15 +10,33 @@ exports[`should render LoadingPage correctly 1`] = `
     <img
       alt=""
       className="loader__image"
-      height="47"
+      height="200"
       src="test-file-stub"
-      width="47"
+      width="200"
     />
     <p
       className="loader__text"
     >
       Loading...
     </p>
+  </div>
+</div>
+`;
+
+exports[`should render LoadingPage correctly with props 1`] = `
+<div
+  className="loader"
+>
+  <div
+    className="loader__content"
+  >
+    <img
+      alt=""
+      className="loader__image"
+      height="98"
+      src="test-file-stub"
+      width="262"
+    />
   </div>
 </div>
 `;

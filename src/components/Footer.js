@@ -8,10 +8,10 @@ const Footer = () => (
   <div className='footer'>
     &copy; {`${currentYear} `}
     <a
-      href='https://www.github.com/olayis'
+      href='https://olusegundev.web.app/'
       target='_blank'
       className='footer__link'
-      aria-label='Olusegun"s Github'
+      aria-label="Olusegun's Portflio"
       rel='noreferrer'
     >
       Olayis
